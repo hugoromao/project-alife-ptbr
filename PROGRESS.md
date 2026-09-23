@@ -22,9 +22,9 @@ Todo lote traduzido é salvo em `translations/speech/` e vai para um commit no G
 <!-- stats -->
 | Fonte | Traduzidas | Total | % |
 |---|---:|---:|---:|
-| barks | 1750 | 3741 | 46.8% |
+| barks | 2050 | 3741 | 54.8% |
 | talk | 0 | 7191 | 0.0% |
-| scenes | 0 | 15198 | 0.0% |
+| scenes | 1 | 15198 | 0.0% |
 | radio | 0 | 9106 | 0.0% |
 <!-- /stats -->
 
