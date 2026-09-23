@@ -24,7 +24,7 @@ Todo lote traduzido é salvo em `translations/speech/` e vai para um commit no G
 |---|---:|---:|---:|
 | barks | 3741 | 3741 | 100.0% |
 | code | 1591 | 1591 | 100.0% |
-| talk | 254 | 7191 | 3.5% |
+| talk | 504 | 7191 | 7.0% |
 | scenes | 12 | 15198 | 0.1% |
 | radio | 7 | 9106 | 0.1% |
 <!-- /stats -->
