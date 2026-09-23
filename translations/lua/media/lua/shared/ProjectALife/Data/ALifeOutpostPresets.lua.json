@@ -1,0 +1,47 @@
+[
+ {
+  "en": "Fortified station",
+  "ctx": "\"police_station\" , label =",
+  "pt": "Delegacia fortificada"
+ },
+ {
+  "en": "Held house",
+  "ctx": "\"sturdy_house\" , label =",
+  "pt": "Casa ocupada"
+ },
+ {
+  "en": "Fortified field base",
+  "ctx": "\"fortified_field_base\" , label =",
+  "pt": "Base de campo fortificada"
+ },
+ {
+  "en": "Forest camp",
+  "ctx": "\"forest_camp\" , label =",
+  "pt": "Acampamento na floresta"
+ },
+ {
+  "en": "Field aid station",
+  "ctx": "\"field_hospital\" , label =",
+  "pt": "Posto de primeiros socorros"
+ },
+ {
+  "en": "Supply depot",
+  "ctx": "\"supply_depot\" , label =",
+  "pt": "Depósito de suprimentos"
+ },
+ {
+  "en": "Holdout",
+  "ctx": "\"holdout_house\" , label =",
+  "pt": "Reduto"
+ },
+ {
+  "en": "Walled compound",
+  "ctx": "\"alexandria\" , label =",
+  "pt": "Complexo murado"
+ },
+ {
+  "en": "Cordon bridge checkpoint",
+  "ctx": "\"bridge_checkpoint\" , label =",
+  "pt": "Bloqueio na ponte"
+ }
+]

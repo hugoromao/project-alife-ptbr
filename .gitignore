@@ -1,0 +1,10 @@
+# Original mod and other translations: third-party content, downloaded on demand
+upstream/
+reference/
+work/es_*.json
+work/creator_list.txt
+work/sandbox_en.txt
+# Downloaded tool and build output
+tools/DepotDownloader
+build/
+__pycache__/

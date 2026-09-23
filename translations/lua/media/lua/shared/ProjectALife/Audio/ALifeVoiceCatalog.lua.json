@@ -1,0 +1,22 @@
+[
+ {
+  "en": "Calm Male",
+  "ctx": "= { label =",
+  "pt": "Masculina calma"
+ },
+ {
+  "en": "Calm Female",
+  "ctx": "= { label =",
+  "pt": "Feminina calma"
+ },
+ {
+  "en": "Aggressive Male",
+  "ctx": "= { label =",
+  "pt": "Masculina agressiva"
+ },
+ {
+  "en": "Aggressive Female",
+  "ctx": "= { label =",
+  "pt": "Feminina agressiva"
+ }
+]

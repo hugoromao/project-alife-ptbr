@@ -1,0 +1,132 @@
+[
+ {
+  "en": "Patrol",
+  "ctx": "\"patrol\" , label =",
+  "pt": "Patrulha"
+ },
+ {
+  "en": "Hostile Scouts",
+  "ctx": "\"raid\" , label =",
+  "pt": "Batedores hostis"
+ },
+ {
+  "en": "Full-scale raid",
+  "ctx": "\"fullscale_raid\" , label =",
+  "pt": "Invasão em grande escala"
+ },
+ {
+  "en": "Road crash",
+  "ctx": "\"car_crash\" , label =",
+  "pt": "Acidente na estrada"
+ },
+ {
+  "en": "Assassination squad",
+  "ctx": "\"assassination\" , label =",
+  "pt": "Esquadrão de assassinos"
+ },
+ {
+  "en": "Blockade",
+  "ctx": "\"blockade\" , label =",
+  "pt": "Bloqueio"
+ },
+ {
+  "en": "Highway ambush",
+  "ctx": "\"highway_ambush\" , label =",
+  "pt": "Emboscada na rodovia"
+ },
+ {
+  "en": "Rooftop shooters",
+  "ctx": "\"rooftop_snipers\" , label =",
+  "pt": "Atiradores no telhado"
+ },
+ {
+  "en": "Station garrison",
+  "ctx": "\"poi_defenders\" , label =",
+  "pt": "Guarnição da delegacia"
+ },
+ {
+  "en": "Broken-down car",
+  "ctx": "\"broken_car\" , label =",
+  "pt": "Carro quebrado"
+ },
+ {
+  "en": "Town patrol route",
+  "ctx": "\"town_patrol\" , label =",
+  "pt": "Rota de patrulha urbana"
+ },
+ {
+  "en": "Scavenger crew",
+  "ctx": "\"scavenger_crew\" , label =",
+  "pt": "Grupo de catadores"
+ },
+ {
+  "en": "Building residents (NPCs only)",
+  "ctx": "\"outpost\" , label =",
+  "pt": "Moradores do prédio (apenas NPCs)"
+ },
+ {
+  "en": "A small armed group walking a real circuit, abreast, pausing at the corners. Warns before it shoots.",
+  "ctx": "\"Patrol\" , summary =",
+  "pt": "Um pequeno grupo armado percorrendo um circuito de verdade, lado a lado, parando nas esquinas. Avisa antes de atirar."
+ },
+ {
+  "en": "An attacking group that pushes at the nearest players.",
+  "ctx": "\"Hostile Scouts\" , summary =",
+  "pt": "Um grupo de ataque que avança sobre os jogadores mais próximos."
+ },
+ {
+  "en": "A big, sustained, coordinated push. Rare and loud.",
+  "ctx": "\"Full-scale raid\" , summary =",
+  "pt": "Um ataque grande, prolongado e coordenado. Raro e barulhento."
+ },
+ {
+  "en": "A wreck on the road and the survivors of it -- any faction's people.",
+  "ctx": "\"Road crash\" , summary =",
+  "pt": "Um acidente na estrada e os sobreviventes dele -- gente de qualquer facção."
+ },
+ {
+  "en": "A tracker and a rifle: quiet approach, one loud second.",
+  "ctx": "\"Assassination squad\" , summary =",
+  "pt": "Um rastreador e um rifle: aproximação silenciosa, um segundo barulhento."
+ },
+ {
+  "en": "Cars across the road and a line of guns behind them, holding the crossing. They do not chase far.",
+  "ctx": "\"Blockade\" , summary =",
+  "pt": "Carros atravessados na estrada e uma fileira de armas atrás deles, segurando a passagem. Não perseguem para longe."
+ },
+ {
+  "en": "Hidden guns on both shoulders of a road, holding fire until something drives into the middle.",
+  "ctx": "\"Highway ambush\" , summary =",
+  "pt": "Armas escondidas nos dois acostamentos de uma estrada, esperando até que algo entre no meio."
+ },
+ {
+  "en": "A pair of rifles on an upper floor, working the street below and refusing to come down.",
+  "ctx": "\"Rooftop shooters\" , summary =",
+  "pt": "Dois rifles num andar de cima, cobrindo a rua lá embaixo e se recusando a descer."
+ },
+ {
+  "en": "A crew that has taken somewhere worth taking -- a station, a warehouse -- and means to keep it.",
+  "ctx": "\"Station garrison\" , summary =",
+  "pt": "Um grupo que tomou um lugar que valia a pena -- uma delegacia, um armazém -- e pretende mantê-lo."
+ },
+ {
+  "en": "A dead engine, an empty tank, one pair of hands under the bonnet and the rest of them watching the road.",
+  "ctx": "\"Broken-down car\" , summary =",
+  "pt": "Motor morto, tanque vazio, um mexendo embaixo do capô e o resto vigiando a estrada."
+ },
+ {
+  "en": "A circuit of the same four corners, walked all day. Predictable on purpose: it can be learned.",
+  "ctx": "\"Town patrol route\" , summary =",
+  "pt": "Um circuito pelas mesmas quatro esquinas, percorrido o dia todo. Previsível de propósito: dá para aprender."
+ },
+ {
+  "en": "A crew out for one thing -- medicine, food, ammunition or tools -- working a street house by house behind its leader, in through doors only.",
+  "ctx": "\"Scavenger crew\" , summary =",
+  "pt": "Um grupo atrás de uma coisa só -- remédio, comida, munição ou ferramentas -- vasculhando a rua casa por casa atrás do líder, entrando só pelas portas."
+ },
+ {
+  "en": "People who live here. They hold the inside of the building, they do not breach out, and they do not leave.",
+  "ctx": "\"Building residents (NPCs only)\" , summary =",
+  "pt": "Gente que mora aqui. Defendem o interior do prédio, não saem para fora e não vão embora."
+ }
+]

@@ -1,0 +1,212 @@
+[
+ {
+  "en": "Good to see another person.",
+  "ctx": "\"GREETING\" , text =",
+  "pt": "Bom ver outra pessoa."
+ },
+ {
+  "en": "Hey. Good to see somebody alive.",
+  "ctx": ", variants = {",
+  "pt": "Ei. Bom ver alguém vivo."
+ },
+ {
+  "en": "Didn't expect company out here.",
+  "ctx": "= { \"Hey. Good to see somebody alive.\" ,",
+  "pt": "Não esperava companhia por aqui."
+ },
+ {
+  "en": "Mind if we talk a minute?",
+  "ctx": "\"Hey. Good to see somebody alive.\" , \"Didn't expect company out here.\" ,",
+  "pt": "Se importa se a gente conversar um minuto?"
+ },
+ {
+  "en": "Heard anything around here?",
+  "ctx": "\"ASK_NEWS\" , text =",
+  "pt": "Ouviu alguma coisa por aqui?"
+ },
+ {
+  "en": "Where are you headed?",
+  "ctx": "\"ASK_DESTINATION\" , text =",
+  "pt": "Para onde você está indo?"
+ },
+ {
+  "en": "Got any advice?",
+  "ctx": "\"ASK_ADVICE\" , text =",
+  "pt": "Tem algum conselho?"
+ },
+ {
+  "en": "Got any food to spare?",
+  "ctx": "\"ASK_FOOD\" , text =",
+  "pt": "Tem comida sobrando?"
+ },
+ {
+  "en": "What did you do before all this?",
+  "ctx": "\"ASK_JOB_BEFORE\" , text =",
+  "pt": "O que você fazia antes de tudo isso?"
+ },
+ {
+  "en": "What happened to the army?",
+  "ctx": "\"ASK_MILITARY\" , text =",
+  "pt": "O que aconteceu com o exército?"
+ },
+ {
+  "en": "Any word from the National Guard?",
+  "ctx": ", variants = {",
+  "pt": "Alguma notícia da Guarda Nacional?"
+ },
+ {
+  "en": "Think the army's still out there?",
+  "ctx": "= { \"Any word from the National Guard?\" ,",
+  "pt": "Acha que o exército ainda está por aí?"
+ },
+ {
+  "en": "You heard anything about the soldiers?",
+  "ctx": "\"Any word from the National Guard?\" , \"Think the army's still out there?\" ,",
+  "pt": "Ouviu alguma coisa sobre os soldados?"
+ },
+ {
+  "en": "You heard anything about Fort Knox?",
+  "ctx": "\"ASK_FORT_KNOX\" , text =",
+  "pt": "Ouviu alguma coisa sobre Fort Knox?"
+ },
+ {
+  "en": "How did it get this bad?",
+  "ctx": "\"ASK_WHAT_HAPPENED\" , text =",
+  "pt": "Como as coisas ficaram tão ruins?"
+ },
+ {
+  "en": "Anything useful on the radio?",
+  "ctx": "\"ASK_RADIO\" , text =",
+  "pt": "Alguma coisa útil no rádio?"
+ },
+ {
+  "en": "Anything I should watch out for here?",
+  "ctx": "\"ASK_DANGER\" , text =",
+  "pt": "Tem algo com que eu deva tomar cuidado por aqui?"
+ },
+ {
+  "en": "You got a story? I could use a distraction.",
+  "ctx": "\"TELL_STORY\" , text =",
+  "pt": "Tem alguma história? Uma distração cairia bem."
+ },
+ {
+  "en": "You got family out there?",
+  "ctx": "\"ASK_FAMILY\" , text =",
+  "pt": "Você tem família por aí?"
+ },
+ {
+  "en": "Who are you running with?",
+  "ctx": "\"ASK_GROUP\" , text =",
+  "pt": "Com quem você anda?"
+ },
+ {
+  "en": "What do you miss most?",
+  "ctx": "\"ASK_MISS\" , text =",
+  "pt": "Do que você mais sente falta?"
+ },
+ {
+  "en": "Know where I can find drinking water?",
+  "ctx": "\"ASK_WATER\" , text =",
+  "pt": "Sabe onde posso achar água potável?"
+ },
+ {
+  "en": "Can you spare any medical supplies?",
+  "ctx": "\"ASK_MEDS\" , text =",
+  "pt": "Pode me arranjar algum suprimento médico?"
+ },
+ {
+  "en": "Anywhere worth checking for supplies?",
+  "ctx": "\"ASK_LOOT_SPOT\" , text =",
+  "pt": "Algum lugar que valha a pena procurar suprimentos?"
+ },
+ {
+  "en": "Yeah, alright.",
+  "ctx": "\"YES\" , text =",
+  "pt": "Tá, pode ser."
+ },
+ {
+  "en": "No, not right now.",
+  "ctx": "\"NO\" , text =",
+  "pt": "Não, agora não."
+ },
+ {
+  "en": "Heard anything I ought to know?",
+  "ctx": "{ ASK_NEWS = {",
+  "pt": "Ouviu algo que eu deveria saber?"
+ },
+ {
+  "en": "What's the word around here?",
+  "ctx": "= { \"Heard anything I ought to know?\" ,",
+  "pt": "O que andam dizendo por aqui?"
+ },
+ {
+  "en": "Any news from outside town?",
+  "ctx": "\"Heard anything I ought to know?\" , \"What's the word around here?\" ,",
+  "pt": "Alguma notícia de fora da cidade?"
+ },
+ {
+  "en": "Where are you headed next?",
+  "ctx": ", ASK_DESTINATION = {",
+  "pt": "Para onde você vai agora?"
+ },
+ {
+  "en": "You staying around here?",
+  "ctx": "= { \"Where are you headed next?\" ,",
+  "pt": "Vai ficar por aqui?"
+ },
+ {
+  "en": "What's your next stop?",
+  "ctx": "\"Where are you headed next?\" , \"You staying around here?\" ,",
+  "pt": "Qual é a sua próxima parada?"
+ },
+ {
+  "en": "What have you figured out so far?",
+  "ctx": ", ASK_ADVICE = {",
+  "pt": "O que você já descobriu até agora?"
+ },
+ {
+  "en": "Any advice for staying alive?",
+  "ctx": "= { \"What have you figured out so far?\" ,",
+  "pt": "Algum conselho pra continuar vivo?"
+ },
+ {
+  "en": "Anything you wish you'd known sooner?",
+  "ctx": "\"What have you figured out so far?\" , \"Any advice for staying alive?\" ,",
+  "pt": "Algo que você queria ter sabido antes?"
+ },
+ {
+  "en": "You have any food you can spare?",
+  "ctx": ", ASK_FOOD = {",
+  "pt": "Tem alguma comida pra dividir?"
+ },
+ {
+  "en": "Got anything to eat? I'm running low.",
+  "ctx": "= { \"You have any food you can spare?\" ,",
+  "pt": "Tem algo pra comer? Estou quase sem nada."
+ },
+ {
+  "en": "Could you spare a bite?",
+  "ctx": "\"You have any food you can spare?\" , \"Got anything to eat? I'm running low.\" ,",
+  "pt": "Pode me dar um pedaço?"
+ },
+ {
+  "en": "What was your work, before this?",
+  "ctx": ", ASK_JOB_BEFORE = {",
+  "pt": "Qual era o seu trabalho, antes disso?"
+ },
+ {
+  "en": "What did a normal day look like for you?",
+  "ctx": "= { \"What was your work, before this?\" ,",
+  "pt": "Como era um dia normal pra você?"
+ },
+ {
+  "en": "You from around here? What did you do?",
+  "ctx": "\"What was your work, before this?\" , \"What did a normal day look like for you?\" ,",
+  "pt": "Você é daqui? O que você fazia?"
+ },
+ {
+  "en": "Maybe we can work together?",
+  "ctx": "\"JOIN_REQUEST\" , text =",
+  "pt": "Talvez a gente possa trabalhar junto?"
+ }
+]

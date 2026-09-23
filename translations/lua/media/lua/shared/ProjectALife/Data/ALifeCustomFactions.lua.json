@@ -1,0 +1,12 @@
+[
+ {
+  "en": "New Faction",
+  "ctx": "= { name =",
+  "pt": "Nova facção"
+ },
+ {
+  "en": "Player-created Project A-Life faction.",
+  "ctx": "\"Hostile NPCs\" , description =",
+  "pt": "Facção do Project A-Life criada pelo jogador."
+ }
+]

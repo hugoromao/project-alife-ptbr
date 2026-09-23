@@ -1,0 +1,282 @@
+[
+ {
+  "en": "Scout Assault",
+  "ctx": "= { label =",
+  "pt": "Assalto de batedores"
+ },
+ {
+  "en": "Area Patrol",
+  "ctx": "= { label =",
+  "pt": "Patrulha de área"
+ },
+ {
+  "en": "Scavenge Route",
+  "ctx": "= { label =",
+  "pt": "Rota de coleta"
+ },
+ {
+  "en": "Search and Destroy",
+  "ctx": "= { label =",
+  "pt": "Buscar e destruir"
+ },
+ {
+  "en": "Manhunt",
+  "ctx": "= { label =",
+  "pt": "Caçada humana"
+ },
+ {
+  "en": "Hold Position",
+  "ctx": "= { label =",
+  "pt": "Manter posição"
+ },
+ {
+  "en": "Camp",
+  "ctx": "= { label =",
+  "pt": "Acampamento"
+ },
+ {
+  "en": "Blockade",
+  "ctx": "= { label =",
+  "pt": "Bloqueio"
+ },
+ {
+  "en": "Outpost Defence",
+  "ctx": "= { label =",
+  "pt": "Defesa de posto avançado"
+ },
+ {
+  "en": "Assault",
+  "ctx": "= { label =",
+  "pt": "Assalto"
+ },
+ {
+  "en": "Full Raid",
+  "ctx": "= { label =",
+  "pt": "Invasão em grande escala"
+ },
+ {
+  "en": "A-Life: spawn refused (unknown encounter '",
+  "ctx": "player : Say (",
+  "pt": "A-Life: geração recusada (encontro desconhecido '"
+ },
+ {
+  "en": "A-Life: spawn refused (",
+  "ctx": "player : Say (",
+  "pt": "A-Life: geração recusada ("
+ },
+ {
+  "en": "Moves through the area and attacks threats it detects.",
+  "ctx": "\"enter_world\" , summary =",
+  "pt": "Percorre a área e ataca as ameaças que detecta."
+ },
+ {
+  "en": "Circulates around the spawn point and returns to its route.",
+  "ctx": "true , summary =",
+  "pt": "Circula em volta do ponto de geração e volta à sua rota."
+ },
+ {
+  "en": "Searches nearby containers, collects supplies, then continues.",
+  "ctx": "\"collect_supplies\" , summary =",
+  "pt": "Revista contêineres próximos, recolhe suprimentos e segue em frente."
+ },
+ {
+  "en": "Actively searches the local area for hostile targets.",
+  "ctx": "\"hunt_nearby\" , summary =",
+  "pt": "Procura ativamente alvos hostis na área."
+ },
+ {
+  "en": "Tracks the designated player and keeps re-engaging.",
+  "ctx": "\"manhunt_player\" , summary =",
+  "pt": "Rastreia o jogador designado e continua voltando ao ataque."
+ },
+ {
+  "en": "Treats the spawn point as home and defends its radius.",
+  "ctx": "true , summary =",
+  "pt": "Trata o ponto de geração como lar e defende os arredores."
+ },
+ {
+  "en": "Stays around a temporary camp and defends the perimeter.",
+  "ctx": "true , summary =",
+  "pt": "Fica em volta de um acampamento temporário e defende o perímetro."
+ },
+ {
+  "en": "Cars across the road, a line of guns behind them.",
+  "ctx": "true , summary =",
+  "pt": "Carros atravessados na estrada e uma fileira de armas atrás deles."
+ },
+ {
+  "en": "Patrols and defends a persistent outpost anchor.",
+  "ctx": "true , summary =",
+  "pt": "Patrulha e defende um posto avançado persistente."
+ },
+ {
+  "en": "Advances on nearby players as an attacking group.",
+  "ctx": "\"assault_player\" , summary =",
+  "pt": "Avança sobre jogadores próximos como grupo de ataque."
+ },
+ {
+  "en": "Runs a sustained coordinated attack against players.",
+  "ctx": "\"full_raid\" , summary =",
+  "pt": "Faz um ataque coordenado e prolongado contra jogadores."
+ },
+ {
+  "en": "the SERVER log (coop-console.txt for a co-op host)",
+  "ctx": "( ) then return",
+  "pt": "o log do SERVIDOR (coop-console.txt para quem hospeda co-op)"
+ },
+ {
+  "en": "Wilderness camp",
+  "ctx": "preset . label or",
+  "pt": "Acampamento na mata"
+ },
+ {
+  "en": "Builds the complete campsite and stages its squad in one plan.",
+  "ctx": ") , summary =",
+  "pt": "Monta o acampamento completo e posiciona o esquadrão num só plano."
+ },
+ {
+  "en": " squad(s) sent out",
+  "ctx": "} ) ) ..",
+  "pt": " esquadrão(ões) enviado(s)"
+ },
+ {
+  "en": "site is ",
+  "ctx": "\" squad(s) sent out\" ) or (",
+  "pt": "local está "
+ },
+ {
+  "en": "forming up nearby",
+  "ctx": "== \"staging\" then return",
+  "pt": "se reunindo por perto"
+ },
+ {
+  "en": "on the road",
+  "ctx": "nil local text =",
+  "pt": "na estrada"
+ },
+ {
+  "en": " to ",
+  "ctx": "text = text ..",
+  "pt": " rumo a "
+ },
+ {
+  "en": "resting",
+  "ctx": "== \"rest\" then return",
+  "pt": "descansando"
+ },
+ {
+  "en": "scavenging",
+  "ctx": "== \"scavenge\" then return",
+  "pt": "coletando"
+ },
+ {
+  "en": "reinforcing an outpost",
+  "ctx": "== \"reinforce\" then return",
+  "pt": "reforçando um posto avançado"
+ },
+ {
+  "en": "patrolling",
+  "ctx": "== \"patrol\" then return",
+  "pt": "patrulhando"
+ },
+ {
+  "en": "waiting for orders",
+  "ctx": "return \"patrolling\" end return",
+  "pt": "aguardando ordens"
+ },
+ {
+  "en": "outpost squad",
+  "ctx": "== \"string\" then return",
+  "pt": "esquadrão de posto avançado"
+ },
+ {
+  "en": "garrison of ",
+  "ctx": "== \"outpost:\" then return",
+  "pt": "guarnição de "
+ },
+ {
+  "en": "fighting",
+  "ctx": "= { combat =",
+  "pt": "lutando"
+ },
+ {
+  "en": "warning someone off",
+  "ctx": "\"fighting\" , warning =",
+  "pt": "mandando alguém se afastar"
+ },
+ {
+  "en": "moving",
+  "ctx": "\"warning someone off\" , moving =",
+  "pt": "em movimento"
+ },
+ {
+  "en": "idle",
+  "ctx": "\"moving\" , idle =",
+  "pt": "parado"
+ },
+ {
+  "en": "dead",
+  "ctx": "\"idle\" , dead =",
+  "pt": "morto"
+ },
+ {
+  "en": "A-Life: support called (",
+  "ctx": "payload . ok and",
+  "pt": "A-Life: apoio chamado ("
+ },
+ {
+  "en": "A-Life: support refused (",
+  "ctx": ") .. \")\" or",
+  "pt": "A-Life: apoio recusado ("
+ },
+ {
+  "en": "A-Life: full raid started",
+  "ctx": "payload . ok and",
+  "pt": "A-Life: invasão total iniciada"
+ },
+ {
+  "en": "A-Life: raid refused (",
+  "ctx": "ok and \"A-Life: full raid started\" or",
+  "pt": "A-Life: invasão recusada ("
+ },
+ {
+  "en": "A-Life: outpost built, ",
+  "ctx": ". ok and (",
+  "pt": "A-Life: posto avançado construído, "
+ },
+ {
+  "en": " ops, squad ",
+  "ctx": ". ops ) ..",
+  "pt": " operações, esquadrão "
+ },
+ {
+  "en": "spawned",
+  "ctx": "payload . garrisoned and",
+  "pt": "gerado"
+ },
+ {
+  "en": "pending",
+  "ctx": "garrisoned and \"spawned\" or",
+  "pt": "pendente"
+ },
+ {
+  "en": "A-Life: outpost refused (",
+  "ctx": ") ) or (",
+  "pt": "A-Life: posto avançado recusado ("
+ },
+ {
+  "en": "A-Life: full-scale raid started (",
+  "ctx": "( ok and (",
+  "pt": "A-Life: invasão em grande escala iniciada ("
+ },
+ {
+  "en": "A-Life: raid refused (",
+  "ctx": "\")\" ) or (",
+  "pt": "A-Life: invasão recusada ("
+ },
+ {
+  "en": "Admin protected area",
+  "ctx": "args . name or",
+  "pt": "Área protegida pelo admin"
+ }
+]

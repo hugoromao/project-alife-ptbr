@@ -1,0 +1,1032 @@
+[
+ {
+  "en": "Use profile",
+  "ctx": "local USE_PROFILE = {",
+  "pt": "Usar perfil"
+ },
+ {
+  "en": "Individual AI",
+  "ctx": "{ USE_PROFILE , {",
+  "pt": "IA individual"
+ },
+ {
+  "en": "Fireteam coordination",
+  "ctx": "\"individual\" } , {",
+  "pt": "Coordenação de equipe de fogo"
+ },
+ {
+  "en": "CQB entry team",
+  "ctx": "\"fireteam\" } , {",
+  "pt": "Equipe de entrada (CQB)"
+ },
+ {
+  "en": "Generalist",
+  "ctx": "{ USE_PROFILE , {",
+  "pt": "Generalista"
+ },
+ {
+  "en": "Team leader",
+  "ctx": "\"none\" } , {",
+  "pt": "Líder de equipe"
+ },
+ {
+  "en": "Medic",
+  "ctx": "\"leader\" } , {",
+  "pt": "Médico"
+ },
+ {
+  "en": "Marksman",
+  "ctx": "\"medic\" } , {",
+  "pt": "Atirador designado"
+ },
+ {
+  "en": "Gunner / suppression",
+  "ctx": "\"sniper\" } , {",
+  "pt": "Metralhador / supressão"
+ },
+ {
+  "en": "Use faction",
+  "ctx": "hostility = { {",
+  "pt": "Usar facção"
+ },
+ {
+  "en": "Ally -- friendly to players",
+  "ctx": "\"profile\" } , {",
+  "pt": "Aliado -- amigável com os jogadores"
+ },
+ {
+  "en": "Neutral -- leave players alone",
+  "ctx": "\"friendly\" } , {",
+  "pt": "Neutro -- deixa os jogadores em paz"
+ },
+ {
+  "en": "Careful -- warn, then shoot",
+  "ctx": "\"neutral\" } , {",
+  "pt": "Cauteloso -- avisa, depois atira"
+ },
+ {
+  "en": "Hostile -- attack on sight",
+  "ctx": "\"careful\" } , {",
+  "pt": "Hostil -- ataca ao avistar"
+ },
+ {
+  "en": "Yes",
+  "ctx": "\"false\" } , {",
+  "pt": "Sim"
+ },
+ {
+  "en": "Yes",
+  "ctx": "{ USE_PROFILE , {",
+  "pt": "Sim"
+ },
+ {
+  "en": "Automatic",
+  "ctx": "facing = { {",
+  "pt": "Automático"
+ },
+ {
+  "en": "North",
+  "ctx": "\"auto\" } , {",
+  "pt": "Norte"
+ },
+ {
+  "en": "North-east",
+  "ctx": "\"N\" } , {",
+  "pt": "Nordeste"
+ },
+ {
+  "en": "East",
+  "ctx": "\"NE\" } , {",
+  "pt": "Leste"
+ },
+ {
+  "en": "South-east",
+  "ctx": "\"E\" } , {",
+  "pt": "Sudeste"
+ },
+ {
+  "en": "South",
+  "ctx": "\"SE\" } , {",
+  "pt": "Sul"
+ },
+ {
+  "en": "South-west",
+  "ctx": "\"S\" } , {",
+  "pt": "Sudoeste"
+ },
+ {
+  "en": "West",
+  "ctx": "\"SW\" } , {",
+  "pt": "Oeste"
+ },
+ {
+  "en": "North-west",
+  "ctx": "\"W\" } , {",
+  "pt": "Noroeste"
+ },
+ {
+  "en": "Any squad member may call",
+  "ctx": "{ USE_PROFILE , {",
+  "pt": "Qualquer membro do esquadrão pode chamar"
+ },
+ {
+  "en": "Radio operators only",
+  "ctx": "\"any\" } , {",
+  "pt": "Só operadores de rádio"
+ },
+ {
+  "en": "Nobody may call",
+  "ctx": "\"radio\" } , {",
+  "pt": "Ninguém pode chamar"
+ },
+ {
+  "en": "Ground + helicopter",
+  "ctx": "{ USE_PROFILE , {",
+  "pt": "Terrestre + helicóptero"
+ },
+ {
+  "en": "Ground reinforcements",
+  "ctx": "\"both\" } , {",
+  "pt": "Reforços terrestres"
+ },
+ {
+  "en": "Helicopter only",
+  "ctx": "\"ground\" } , {",
+  "pt": "Só helicóptero"
+ },
+ {
+  "en": "No support at all",
+  "ctx": "\"heli\" } , {",
+  "pt": "Nenhum apoio"
+ },
+ {
+  "en": "No helicopter",
+  "ctx": "{ USE_PROFILE , {",
+  "pt": "Sem helicóptero"
+ },
+ {
+  "en": "Spotlight only",
+  "ctx": "\"none\" } , {",
+  "pt": "Só holofote"
+ },
+ {
+  "en": "Helicopter support",
+  "ctx": "\"spotlight\" } , {",
+  "pt": "Apoio de helicóptero"
+ },
+ {
+  "en": "Right here",
+  "ctx": "placement = { {",
+  "pt": "Bem aqui"
+ },
+ {
+  "en": "Wherever the plan fits",
+  "ctx": "\"here\" } , {",
+  "pt": "Onde o plano couber"
+ },
+ {
+  "en": "Default -- just appear",
+  "ctx": "arrival = { {",
+  "pt": "Padrão -- só aparecem"
+ },
+ {
+  "en": "Helicopter and rope",
+  "ctx": "\"foot\" } , {",
+  "pt": "Helicóptero e corda"
+ },
+ {
+  "en": "By car",
+  "ctx": "\"heli\" } , {",
+  "pt": "De carro"
+ },
+ {
+  "en": "NPC faction",
+  "ctx": "{ { \"faction\" ,",
+  "pt": "Facção de NPC"
+ },
+ {
+  "en": "Encounter",
+  "ctx": ", { \"encounter\" ,",
+  "pt": "Encontro"
+ },
+ {
+  "en": "Behaviour doctrine",
+  "ctx": ", { \"doctrine\" ,",
+  "pt": "Doutrina de comportamento"
+ },
+ {
+  "en": "Specialist role",
+  "ctx": ", { \"role\" ,",
+  "pt": "Função especialista"
+ },
+ {
+  "en": "Stance toward players",
+  "ctx": ", { \"hostility\" ,",
+  "pt": "Postura com os jogadores"
+ },
+ {
+  "en": "Placement",
+  "ctx": ", { \"placement\" ,",
+  "pt": "Posicionamento"
+ },
+ {
+  "en": "Arrival animation",
+  "ctx": ", { \"animation\" ,",
+  "pt": "Animação de chegada"
+ },
+ {
+  "en": "How they arrive",
+  "ctx": ", { \"arrival\" ,",
+  "pt": "Como chegam"
+ },
+ {
+  "en": "Save squad (within limit)",
+  "ctx": ", { \"persistent\" ,",
+  "pt": "Salvar esquadrão (dentro do limite)"
+ },
+ {
+  "en": "Invulnerable NPCs",
+  "ctx": ", { \"invulnerable\" ,",
+  "pt": "NPCs invulneráveis"
+ },
+ {
+  "en": "Position locked",
+  "ctx": ", { \"stationary\" ,",
+  "pt": "Posição travada"
+ },
+ {
+  "en": "Facing / line heading",
+  "ctx": ", { \"facing\" ,",
+  "pt": "Direção / rumo da linha"
+ },
+ {
+  "en": "Can call support",
+  "ctx": ", { \"canCallSupport\" ,",
+  "pt": "Pode chamar apoio"
+ },
+ {
+  "en": "Who may call",
+  "ctx": ", { \"supportPolicy\" ,",
+  "pt": "Quem pode chamar"
+ },
+ {
+  "en": "Allowed support",
+  "ctx": ", { \"supportType\" ,",
+  "pt": "Apoio permitido"
+ },
+ {
+  "en": "Helicopter",
+  "ctx": ", { \"heli\" ,",
+  "pt": "Helicóptero"
+ },
+ {
+  "en": "Group / wave size",
+  "ctx": "{ { \"count\" ,",
+  "pt": "Tamanho do grupo / onda"
+ },
+ {
+  "en": "Spawn distance",
+  "ctx": ", { \"distance\" ,",
+  "pt": "Distância de geração"
+ },
+ {
+  "en": "Unit spacing",
+  "ctx": ", { \"separation\" ,",
+  "pt": "Espaçamento entre unidades"
+ },
+ {
+  "en": "Behaviour radius",
+  "ctx": ", { \"radius\" ,",
+  "pt": "Raio de comportamento"
+ },
+ {
+  "en": "Detection range",
+  "ctx": ", { \"awareness\" ,",
+  "pt": "Alcance de detecção"
+ },
+ {
+  "en": "Movement leash",
+  "ctx": ", { \"leash\" ,",
+  "pt": "Limite de movimento"
+ },
+ {
+  "en": "Exact HP",
+  "ctx": ", { \"health\" ,",
+  "pt": "PV exatos"
+ },
+ {
+  "en": "Damage reduction %",
+  "ctx": ", { \"damageReduction\" ,",
+  "pt": "Redução de dano %"
+ },
+ {
+  "en": "Damage output %",
+  "ctx": ", { \"damageOutput\" ,",
+  "pt": "Dano causado %"
+ },
+ {
+  "en": "Support squad size",
+  "ctx": ", { \"supportSize\" ,",
+  "pt": "Tamanho do esquadrão de apoio"
+ },
+ {
+  "en": "Support calls (max)",
+  "ctx": ", { \"supportMaxCalls\" ,",
+  "pt": "Chamadas de apoio (máx.)"
+ },
+ {
+  "en": "Support cooldown (h)",
+  "ctx": ", { \"supportCooldownHours\" ,",
+  "pt": "Recarga do apoio (h)"
+ },
+ {
+  "en": "Raid waves (1-12)",
+  "ctx": ", { \"waves\" ,",
+  "pt": "Ondas da invasão (1-12)"
+ },
+ {
+  "en": "Game minutes per wave",
+  "ctx": ", { \"waveDelayMinutes\" ,",
+  "pt": "Minutos de jogo por onda"
+ },
+ {
+  "en": "Raid helicopter",
+  "ctx": ", { \"raidHeli\" ,",
+  "pt": "Helicóptero da invasão"
+ },
+ {
+  "en": "Weapon drop chance",
+  "ctx": ", { \"weaponChance\" ,",
+  "pt": "Chance de largar arma"
+ },
+ {
+  "en": "Weapon condition",
+  "ctx": ", { \"weaponCondition\" ,",
+  "pt": "Estado da arma"
+ },
+ {
+  "en": "Clothing condition",
+  "ctx": ", { \"clothingCondition\" ,",
+  "pt": "Estado das roupas"
+ },
+ {
+  "en": "IDENTITY, AI & RULES",
+  "ctx": "left . heading =",
+  "pt": "IDENTIDADE, IA E REGRAS"
+ },
+ {
+  "en": "COMBAT, SUPPORT & EVENTS",
+  "ctx": "right . heading =",
+  "pt": "COMBATE, APOIO E EVENTOS"
+ },
+ {
+  "en": "Any hostile faction",
+  "ctx": "faction , { {",
+  "pt": "Qualquer facção hostil"
+ },
+ {
+  "en": "Roaming squad (no encounter)",
+  "ctx": "encounter , { {",
+  "pt": "Esquadrão errante (sem encontro)"
+ },
+ {
+  "en": "Encounter arrows",
+  "ctx": "tools = { {",
+  "pt": "Setas de encontro"
+ },
+ {
+  "en": "Squads on the map",
+  "ctx": "onToggleArrows } , {",
+  "pt": "Esquadrões no mapa"
+ },
+ {
+  "en": "Runtime status",
+  "ctx": "onToggleMap } , {",
+  "pt": "Status de execução"
+ },
+ {
+  "en": "NPC report",
+  "ctx": "onStatus } , {",
+  "pt": "Relatório de NPCs"
+ },
+ {
+  "en": "Diagnostics",
+  "ctx": "onActors } , {",
+  "pt": "Diagnósticos"
+ },
+ {
+  "en": "Repair runtime",
+  "ctx": "onDiagnostics } , {",
+  "pt": "Reparar execução"
+ },
+ {
+  "en": "Black box dump",
+  "ctx": "onRepair } , {",
+  "pt": "Despejar caixa-preta"
+ },
+ {
+  "en": "Module QA dump",
+  "ctx": "onBlackbox } , {",
+  "pt": "Despejar QA dos módulos"
+ },
+ {
+  "en": "No-spawn area here",
+  "ctx": "onModuleQA } , {",
+  "pt": "Área sem geração aqui"
+ },
+ {
+  "en": "Clear no-spawn areas",
+  "ctx": "onProtect } , {",
+  "pt": "Limpar áreas sem geração"
+ },
+ {
+  "en": "Meta: gunfire",
+  "ctx": "onClearZones } , {",
+  "pt": "Ambiente: tiros"
+ },
+ {
+  "en": "Meta: helicopter",
+  "ctx": "end } , {",
+  "pt": "Ambiente: helicóptero"
+ },
+ {
+  "en": "Meta: ambience",
+  "ctx": "end } , {",
+  "pt": "Ambiente: sons"
+ },
+ {
+  "en": "Meta: car crash",
+  "ctx": "end } , {",
+  "pt": "Ambiente: batida de carro"
+ },
+ {
+  "en": "Faction defaults",
+  "ctx": "footY , 128 ,",
+  "pt": "Padrões da facção"
+ },
+ {
+  "en": "Reset fields",
+  "ctx": "footY , 128 ,",
+  "pt": "Redefinir campos"
+ },
+ {
+  "en": "Load preset",
+  "ctx": "actionY , 110 ,",
+  "pt": "Carregar predefinição"
+ },
+ {
+  "en": "Save preset",
+  "ctx": "actionY , 110 ,",
+  "pt": "Salvar predefinição"
+ },
+ {
+  "en": "Close",
+  "ctx": "actionY , 100 ,",
+  "pt": "Fechar"
+ },
+ {
+  "en": "SPAWN",
+  "ctx": "actionY , 102 ,",
+  "pt": "GERAR"
+ },
+ {
+  "en": "Pick a faction and an encounter, then press SPAWN.",
+  "ctx": "self : addLog (",
+  "pt": "Escolha uma facção e um encontro e aperte GERAR."
+ },
+ {
+  "en": "Staffed outpost: ",
+  "ctx": "id , label =",
+  "pt": "Posto avançado com guarnição: "
+ },
+ {
+  "en": " hostile profiles ready.",
+  "ctx": "( count ) ..",
+  "pt": " perfis hostis prontos."
+ },
+ {
+  "en": "Built at the clicked location. Saved site; session-only crew. Layout sets spacing.",
+  "ctx": "self : addLog (",
+  "pt": "Construído no local clicado. Local salvo; guarnição só desta sessão. O layout define o espaçamento."
+ },
+ {
+  "en": "Roaming squad: the faction and the profile decide.",
+  "ctx": "self : addLog (",
+  "pt": "Esquadrão errante: a facção e o perfil decidem."
+ },
+ {
+  "en": " decides: program ",
+  "ctx": "or id ) ..",
+  "pt": " decide: programa "
+ },
+ {
+  "en": ", leash ",
+  "ctx": "or \"guard\" ) ..",
+  "pt": ", limite "
+ },
+ {
+  "en": ", holds ground",
+  "ctx": "stationary == \"true\" and",
+  "pt": ", mantém posição"
+ },
+ {
+  "en": ", placed by its own rule",
+  "ctx": "placement == \"rule\" and",
+  "pt": ", posicionado pela própria regra"
+ },
+ {
+  "en": ", placed here",
+  "ctx": "\"rule\" and \", placed by its own rule\" or",
+  "pt": ", posicionado aqui"
+ },
+ {
+  "en": "No saved presets",
+  "ctx": "1 ] = {",
+  "pt": "Nenhuma predefinição salva"
+ },
+ {
+  "en": "Name the preset first.",
+  "ctx": "self : addLog (",
+  "pt": "Dê um nome à predefinição primeiro."
+ },
+ {
+  "en": "Preset saved: ",
+  "ctx": "self : addLog (",
+  "pt": "Predefinição salva: "
+ },
+ {
+  "en": "No preset chosen.",
+  "ctx": "self : addLog (",
+  "pt": "Nenhuma predefinição escolhida."
+ },
+ {
+  "en": "Preset loaded: ",
+  "ctx": "self : addLog (",
+  "pt": "Predefinição carregada: "
+ },
+ {
+  "en": "Fields reset to the profile's own settings.",
+  "ctx": "self : addLog (",
+  "pt": "Campos redefinidos para as configurações do perfil."
+ },
+ {
+  "en": "Every override cleared -- the faction decides.",
+  "ctx": "self : addLog (",
+  "pt": "Todas as alterações apagadas -- a facção decide."
+ },
+ {
+  "en": "Building ",
+  "ctx": "self : addLog (",
+  "pt": "Construindo "
+ },
+ {
+  "en": "The request could not be sent.",
+  "ctx": "self : addLog (",
+  "pt": "Não foi possível enviar a solicitação."
+ },
+ {
+  "en": "Spawning ",
+  "ctx": "self : addLog (",
+  "pt": "Gerando "
+ },
+ {
+  "en": "faction members",
+  "ctx": ". id ) or",
+  "pt": "membros da facção"
+ },
+ {
+  "en": "Asking the server for the hostile catalog...",
+  "ctx": "self : addLog (",
+  "pt": "Pedindo ao servidor o catálogo de hostis..."
+ },
+ {
+  "en": "Requesting runtime status...",
+  "ctx": "self : addLog (",
+  "pt": "Solicitando o status de execução..."
+ },
+ {
+  "en": "Encounter arrows toggled.",
+  "ctx": "self : addLog (",
+  "pt": "Setas de encontro alternadas."
+ },
+ {
+  "en": "Squad map opened.",
+  "ctx": "self : addLog (",
+  "pt": "Mapa de esquadrões aberto."
+ },
+ {
+  "en": "Meta event: ",
+  "ctx": "self : addLog (",
+  "pt": "Evento de ambiente: "
+ },
+ {
+  "en": "  played locally (60 tiles north-east).",
+  "ctx": "addLog ( ok and",
+  "pt": "  tocado localmente (60 quadrados a nordeste)."
+ },
+ {
+  "en": "  local play refused.",
+  "ctx": "ok and \"  played locally (60 tiles north-east).\" or",
+  "pt": "  reprodução local recusada."
+ },
+ {
+  "en": "Requesting the black box dump...",
+  "ctx": "self : addLog (",
+  "pt": "Solicitando o despejo da caixa-preta..."
+ },
+ {
+  "en": "Requesting the module QA dump...",
+  "ctx": "self : addLog (",
+  "pt": "Solicitando o despejo do QA dos módulos..."
+ },
+ {
+  "en": "Running server diagnostics...",
+  "ctx": "self : addLog (",
+  "pt": "Executando diagnósticos do servidor..."
+ },
+ {
+  "en": "Reading NPC behaviour and endurance...",
+  "ctx": "self : addLog (",
+  "pt": "Lendo comportamento e resistência dos NPCs..."
+ },
+ {
+  "en": "Repairing invalid runtime state...",
+  "ctx": "self : addLog (",
+  "pt": "Reparando estado de execução inválido..."
+ },
+ {
+  "en": "Adding a protected no-spawn area...",
+  "ctx": "self : addLog (",
+  "pt": "Adicionando uma área protegida sem geração..."
+ },
+ {
+  "en": "Clearing the protected areas...",
+  "ctx": "self : addLog (",
+  "pt": "Limpando as áreas protegidas..."
+ },
+ {
+  "en": "NPC FACTION  --  SPAWN",
+  "ctx": "self : drawTextCentre (",
+  "pt": "FACÇÃO DE NPC  --  GERAR"
+ },
+ {
+  "en": "Doctrine: use each profile's saved coordination behaviour.",
+  "ctx": "== \"profile\" ) and",
+  "pt": "Doutrina: usar o comportamento de coordenação salvo em cada perfil."
+ },
+ {
+  "en": "Doctrine override: every member of this group runs it.",
+  "ctx": ") and \"Doctrine: use each profile's saved coord\" or",
+  "pt": "Doutrina forçada: todos os membros deste grupo a seguem."
+ },
+ {
+  "en": "target ",
+  "ctx": "~= nil and (",
+  "pt": "alvo "
+ },
+ {
+  "en": "target: your position",
+  "ctx": "z ) ) or",
+  "pt": "alvo: sua posição"
+ },
+ {
+  "en": " + complete ",
+  "ctx": "~= nil and (",
+  "pt": " + cena "
+ },
+ {
+  "en": " scene",
+  "ctx": ". scene ) ..",
+  "pt": " completa"
+ },
+ {
+  "en": "Group queued: ",
+  "ctx": "or \"\" activeWindow (",
+  "pt": "Grupo na fila: "
+ },
+ {
+  "en": " accepted, ",
+  "ctx": ". accepted ) ..",
+  "pt": " aceitos, "
+ },
+ {
+  "en": " rejected | ",
+  "ctx": ". rejected ) ..",
+  "pt": " rejeitados | "
+ },
+ {
+  "en": "Spawn rejected: ",
+  "ctx": ") else activeWindow (",
+  "pt": "Geração rejeitada: "
+ },
+ {
+  "en": "Spawn progress: ",
+  "ctx": "end end activeWindow (",
+  "pt": "Progresso da geração: "
+ },
+ {
+  "en": " settled (",
+  "ctx": ". accepted ) ..",
+  "pt": " resolvidos ("
+ },
+ {
+  "en": " active, ",
+  "ctx": ". active ) ..",
+  "pt": " ativos, "
+ },
+ {
+  "en": " failed)",
+  "ctx": ". failed ) ..",
+  "pt": " falharam)"
+ },
+ {
+  "en": "Starting group member ",
+  "ctx": "+ 1 activeWindow (",
+  "pt": "Iniciando membro do grupo "
+ },
+ {
+  "en": "Spawn job failed: ",
+  "ctx": "ok then activeWindow (",
+  "pt": "Falha na geração: "
+ },
+ {
+  "en": "Group complete: ",
+  "ctx": "= state activeWindow (",
+  "pt": "Grupo completo: "
+ },
+ {
+  "en": " active, ",
+  "ctx": ". accepted ) ..",
+  "pt": " ativos, "
+ },
+ {
+  "en": " failed | ",
+  "ctx": ". failed ) ..",
+  "pt": " falharam | "
+ },
+ {
+  "en": "no group id",
+  "ctx": "state . groupId or",
+  "pt": "sem id de grupo"
+ },
+ {
+  "en": "Diagnostics healthy: ",
+  "ctx": "( ( healthy and",
+  "pt": "Diagnóstico OK: "
+ },
+ {
+  "en": "Diagnostics found faults: ",
+  "ctx": "healthy and \"Diagnostics healthy: \" or",
+  "pt": "Diagnóstico encontrou falhas: "
+ },
+ {
+  "en": " active, ",
+  "ctx": "or 0 ) ..",
+  "pt": " ativos, "
+ },
+ {
+  "en": " error(s), ",
+  "ctx": "or 0 ) ..",
+  "pt": " erro(s), "
+ },
+ {
+  "en": " warning(s), ",
+  "ctx": "or 0 ) ..",
+  "pt": " aviso(s), "
+ },
+ {
+  "en": " admin spawn(s) pending.",
+  "ctx": "or 0 ) ..",
+  "pt": " geração(ões) de admin pendente(s)."
+ },
+ {
+  "en": "Movement: ",
+  "ctx": "window : addLog (",
+  "pt": "Movimento: "
+ },
+ {
+  "en": " paths, ",
+  "ctx": "or 0 ) ..",
+  "pt": " rotas, "
+ },
+ {
+  "en": " stalls, ",
+  "ctx": "or 0 ) ..",
+  "pt": " travamentos, "
+ },
+ {
+  "en": " traversal failure(s), ",
+  "ctx": "or 0 ) ..",
+  "pt": " falha(s) de travessia, "
+ },
+ {
+  "en": " unreachable target(s).",
+  "ctx": "or 0 ) ..",
+  "pt": " alvo(s) inalcançável(is)."
+ },
+ {
+  "en": "NPC inspector: ",
+  "ctx": "window = activeWindow (",
+  "pt": "Inspetor de NPCs: "
+ },
+ {
+  "en": " actor(s), ",
+  "ctx": "or \"\" ) ..",
+  "pt": " ator(es), "
+ },
+ {
+  "en": "...additional actors omitted from this panel.",
+  "ctx": "window : addLog (",
+  "pt": "...atores adicionais omitidos deste painel."
+ },
+ {
+  "en": "Catalog error: ",
+  "ctx": "window : addLog (",
+  "pt": "Erro no catálogo: "
+ },
+ {
+  "en": "  server fired meta ",
+  "ctx": ". ok and (",
+  "pt": "  o servidor disparou o evento "
+ },
+ {
+  "en": "  server refused meta ",
+  "ctx": "\".\" ) or (",
+  "pt": "  o servidor recusou o evento "
+ },
+ {
+  "en": "the SERVER log",
+  "ctx": "arguments . where or",
+  "pt": "o log do SERVIDOR"
+ },
+ {
+  "en": "; client recorder in your console.txt",
+  "ctx": "or \"the SERVER log\" ) ..",
+  "pt": "; gravador do cliente no seu console.txt"
+ },
+ {
+  "en": "Module QA written to ",
+  "ctx": "kind == \"qa\" and",
+  "pt": "QA dos módulos gravado em "
+ },
+ {
+  "en": "Black box written to ",
+  "ctx": "\"qa\" and \"Module QA written to \" or",
+  "pt": "Caixa-preta gravada em "
+ },
+ {
+  "en": " dump failed: ",
+  "ctx": "( kind ) ..",
+  "pt": " - despejo falhou: "
+ },
+ {
+  "en": "unknown",
+  "ctx": "arguments . reason or",
+  "pt": "desconhecido"
+ },
+ {
+  "en": "Repair: ",
+  "ctx": ". report activeWindow (",
+  "pt": "Reparo: "
+ },
+ {
+  "en": " fixed, ",
+  "ctx": "or 0 ) ..",
+  "pt": " corrigidos, "
+ },
+ {
+  "en": " failed; health ",
+  "ctx": "or 0 ) ..",
+  "pt": " falharam; saúde "
+ },
+ {
+  "en": "needs review",
+  "ctx": "true and \"OK\" or",
+  "pt": "precisa de revisão"
+ },
+ {
+  "en": "Protected area added.",
+  "ctx": "arguments . ok and",
+  "pt": "Área protegida adicionada."
+ },
+ {
+  "en": "Protection failed: ",
+  "ctx": "and \"Protected area added.\" or (",
+  "pt": "Falha ao proteger: "
+ },
+ {
+  "en": "Cleared ",
+  "ctx": ". ok and (",
+  "pt": "Limpas: "
+ },
+ {
+  "en": " protected area(s).",
+  "ctx": "or 0 ) ..",
+  "pt": " área(s) protegida(s)."
+ },
+ {
+  "en": "Clear failed: ",
+  "ctx": "\" protected area(s).\" ) or (",
+  "pt": "Falha ao limpar: "
+ },
+ {
+  "en": "disabled",
+  "ctx": "runtimeEnabled == false and",
+  "pt": "desativado"
+ },
+ {
+  "en": "enabled",
+  "ctx": "false and \"disabled\" or",
+  "pt": "ativado"
+ },
+ {
+  "en": " | health ",
+  "ctx": "or \"enabled\" ) ..",
+  "pt": " | saúde "
+ },
+ {
+  "en": " error(s)",
+  "ctx": "or 0 ) ..",
+  "pt": " erro(s)"
+ },
+ {
+  "en": " | actors ",
+  "ctx": "\" error(s)\" ) ) ..",
+  "pt": " | atores "
+ },
+ {
+  "en": " | shells ",
+  "ctx": "or 0 ) ..",
+  "pt": " | corpos "
+ },
+ {
+  "en": " | pending ",
+  "ctx": "or 0 ) ..",
+  "pt": " | pendentes "
+ },
+ {
+  "en": "No",
+  "ctx": "yesNo = { {",
+  "pt": "Não"
+ },
+ {
+  "en": "No",
+  "ctx": "\"true\" } , {",
+  "pt": "Não"
+ },
+ {
+  "en": "Normal",
+  "ctx": "animation , { {",
+  "pt": "Normal"
+ },
+ {
+  "en": "Normal",
+  "ctx": "1 ] = {",
+  "pt": "Normal"
+ },
+ {
+  "en": "black box",
+  "ctx": "\"debugModuleQAResult\" and \"qa\" or",
+  "pt": "caixa-preta"
+ },
+ {
+  "en": "Diagnostics ",
+  "ctx": "\"alifeDiagnosticsResult\" then activeWindow (",
+  "pt": "Diagnósticos "
+ },
+ {
+  "en": "on",
+  "ctx": "arguments . enabled and",
+  "pt": "ligado"
+ },
+ {
+  "en": "off",
+  "ctx": "enabled and \"on\" or",
+  "pt": "desligado"
+ },
+ {
+  "en": ", flight recorder ",
+  "ctx": "or \"off\" ) ..",
+  "pt": ", gravador de voo "
+ },
+ {
+  "en": "on",
+  "ctx": "arguments . recorder and",
+  "pt": "ligado"
+ },
+ {
+  "en": "off",
+  "ctx": "recorder and \"on\" or",
+  "pt": "desligado"
+ },
+ {
+  "en": "Any hostile faction",
+  "ctx": "factions = { {",
+  "pt": "Qualquer facção hostil"
+ },
+ {
+  "en": "Roaming squad (no encounter)",
+  "ctx": "encounters = { {",
+  "pt": "Esquadrão errante (sem encontro)"
+ }
+]

@@ -1,0 +1,367 @@
+[
+ {
+  "en": "HOLDS A LINE",
+  "ctx": "= { blockade =",
+  "pt": "SEGURA UMA LINHA"
+ },
+ {
+  "en": "HOLDS A BUILDING",
+  "ctx": "\"HOLDS A LINE\" , garrison =",
+  "pt": "OCUPA UM PRÉDIO"
+ },
+ {
+  "en": "HOLDS A FLOOR",
+  "ctx": "\"HOLDS A BUILDING\" , occupy_high =",
+  "pt": "OCUPA UM ANDAR"
+ },
+ {
+  "en": "HOLDS A PLACE",
+  "ctx": "\"HOLDS A FLOOR\" , defend =",
+  "pt": "OCUPA UM LUGAR"
+ },
+ {
+  "en": "WALKS A CIRCUIT",
+  "ctx": "\"HOLDS A PLACE\" , route =",
+  "pt": "PERCORRE UM CIRCUITO"
+ },
+ {
+  "en": "WORKS ON A CAR",
+  "ctx": "\"WALKS A CIRCUIT\" , repair =",
+  "pt": "CONSERTA UM CARRO"
+ },
+ {
+  "en": "LIVES AT A CAMP",
+  "ctx": "\"WORKS ON A CAR\" , camp =",
+  "pt": "VIVE NUM ACAMPAMENTO"
+ },
+ {
+  "en": "(empty)",
+  "ctx": "self : drawText (",
+  "pt": "(vazio)"
+ },
+ {
+  "en": "A-LIFE  ::  ENCOUNTER CONSOLE",
+  "ctx": "window . title =",
+  "pt": "A-LIFE  ::  CONSOLE DE ENCONTROS"
+ },
+ {
+  "en": "Choose a squad and encounter, then deploy both with one action.",
+  "ctx": "window . message =",
+  "pt": "Escolha um esquadrão e um encontro e posicione os dois com uma só ação."
+ },
+ {
+  "en": "Faction: ",
+  "ctx": "self . message =",
+  "pt": "Facção: "
+ },
+ {
+  "en": "SPAWN ENCOUNTER + SQUAD",
+  "ctx": "rightW , 34 ,",
+  "pt": "GERAR ENCONTRO + ESQUADRÃO"
+ },
+ {
+  "en": "ADVANCED OPTIONS  >",
+  "ctx": "rightW , 24 ,",
+  "pt": "OPÇÕES AVANÇADAS  >"
+ },
+ {
+  "en": "SIMULATE HERE",
+  "ctx": "rightW , 20 ,",
+  "pt": "SIMULAR AQUI"
+ },
+ {
+  "en": "SIMULATE BY RULE",
+  "ctx": "rightW , 20 ,",
+  "pt": "SIMULAR PELA REGRA"
+ },
+ {
+  "en": "SPAWN FACTION SQUAD",
+  "ctx": "rightW , 20 ,",
+  "pt": "GERAR ESQUADRÃO DE FACÇÃO"
+ },
+ {
+  "en": "PERSISTENT: DEFAULT",
+  "ctx": "rightW , 20 ,",
+  "pt": "PERSISTENTE: PADRÃO"
+ },
+ {
+  "en": "ENCOUNTER ARROWS",
+  "ctx": "debugW , 24 ,",
+  "pt": "SETAS DE ENCONTRO"
+ },
+ {
+  "en": "SQUADS ON WORLD MAP",
+  "ctx": "debugW , 24 ,",
+  "pt": "ESQUADRÕES NO MAPA DO MUNDO"
+ },
+ {
+  "en": "BLACK BOX DUMP",
+  "ctx": "debugW , 24 ,",
+  "pt": "DESPEJAR CAIXA-PRETA"
+ },
+ {
+  "en": "MODULE QA DUMP",
+  "ctx": "debugW , 24 ,",
+  "pt": "DESPEJAR QA DOS MÓDULOS"
+ },
+ {
+  "en": "REFRESH",
+  "ctx": "98 , 24 ,",
+  "pt": "ATUALIZAR"
+ },
+ {
+  "en": "ADVANCED OPTIONS  v",
+  "ctx": "setTitle ( advanced and",
+  "pt": "OPÇÕES AVANÇADAS  v"
+ },
+ {
+  "en": "ADVANCED OPTIONS  >",
+  "ctx": "advanced and \"ADVANCED OPTIONS  v\" or",
+  "pt": "OPÇÕES AVANÇADAS  >"
+ },
+ {
+  "en": " NPCs",
+  "ctx": "or \"?\" ) ..",
+  "pt": " NPCs"
+ },
+ {
+  "en": "FIGHTS AND MOVES",
+  "ctx": "or stance ) or",
+  "pt": "LUTA E SE MOVE"
+ },
+ {
+  "en": " profiles",
+  "ctx": ". count ) ..",
+  "pt": " perfis"
+ },
+ {
+  "en": "REFRESH REFUSED: ",
+  "ctx": "self . message =",
+  "pt": "ATUALIZAÇÃO RECUSADA: "
+ },
+ {
+  "en": "unknown",
+  "ctx": "payload . reason or",
+  "pt": "desconhecido"
+ },
+ {
+  "en": "Module QA written to ",
+  "ctx": "kind == \"qa\" and",
+  "pt": "QA dos módulos gravado em "
+ },
+ {
+  "en": "Black box written to ",
+  "ctx": "\"qa\" and \"Module QA written to \" or",
+  "pt": "Caixa-preta gravada em "
+ },
+ {
+  "en": " DUMP REFUSED: ",
+  "ctx": "( kind ) ..",
+  "pt": " - DESPEJO RECUSADO: "
+ },
+ {
+  "en": " + ",
+  "ctx": "~= nil and (",
+  "pt": " + cena "
+ },
+ {
+  "en": "Queued ",
+  "ctx": "self . message =",
+  "pt": "Na fila: "
+ },
+ {
+  "en": "REFUSED: ",
+  "ctx": "self . message =",
+  "pt": "RECUSADO: "
+ },
+ {
+  "en": "Pick an encounter first.",
+  "ctx": "self . message =",
+  "pt": "Escolha um encontro primeiro."
+ },
+ {
+  "en": "No position for this player.",
+  "ctx": "self . message =",
+  "pt": "Sem posição para este jogador."
+ },
+ {
+  "en": "Building ",
+  "ctx": "self . message =",
+  "pt": "Montando "
+ },
+ {
+  "en": "encounter",
+  "ctx": "encounter . label or",
+  "pt": "encontro"
+ },
+ {
+  "en": " + ",
+  "ctx": "or \"encounter\" ) ..",
+  "pt": " + esquadrão "
+ },
+ {
+  "en": "automatic",
+  "ctx": "faction . label or",
+  "pt": "automático"
+ },
+ {
+  "en": " squad...",
+  "ctx": "or \"automatic\" ) ..",
+  "pt": "..."
+ },
+ {
+  "en": "Simulating here...",
+  "ctx": "self . message =",
+  "pt": "Simulando aqui..."
+ },
+ {
+  "en": "Placing by the encounter's own rule...",
+  "ctx": "self . message =",
+  "pt": "Posicionando pela regra do próprio encontro..."
+ },
+ {
+  "en": "Pick a faction first.",
+  "ctx": "self . message =",
+  "pt": "Escolha uma facção primeiro."
+ },
+ {
+  "en": "Spawning ",
+  "ctx": "self . message =",
+  "pt": "Gerando esquadrão de "
+ },
+ {
+  "en": " squad...",
+  "ctx": ". label ) ..",
+  "pt": "..."
+ },
+ {
+  "en": "PERSISTENT: DEFAULT",
+  "ctx": "persistent == nil and",
+  "pt": "PERSISTENTE: PADRÃO"
+ },
+ {
+  "en": "PERSISTENT: YES",
+  "ctx": "self . persistent and",
+  "pt": "PERSISTENTE: SIM"
+ },
+ {
+  "en": "PERSISTENT: NO",
+  "ctx": "persistent and \"PERSISTENT: YES\" or",
+  "pt": "PERSISTENTE: NÃO"
+ },
+ {
+  "en": "Requesting black box dump...",
+  "ctx": "self . message =",
+  "pt": "Solicitando despejo da caixa-preta..."
+ },
+ {
+  "en": "Requesting module QA dump...",
+  "ctx": "self . message =",
+  "pt": "Solicitando despejo do QA dos módulos..."
+ },
+ {
+  "en": "1  SQUAD",
+  "ctx": "self : drawText (",
+  "pt": "1  ESQUADRÃO"
+ },
+ {
+  "en": "2  ENCOUNTER",
+  "ctx": "self : drawText (",
+  "pt": "2  ENCONTRO"
+ },
+ {
+  "en": "3  DEPLOY",
+  "ctx": "self : drawText (",
+  "pt": "3  POSICIONAR"
+ },
+ {
+  "en": "SIZE: ",
+  "ctx": "self : drawText (",
+  "pt": "TAMANHO: "
+ },
+ {
+  "en": "SCENE + SQUAD, ONE DEPLOY",
+  "ctx": "self : drawText (",
+  "pt": "CENA + ESQUADRÃO, UM SÓ POSICIONAMENTO"
+ },
+ {
+  "en": "Advanced: place / size / persist",
+  "ctx": "self : drawText (",
+  "pt": "Avançado: local / tamanho / persistência"
+ },
+ {
+  "en": "tile ",
+  "ctx": "~= nil and (",
+  "pt": "quadrado "
+ },
+ {
+  "en": "player position",
+  "ctx": ") ) ) or",
+  "pt": "posição do jogador"
+ },
+ {
+  "en": "Target: ",
+  "ctx": "self : drawText (",
+  "pt": "Alvo: "
+ },
+ {
+  "en": "rolls ",
+  "ctx": "self : drawText (",
+  "pt": "sorteios "
+ },
+ {
+  "en": "  placed ",
+  "ctx": "or 0 ) ..",
+  "pt": "  posicionados "
+ },
+ {
+  "en": "  refused ",
+  "ctx": "or 0 ) ..",
+  "pt": "  recusados "
+ },
+ {
+  "en": "(nothing yet)",
+  "ctx": "director . lastOutcome or",
+  "pt": "(nada ainda)"
+ },
+ {
+  "en": "(no report yet)",
+  "ctx": "self : drawText (",
+  "pt": "(sem relatório ainda)"
+ },
+ {
+  "en": "ON THE MAP",
+  "ctx": "self : drawText (",
+  "pt": "NO MAPA"
+ },
+ {
+  "en": "   ",
+  "ctx": "0 ) ) ..",
+  "pt": "   há "
+ },
+ {
+  "en": "s ago",
+  "ctx": "( age ) ..",
+  "pt": "s"
+ },
+ {
+  "en": "nothing placed yet",
+  "ctx": "self : drawText (",
+  "pt": "nada posicionado ainda"
+ },
+ {
+  "en": " scene",
+  "ctx": ". scene ) ..",
+  "pt": ""
+ },
+ {
+  "en": "black box",
+  "ctx": "self : applyDumpResult (",
+  "pt": "caixa-preta"
+ },
+ {
+  "en": "DIRECTOR",
+  "ctx": "self : drawText (",
+  "pt": "DIRETOR"
+ }
+]

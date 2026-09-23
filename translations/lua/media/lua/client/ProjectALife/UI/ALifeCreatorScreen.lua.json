@@ -1,0 +1,4382 @@
+[
+ {
+  "en": "Roaming survivors",
+  "ctx": "SCENARIOS = { {",
+  "pt": "Sobreviventes errantes"
+ },
+ {
+  "en": "Travel between places",
+  "ctx": "\"Roaming survivors\" , \"roamer\" ,",
+  "pt": "Viajam entre lugares"
+ },
+ {
+  "en": "Patrol",
+  "ctx": "\"Travel between places\" } , {",
+  "pt": "Patrulha"
+ },
+ {
+  "en": "An open-area route",
+  "ctx": "\"Patrol\" , \"patrol\" ,",
+  "pt": "Uma rota em área aberta"
+ },
+ {
+  "en": "Town patrol",
+  "ctx": "\"An open-area route\" } , {",
+  "pt": "Patrulha urbana"
+ },
+ {
+  "en": "Streets and neighborhoods",
+  "ctx": "\"Town patrol\" , \"town_patrol\" ,",
+  "pt": "Ruas e bairros"
+ },
+ {
+  "en": "Scavengers",
+  "ctx": "\"Streets and neighborhoods\" } , {",
+  "pt": "Catadores"
+ },
+ {
+  "en": "Search for supplies",
+  "ctx": "\"Scavengers\" , \"scavenger_crew\" ,",
+  "pt": "Procuram suprimentos"
+ },
+ {
+  "en": "Camps",
+  "ctx": "\"Search for supplies\" } , {",
+  "pt": "Acampamentos"
+ },
+ {
+  "en": "Outdoor survivor camps",
+  "ctx": "\"Camps\" , \"camp\" ,",
+  "pt": "Acampamentos de sobreviventes ao ar livre"
+ },
+ {
+  "en": "Outposts & residents",
+  "ctx": "\"Outdoor survivor camps\" } , {",
+  "pt": "Postos avançados e moradores"
+ },
+ {
+  "en": "Bases and building garrisons",
+  "ctx": "\"Outposts & residents\" , \"outpost\" ,",
+  "pt": "Bases e guarnições em prédios"
+ },
+ {
+  "en": "Station guards",
+  "ctx": "\"Bases and building garrisons\" } , {",
+  "pt": "Guardas de delegacia"
+ },
+ {
+  "en": "Protect important buildings",
+  "ctx": "\"Station guards\" , \"poi_defenders\" ,",
+  "pt": "Protegem prédios importantes"
+ },
+ {
+  "en": "Rooftop shooters",
+  "ctx": "\"Protect important buildings\" } , {",
+  "pt": "Atiradores no telhado"
+ },
+ {
+  "en": "Hold elevated positions",
+  "ctx": "\"Rooftop shooters\" , \"rooftop_snipers\" ,",
+  "pt": "Seguram posições elevadas"
+ },
+ {
+  "en": "Defend a stretch of road",
+  "ctx": "\"Road blockade\" , \"blockade\" ,",
+  "pt": "Defendem um trecho de estrada"
+ },
+ {
+  "en": "Broken-down car",
+  "ctx": "\"Defend a stretch of road\" } , {",
+  "pt": "Carro quebrado"
+ },
+ {
+  "en": "Stranded repair crew",
+  "ctx": "\"Broken-down car\" , \"broken_car\" ,",
+  "pt": "Equipe de reparo presa"
+ },
+ {
+  "en": "Road crash",
+  "ctx": "\"Stranded repair crew\" } , {",
+  "pt": "Acidente na estrada"
+ },
+ {
+  "en": "Triggered by world events",
+  "ctx": "\"Road crash\" , \"car_crash\" ,",
+  "pt": "Disparado por eventos do mundo"
+ },
+ {
+  "en": "Highway ambush",
+  "ctx": "\"Triggered by world events\" } , {",
+  "pt": "Emboscada na rodovia"
+ },
+ {
+  "en": "Triggered by driving",
+  "ctx": "\"Highway ambush\" , \"highway_ambush\" ,",
+  "pt": "Disparada ao dirigir"
+ },
+ {
+  "en": "Enemy scouts",
+  "ctx": "\"Triggered by driving\" } , {",
+  "pt": "Batedores inimigos"
+ },
+ {
+  "en": "Hostile reconnaissance",
+  "ctx": "\"Enemy scouts\" , \"raid\" ,",
+  "pt": "Reconhecimento hostil"
+ },
+ {
+  "en": "Assassination",
+  "ctx": "\"Hostile reconnaissance\" } , {",
+  "pt": "Assassinato"
+ },
+ {
+  "en": "Hunt a target",
+  "ctx": "\"Assassination\" , \"assassination\" ,",
+  "pt": "Caçam um alvo"
+ },
+ {
+  "en": "Full-scale raid",
+  "ctx": "\"Hunt a target\" } , {",
+  "pt": "Invasão em grande escala"
+ },
+ {
+  "en": "Scout buildup + raid-day rules",
+  "ctx": "\"Full-scale raid\" , \"fullscale_raid\" ,",
+  "pt": "Preparação de batedores + regras do dia da invasão"
+ },
+ {
+  "en": "Holdout",
+  "ctx": "outpostSeats = { {",
+  "pt": "Reduto"
+ },
+ {
+  "en": "A house a family holds",
+  "ctx": "\"Holdout\" , \"holdout_house\" ,",
+  "pt": "Uma casa ocupada por uma família"
+ },
+ {
+  "en": "Walled compound",
+  "ctx": "\"A house a family holds\" } , {",
+  "pt": "Complexo murado"
+ },
+ {
+  "en": "A walled settlement",
+  "ctx": "\"Walled compound\" , \"alexandria\" ,",
+  "pt": "Um assentamento murado"
+ },
+ {
+  "en": "Fortified station",
+  "ctx": "\"A walled settlement\" } , {",
+  "pt": "Delegacia fortificada"
+ },
+ {
+  "en": "A station turned into a base",
+  "ctx": "\"Fortified station\" , \"police_station\" ,",
+  "pt": "Uma delegacia transformada em base"
+ },
+ {
+  "en": "Held house",
+  "ctx": "\"A station turned into a base\" } , {",
+  "pt": "Casa ocupada"
+ },
+ {
+  "en": "A sturdy house, garrisoned",
+  "ctx": "\"Held house\" , \"sturdy_house\" ,",
+  "pt": "Uma casa resistente, com guarnição"
+ },
+ {
+  "en": "Fortified field base",
+  "ctx": "\"A sturdy house, garrisoned\" } , {",
+  "pt": "Base de campo fortificada"
+ },
+ {
+  "en": "A built camp in the open",
+  "ctx": "\"Fortified field base\" , \"fortified_field_base\" ,",
+  "pt": "Um acampamento construído ao ar livre"
+ },
+ {
+  "en": "Forest camp",
+  "ctx": "\"A built camp in the open\" } , {",
+  "pt": "Acampamento na floresta"
+ },
+ {
+  "en": "A camp under the trees",
+  "ctx": "\"Forest camp\" , \"forest_camp\" ,",
+  "pt": "Um acampamento sob as árvores"
+ },
+ {
+  "en": "Field aid station",
+  "ctx": "\"A camp under the trees\" } , {",
+  "pt": "Posto de primeiros socorros"
+ },
+ {
+  "en": "A place that treats people",
+  "ctx": "\"Field aid station\" , \"field_hospital\" ,",
+  "pt": "Um lugar que cuida de feridos"
+ },
+ {
+  "en": "Supply depot",
+  "ctx": "\"A place that treats people\" } , {",
+  "pt": "Depósito de suprimentos"
+ },
+ {
+  "en": "Stores, and people guarding them",
+  "ctx": "\"Supply depot\" , \"supply_depot\" ,",
+  "pt": "Estoques e gente vigiando"
+ },
+ {
+  "en": "Checkpoint",
+  "ctx": "\"Stores, and people guarding them\" } , {",
+  "pt": "Posto de controle"
+ },
+ {
+  "en": "A bridge or road cordon",
+  "ctx": "\"Checkpoint\" , \"bridge_checkpoint\" ,",
+  "pt": "Um bloqueio em ponte ou estrada"
+ },
+ {
+  "en": "Patrol / guard",
+  "ctx": "PROGRAMS = { {",
+  "pt": "Patrulhar / vigiar"
+ },
+ {
+  "en": "Scavenge / loot",
+  "ctx": "\"patrol\" } , {",
+  "pt": "Vasculhar / saquear"
+ },
+ {
+  "en": "Roam",
+  "ctx": "\"looter\" } , {",
+  "pt": "Vagar"
+ },
+ {
+  "en": "Hunt",
+  "ctx": "\"roam\" } , {",
+  "pt": "Caçar"
+ },
+ {
+  "en": "Manhunt",
+  "ctx": "\"hunt\" } , {",
+  "pt": "Caçada humana"
+ },
+ {
+  "en": "Police & prisons",
+  "ctx": "SPECIFIC_PLACES = { {",
+  "pt": "Polícia e prisões"
+ },
+ {
+  "en": "Fire stations",
+  "ctx": "\"police\" } , {",
+  "pt": "Quartéis de bombeiros"
+ },
+ {
+  "en": "Hospitals & clinics",
+  "ctx": "\"fire\" } , {",
+  "pt": "Hospitais e clínicas"
+ },
+ {
+  "en": "Warehouses",
+  "ctx": "\"medical\" } , {",
+  "pt": "Armazéns"
+ },
+ {
+  "en": "Gun & military sites",
+  "ctx": "\"warehouse\" } , {",
+  "pt": "Lojas de armas e locais militares"
+ },
+ {
+  "en": "Male",
+  "ctx": "GENDERS = { {",
+  "pt": "Masculino"
+ },
+ {
+  "en": "Female",
+  "ctx": "\"male\" } , {",
+  "pt": "Feminino"
+ },
+ {
+  "en": "Automatic  /  faction voice",
+  "ctx": "VOICES = { {",
+  "pt": "Automático  /  voz da facção"
+ },
+ {
+  "en": "Outlaw Survivor 1",
+  "ctx": "\"\" } , {",
+  "pt": "Sobrevivente fora da lei 1"
+ },
+ {
+  "en": "Outlaw Survivor 2",
+  "ctx": "\"pal_outlaw_1\" } , {",
+  "pt": "Sobrevivente fora da lei 2"
+ },
+ {
+  "en": "Outlaw Survivor 3",
+  "ctx": "\"pal_outlaw_2\" } , {",
+  "pt": "Sobrevivente fora da lei 3"
+ },
+ {
+  "en": "Experienced Survivor 1",
+  "ctx": "\"pal_outlaw_3\" } , {",
+  "pt": "Sobrevivente experiente 1"
+ },
+ {
+  "en": "Experienced Survivor 2",
+  "ctx": "\"pal_csky_1\" } , {",
+  "pt": "Sobrevivente experiente 2"
+ },
+ {
+  "en": "Experienced Survivor 3",
+  "ctx": "\"pal_csky_2\" } , {",
+  "pt": "Sobrevivente experiente 3"
+ },
+ {
+  "en": "Paramilitary Survivor 1",
+  "ctx": "\"pal_csky_3\" } , {",
+  "pt": "Sobrevivente paramilitar 1"
+ },
+ {
+  "en": "Paramilitary Survivor 2",
+  "ctx": "\"pal_dolg_1\" } , {",
+  "pt": "Sobrevivente paramilitar 2"
+ },
+ {
+  "en": "Paramilitary Survivor 3",
+  "ctx": "\"pal_dolg_2\" } , {",
+  "pt": "Sobrevivente paramilitar 3"
+ },
+ {
+  "en": "Scientist 1",
+  "ctx": "\"pal_dolg_3\" } , {",
+  "pt": "Cientista 1"
+ },
+ {
+  "en": "Scientist 2",
+  "ctx": "\"pal_ecolog_1\" } , {",
+  "pt": "Cientista 2"
+ },
+ {
+  "en": "Scientist 3",
+  "ctx": "\"pal_ecolog_2\" } , {",
+  "pt": "Cientista 3"
+ },
+ {
+  "en": "Anarchist Survivor 1",
+  "ctx": "\"pal_ecolog_3\" } , {",
+  "pt": "Sobrevivente anarquista 1"
+ },
+ {
+  "en": "Anarchist Survivor 2",
+  "ctx": "\"pal_freedom_1\" } , {",
+  "pt": "Sobrevivente anarquista 2"
+ },
+ {
+  "en": "Anarchist Survivor 3",
+  "ctx": "\"pal_freedom_2\" } , {",
+  "pt": "Sobrevivente anarquista 3"
+ },
+ {
+  "en": "Military Soldier 1",
+  "ctx": "\"pal_freedom_3\" } , {",
+  "pt": "Soldado militar 1"
+ },
+ {
+  "en": "Military Soldier 2",
+  "ctx": "\"pal_military_1\" } , {",
+  "pt": "Soldado militar 2"
+ },
+ {
+  "en": "Military Soldier 3",
+  "ctx": "\"pal_military_2\" } , {",
+  "pt": "Soldado militar 3"
+ },
+ {
+  "en": "Foreign Survivor 1",
+  "ctx": "\"pal_military_3\" } , {",
+  "pt": "Sobrevivente estrangeiro 1"
+ },
+ {
+  "en": "Foreign Survivor 2",
+  "ctx": "\"pal_stalker_1\" } , {",
+  "pt": "Sobrevivente estrangeiro 2"
+ },
+ {
+  "en": "Foreign Survivor 3",
+  "ctx": "\"pal_stalker_2\" } , {",
+  "pt": "Sobrevivente estrangeiro 3"
+ },
+ {
+  "en": "Mercenary 1",
+  "ctx": "\"pal_stalker_3\" } , {",
+  "pt": "Mercenário 1"
+ },
+ {
+  "en": "Mercenary 2",
+  "ctx": "\"pal_mercenary_1\" } , {",
+  "pt": "Mercenário 2"
+ },
+ {
+  "en": "Mercenary 3",
+  "ctx": "\"pal_mercenary_2\" } , {",
+  "pt": "Mercenário 3"
+ },
+ {
+  "en": "Mercenary 4",
+  "ctx": "\"pal_mercenary_3\" } , {",
+  "pt": "Mercenário 4"
+ },
+ {
+  "en": "Mercenary 5",
+  "ctx": "\"pal_mercenary_4\" } , {",
+  "pt": "Mercenário 5"
+ },
+ {
+  "en": "Mercenary 6",
+  "ctx": "\"pal_mercenary_5\" } , {",
+  "pt": "Mercenário 6"
+ },
+ {
+  "en": "Mercenary 7",
+  "ctx": "\"pal_mercenary_6\" } , {",
+  "pt": "Mercenário 7"
+ },
+ {
+  "en": "Mercenary 8",
+  "ctx": "\"pal_mercenary_7\" } , {",
+  "pt": "Mercenário 8"
+ },
+ {
+  "en": "Law Enforcement - Team Lead",
+  "ctx": "\"pal_mercenary_8\" } , {",
+  "pt": "Forças da Lei - Líder de equipe"
+ },
+ {
+  "en": "Law Enforcement - Operator 1",
+  "ctx": "\"pal_law_enforcement_team_lead\" } , {",
+  "pt": "Forças da Lei - Operador 1"
+ },
+ {
+  "en": "Law Enforcement - Operator 2",
+  "ctx": "\"pal_law_enforcement_operator_1\" } , {",
+  "pt": "Forças da Lei - Operador 2"
+ },
+ {
+  "en": "Law Enforcement - Operator 3",
+  "ctx": "\"pal_law_enforcement_operator_2\" } , {",
+  "pt": "Forças da Lei - Operador 3"
+ },
+ {
+  "en": "Law Enforcement - Operator 4",
+  "ctx": "\"pal_law_enforcement_operator_3\" } , {",
+  "pt": "Forças da Lei - Operador 4"
+ },
+ {
+  "en": "American Survivor 1",
+  "ctx": "\"pal_law_enforcement_operator_4\" } , {",
+  "pt": "Sobrevivente americano 1"
+ },
+ {
+  "en": "American Survivor 2",
+  "ctx": "\"pal_american_survivor_1\" } , {",
+  "pt": "Sobrevivente americano 2"
+ },
+ {
+  "en": "American Survivor 3",
+  "ctx": "\"pal_american_survivor_2\" } , {",
+  "pt": "Sobrevivente americano 3"
+ },
+ {
+  "en": "Russian Survivor 1",
+  "ctx": "\"pal_american_survivor_3\" } , {",
+  "pt": "Sobrevivente russo 1"
+ },
+ {
+  "en": "Russian Survivor 2",
+  "ctx": "\"pal_russian_survivor_1\" } , {",
+  "pt": "Sobrevivente russo 2"
+ },
+ {
+  "en": "Russian Survivor 3",
+  "ctx": "\"pal_russian_survivor_2\" } , {",
+  "pt": "Sobrevivente russo 3"
+ },
+ {
+  "en": "Foreign Female Survivor",
+  "ctx": "\"pal_russian_survivor_3\" } , {",
+  "pt": "Sobrevivente estrangeira"
+ },
+ {
+  "en": "American Female Survivor",
+  "ctx": "\"pal_foreign_female_survivor\" } , {",
+  "pt": "Sobrevivente americana"
+ },
+ {
+  "en": "Scout",
+  "ctx": "ROLES = { {",
+  "pt": "Batedor"
+ },
+ {
+  "en": "Guard",
+  "ctx": "\"Scout\" } , {",
+  "pt": "Guarda"
+ },
+ {
+  "en": "Raider",
+  "ctx": "\"Guard\" } , {",
+  "pt": "Saqueador"
+ },
+ {
+  "en": "Heavy",
+  "ctx": "\"Raider\" } , {",
+  "pt": "Pesado"
+ },
+ {
+  "en": "Medic",
+  "ctx": "\"Heavy\" } , {",
+  "pt": "Médico"
+ },
+ {
+  "en": "Leader",
+  "ctx": "\"Medic\" } , {",
+  "pt": "Líder"
+ },
+ {
+  "en": "Sniper",
+  "ctx": "\"Leader\" } , {",
+  "pt": "Atirador de elite"
+ },
+ {
+  "en": "Scavenger",
+  "ctx": "\"Sniper\" } , {",
+  "pt": "Catador"
+ },
+ {
+  "en": "Radio operator",
+  "ctx": "\"Scavenger\" } , {",
+  "pt": "Operador de rádio"
+ },
+ {
+  "en": "Breacher",
+  "ctx": "\"RadioOperator\" } , {",
+  "pt": "Arrombador"
+ },
+ {
+  "en": "Mechanic",
+  "ctx": "\"Breacher\" } , {",
+  "pt": "Mecânico"
+ },
+ {
+  "en": "Driver",
+  "ctx": "\"Mechanic\" } , {",
+  "pt": "Motorista"
+ },
+ {
+  "en": "Quartermaster",
+  "ctx": "\"Driver\" } , {",
+  "pt": "Intendente"
+ },
+ {
+  "en": "Hunter",
+  "ctx": "\"Quartermaster\" } , {",
+  "pt": "Caçador"
+ },
+ {
+  "en": "Civilian",
+  "ctx": "\"Hunter\" } , {",
+  "pt": "Civil"
+ },
+ {
+  "en": "Recruit",
+  "ctx": "RANKS = { {",
+  "pt": "Recruta"
+ },
+ {
+  "en": "Veteran",
+  "ctx": "\"Regular\" } , {",
+  "pt": "Veterano"
+ },
+ {
+  "en": "Elite",
+  "ctx": "\"Veteran\" } , {",
+  "pt": "Elite"
+ },
+ {
+  "en": "Leader",
+  "ctx": "\"Elite\" } , {",
+  "pt": "Líder"
+ },
+ {
+  "en": "Patrol / Scavenge",
+  "ctx": "ACTIVITIES = { {",
+  "pt": "Patrulha / Coleta"
+ },
+ {
+  "en": "Scavenge",
+  "ctx": "\"patrol\" } , {",
+  "pt": "Coleta"
+ },
+ {
+  "en": "Guard",
+  "ctx": "\"scavenge\" } , {",
+  "pt": "Guarda"
+ },
+ {
+  "en": "Hunt",
+  "ctx": "\"guard\" } , {",
+  "pt": "Caçada"
+ },
+ {
+  "en": "Assault",
+  "ctx": "\"manhunt\" } , {",
+  "pt": "Assalto"
+ },
+ {
+  "en": "Full Raid",
+  "ctx": "\"assault\" } , {",
+  "pt": "Invasão total"
+ },
+ {
+  "en": "Perception module",
+  "ctx": "\"decisions\" } , {",
+  "pt": "Módulo de percepção"
+ },
+ {
+  "en": "Movement module",
+  "ctx": "\"perception\" } , {",
+  "pt": "Módulo de movimento"
+ },
+ {
+  "en": "Combat module",
+  "ctx": "\"movement\" } , {",
+  "pt": "Módulo de combate"
+ },
+ {
+  "en": "Scavenging module",
+  "ctx": "\"combat\" } , {",
+  "pt": "Módulo de coleta"
+ },
+ {
+  "en": "Voice module",
+  "ctx": "\"scavenging\" } , {",
+  "pt": "Módulo de voz"
+ },
+ {
+  "en": "Encounter module",
+  "ctx": "FACTION_MODULES = { {",
+  "pt": "Módulo de encontros"
+ },
+ {
+  "en": "Raid module",
+  "ctx": "\"encounter\" } , {",
+  "pt": "Módulo de invasões"
+ },
+ {
+  "en": "Relations module",
+  "ctx": "\"raid\" } , {",
+  "pt": "Módulo de relações"
+ },
+ {
+  "en": "Director module",
+  "ctx": "\"relations\" } , {",
+  "pt": "Módulo diretor"
+ },
+ {
+  "en": "Allied",
+  "ctx": "RELATIONS = { {",
+  "pt": "Aliado"
+ },
+ {
+  "en": "Friendly",
+  "ctx": "\"allied\" } , {",
+  "pt": "Amigável"
+ },
+ {
+  "en": "Careful",
+  "ctx": "\"neutral\" } , {",
+  "pt": "Cauteloso"
+ },
+ {
+  "en": "Hostile",
+  "ctx": "\"careful\" } , {",
+  "pt": "Hostil"
+ },
+ {
+  "en": "Magazines",
+  "ctx": "AMMO_MODES = { {",
+  "pt": "Carregadores"
+ },
+ {
+  "en": "Default (Mixed)",
+  "ctx": "COMBAT_READY = { {",
+  "pt": "Padrão (Misto)"
+ },
+ {
+  "en": "Yes",
+  "ctx": "\"default\" } , {",
+  "pt": "Sim"
+ },
+ {
+  "en": "Mixed",
+  "ctx": "\"no\" } , {",
+  "pt": "Misto"
+ },
+ {
+  "en": "None",
+  "ctx": "PRIMARY_BEHAVIORS = { {",
+  "pt": "Nenhuma"
+ },
+ {
+  "en": "Leader",
+  "ctx": "\"none\" } , {",
+  "pt": "Líder"
+ },
+ {
+  "en": "Gunner",
+  "ctx": "\"leader\" } , {",
+  "pt": "Metralhador"
+ },
+ {
+  "en": "Medic",
+  "ctx": "\"gunner\" } , {",
+  "pt": "Médico"
+ },
+ {
+  "en": "Sniper",
+  "ctx": "\"medic\" } , {",
+  "pt": "Atirador de elite"
+ },
+ {
+  "en": "Stealth",
+  "ctx": "\"sniper\" } , {",
+  "pt": "Furtivo"
+ },
+ {
+  "en": "Ambusher",
+  "ctx": "\"stealth\" } , {",
+  "pt": "Emboscador"
+ },
+ {
+  "en": "Follow orders",
+  "ctx": "MEMBER_MODULES = { {",
+  "pt": "Seguir ordens"
+ },
+ {
+  "en": "Hold stance",
+  "ctx": "\"orders\" } , {",
+  "pt": "Manter postura"
+ },
+ {
+  "en": "Panic",
+  "ctx": "\"orders\" } , {",
+  "pt": "Pânico"
+ },
+ {
+  "en": "Withdraw",
+  "ctx": "\"reaction\" } , {",
+  "pt": "Recuar"
+ },
+ {
+  "en": "Flee",
+  "ctx": "\"reaction\" } , {",
+  "pt": "Fugir"
+ },
+ {
+  "en": "Strafe",
+  "ctx": "\"reaction\" } , {",
+  "pt": "Deslocamento lateral"
+ },
+ {
+  "en": "Weave",
+  "ctx": "\"craft\" } , {",
+  "pt": "Zigue-zague"
+ },
+ {
+  "en": "Cover",
+  "ctx": "\"craft\" } , {",
+  "pt": "Cobertura"
+ },
+ {
+  "en": "Door stack",
+  "ctx": "\"craft\" } , {",
+  "pt": "Formação na porta"
+ },
+ {
+  "en": "CQB sweep",
+  "ctx": "\"craft\" } , {",
+  "pt": "Varredura CQB"
+ },
+ {
+  "en": "Flanking",
+  "ctx": "\"craft\" } , {",
+  "pt": "Flanqueio"
+ },
+ {
+  "en": "Healing",
+  "ctx": "\"craft\" } , {",
+  "pt": "Cura"
+ },
+ {
+  "en": "Scavenge",
+  "ctx": "\"upkeep\" } , {",
+  "pt": "Coleta"
+ },
+ {
+  "en": "Search",
+  "ctx": "\"upkeep\" } , {",
+  "pt": "Revista"
+ },
+ {
+  "en": "Investigate",
+  "ctx": "\"upkeep\" } , {",
+  "pt": "Investigar"
+ },
+ {
+  "en": "Idle life",
+  "ctx": "\"upkeep\" } , {",
+  "pt": "Vida cotidiana"
+ },
+ {
+  "en": "Regroup",
+  "ctx": "\"upkeep\" } , {",
+  "pt": "Reagrupar"
+ },
+ {
+  "en": "Group march",
+  "ctx": "\"upkeep\" } , {",
+  "pt": "Marcha em grupo"
+ },
+ {
+  "en": "Spread",
+  "ctx": "\"upkeep\" } , {",
+  "pt": "Espalhar"
+ },
+ {
+  "en": "Patrol rest",
+  "ctx": "\"upkeep\" } , {",
+  "pt": "Descanso da patrulha"
+ },
+ {
+  "en": "Rob players",
+  "ctx": "\"upkeep\" } , {",
+  "pt": "Assaltar jogadores"
+ },
+ {
+  "en": "Follow the leader's current order instead of selecting an unrelated task.",
+  "ctx": "= { orders =",
+  "pt": "Seguir a ordem atual do líder em vez de escolher uma tarefa sem relação."
+ },
+ {
+  "en": "Hold the assigned guard, route, blockade or garrison stance until the squad changes it.",
+  "ctx": "\"Follow the leader's current order instea\" , stance =",
+  "pt": "Manter a postura designada de guarda, rota, bloqueio ou guarnição até o esquadrão mudá-la."
+ },
+ {
+  "en": "React to overwhelming danger and recover after reaching a safer distance.",
+  "ctx": "\"Hold the assigned guard, route, blockade\" , panic =",
+  "pt": "Reagir a um perigo esmagador e se recuperar depois de chegar a uma distância mais segura."
+ },
+ {
+  "en": "Back away while facing and aiming at the threat; fire remains available during the retreat.",
+  "ctx": "\"React to overwhelming danger and recover\" , withdraw =",
+  "pt": "Recuar encarando e mirando na ameaça; ainda pode atirar durante o recuo."
+ },
+ {
+  "en": "Allow a full break-contact escape. The world Flee switch must also be enabled; a faction or NPC override cannot bypass it.",
+  "ctx": "\"Back away while facing and aiming at the\" , flee =",
+  "pt": "Permitir uma fuga completa, rompendo o contato. A chave global de Fuga também precisa estar ativada; uma alteração de facção ou de NPC não consegue contorná-la."
+ },
+ {
+  "en": "Move laterally while keeping the weapon and attention on the current target.",
+  "ctx": "\"Allow a full break-contact escape. The w\" , strafe =",
+  "pt": "Mover-se para os lados mantendo a arma e a atenção no alvo atual."
+ },
+ {
+  "en": "Vary the approach path under fire instead of running in one predictable line.",
+  "ctx": "\"Move laterally while keeping the weapon \" , weave =",
+  "pt": "Variar o caminho de aproximação sob fogo em vez de correr numa linha previsível."
+ },
+ {
+  "en": "Search for nearby cover and fight from it when the path and line of fire are valid.",
+  "ctx": "\"Vary the approach path under fire instea\" , cover =",
+  "pt": "Procurar cobertura próxima e lutar a partir dela quando o caminho e a linha de tiro forem válidos."
+ },
+ {
+  "en": "Queue at an entrance so squad members do not jam the same doorway.",
+  "ctx": "\"Search for nearby cover and fight from i\" , doorstack =",
+  "pt": "Fazer fila numa entrada para que os membros do esquadrão não se amontoem na mesma porta."
+ },
+ {
+  "en": "Clear close interior spaces in a controlled room-to-room sequence.",
+  "ctx": "\"Queue at an entrance so squad members do\" , cqbsweep =",
+  "pt": "Limpar espaços internos fechados numa sequência controlada, cômodo por cômodo."
+ },
+ {
+  "en": "Move to a side angle when another squad member already occupies the target's attention.",
+  "ctx": "\"Clear close interior spaces in a control\" , flanking =",
+  "pt": "Ir para um ângulo lateral quando outro membro do esquadrão já estiver ocupando a atenção do alvo."
+ },
+ {
+  "en": "Treat wounds during a safe pause and return to the previous squad task afterwards.",
+  "ctx": "\"Move to a side angle when another squad \" , healing =",
+  "pt": "Tratar ferimentos numa pausa segura e depois voltar à tarefa anterior do esquadrão."
+ },
+ {
+  "en": "Search valid containers, reserve loot and carry useful supplies for the squad.",
+  "ctx": "\"Treat wounds during a safe pause and ret\" , scavenge =",
+  "pt": "Revistar contêineres válidos, reservar o saque e carregar suprimentos úteis para o esquadrão."
+ },
+ {
+  "en": "After combat, search at most two bodies (at most one infected). Take a bounded quarter of non-clothing items, prioritizing weapons. Gear remains recoverable.",
+  "ctx": "\"Search valid containers, reserve loot an\" , search =",
+  "pt": "Depois do combate, revistar no máximo dois corpos (no máximo um infectado). Levar até um quarto dos itens que não são roupas, priorizando armas. O equipamento continua recuperável."
+ },
+ {
+  "en": "Inspect recent sounds, sightings and clues without forgetting the squad objective.",
+  "ctx": "\"After combat, search at most two bodies \" , investigate =",
+  "pt": "Averiguar sons, avistamentos e pistas recentes sem esquecer o objetivo do esquadrão."
+ },
+ {
+  "en": "Use believable calm-state activities while no urgent task or threat is active.",
+  "ctx": "\"Inspect recent sounds, sightings and clu\" , idleLife =",
+  "pt": "Fazer atividades cotidianas críveis enquanto não houver tarefa urgente nem ameaça ativa."
+ },
+ {
+  "en": "Return isolated members to a safe formation around the squad leader.",
+  "ctx": "\"Use believable calm-state activities whi\" , regroup =",
+  "pt": "Trazer membros isolados de volta a uma formação segura ao redor do líder do esquadrão."
+ },
+ {
+  "en": "Travel as a formation instead of sending every member through an independent path.",
+  "ctx": "\"Return isolated members to a safe format\" , groupMarch =",
+  "pt": "Viajar em formação em vez de mandar cada membro por um caminho independente."
+ },
+ {
+  "en": "Maintain useful spacing so the squad does not form a single vulnerable cluster.",
+  "ctx": "\"Travel as a formation instead of sending\" , spread =",
+  "pt": "Manter um espaçamento útil para que o esquadrão não forme um único aglomerado vulnerável."
+ },
+ {
+  "en": "Let patrols pause together for rest, idle activities and conversation. Rest timing and the master switch come from sandbox settings.",
+  "ctx": "\"Maintain useful spacing so the squad doe\" , patrolRest =",
+  "pt": "Deixar as patrulhas pararem juntas para descansar, fazer atividades cotidianas e conversar. O horário do descanso e a chave geral vêm das opções de sandbox."
+ },
+ {
+  "en": "Hold up a player: weapons down, hands up, a few valuable items taken, then the crew leaves. Refusing gets him shot. Inherit robs by register (raiders almost always, mercenaries about half the time) and only when the player is alone. On means this crew always tries, whatever its faction and whoever he is with.",
+  "ctx": "\"Let patrols pause together for rest, idl\" , robbery =",
+  "pt": "Render um jogador: armas no chão, mãos para cima, alguns itens valiosos levados, e o grupo vai embora. Quem recusar leva tiro. Herdar assalta conforme o perfil do grupo (saqueadores quase sempre, mercenários cerca de metade das vezes) e só quando o jogador está sozinho. Ligado significa que este grupo sempre tenta, qualquer que seja a facção e esteja o jogador com quem estiver."
+ },
+ {
+  "en": "ORDERS",
+  "ctx": "{ { \"orders\" ,",
+  "pt": "ORDENS"
+ },
+ {
+  "en": "Leadership and assigned stance",
+  "ctx": "\"orders\" , \"ORDERS\" ,",
+  "pt": "Liderança e postura designada"
+ },
+ {
+  "en": "DANGER RESPONSE",
+  "ctx": ", { \"reaction\" ,",
+  "pt": "REAÇÃO AO PERIGO"
+ },
+ {
+  "en": "Warnings, controlled retreat and escape",
+  "ctx": "\"reaction\" , \"DANGER RESPONSE\" ,",
+  "pt": "Avisos, recuo controlado e fuga"
+ },
+ {
+  "en": "COMBAT MOVEMENT",
+  "ctx": ", { \"craft\" ,",
+  "pt": "MOVIMENTO EM COMBATE"
+ },
+ {
+  "en": "Cover, spacing and coordinated manoeuvres",
+  "ctx": "\"craft\" , \"COMBAT MOVEMENT\" ,",
+  "pt": "Cobertura, espaçamento e manobras coordenadas"
+ },
+ {
+  "en": "SURVIVAL & ROUTINE",
+  "ctx": ", { \"upkeep\" ,",
+  "pt": "SOBREVIVÊNCIA E ROTINA"
+ },
+ {
+  "en": "Recovery, scavenging and calm-state activity",
+  "ctx": "\"upkeep\" , \"SURVIVAL & ROUTINE\" ,",
+  "pt": "Recuperação, coleta e atividades cotidianas"
+ },
+ {
+  "en": "OUTLAW CONDUCT",
+  "ctx": ", { \"outlaw\" ,",
+  "pt": "CONDUTA FORA DA LEI"
+ },
+ {
+  "en": "Demands made of players at gunpoint",
+  "ctx": "\"outlaw\" , \"OUTLAW CONDUCT\" ,",
+  "pt": "Exigências feitas aos jogadores sob a mira de uma arma"
+ },
+ {
+  "en": "Inherit",
+  "ctx": "MODULE_STATES = { {",
+  "pt": "Herdar"
+ },
+ {
+  "en": "On",
+  "ctx": "\"inherit\" } , {",
+  "pt": "Ligado"
+ },
+ {
+  "en": "Off",
+  "ctx": "\"on\" } , {",
+  "pt": "Desligado"
+ },
+ {
+  "en": "Common",
+  "ctx": "spawnWeightChoices = { {",
+  "pt": "Comum"
+ },
+ {
+  "en": "Uncommon",
+  "ctx": "1 } , {",
+  "pt": "Incomum"
+ },
+ {
+  "en": "Rare",
+  "ctx": "0.5 } , {",
+  "pt": "Raro"
+ },
+ {
+  "en": "Very Rare",
+  "ctx": "0.2 } , {",
+  "pt": "Muito raro"
+ },
+ {
+  "en": "Unseen",
+  "ctx": "0.05 } , {",
+  "pt": "Nunca visto"
+ },
+ {
+  "en": "(none)",
+  "ctx": "label == \"\" and",
+  "pt": "(nenhum)"
+ },
+ {
+  "en": "Custom (",
+  "ctx": "self : addOptionWithData (",
+  "pt": "Personalizado ("
+ },
+ {
+  "en": " SPAWN OPTIONS",
+  "ctx": ". poolCount ) ..",
+  "pt": " OPÇÕES DE GERAÇÃO"
+ },
+ {
+  "en": "Use NPC profile",
+  "ctx": "\"faction\" and { {",
+  "pt": "Usar perfil do NPC"
+ },
+ {
+  "en": "On by default",
+  "ctx": "\"inherit\" } , {",
+  "pt": "Ligado por padrão"
+ },
+ {
+  "en": "Off by default",
+  "ctx": "\"on\" } , {",
+  "pt": "Desligado por padrão"
+ },
+ {
+  "en": "Use faction",
+  "ctx": "} or { {",
+  "pt": "Usar facção"
+ },
+ {
+  "en": "On for this NPC",
+  "ctx": "\"inherit\" } , {",
+  "pt": "Ligado para este NPC"
+ },
+ {
+  "en": "Off for this NPC",
+  "ctx": "\"on\" } , {",
+  "pt": "Desligado para este NPC"
+ },
+ {
+  "en": " Use NPC profile leaves the choice to each member's behavior profile. Individual NPC overrides take precedence.",
+  "ctx": "scope == \"faction\" and",
+  "pt": " Usar perfil do NPC deixa a escolha para o perfil de comportamento de cada membro. Alterações individuais de NPC têm prioridade."
+ },
+ {
+  "en": " Use faction follows its default, then the NPC behavior profile when the faction has no override.",
+  "ctx": "\"faction\" and \" Use NPC profile leaves the choice to ea\" or",
+  "pt": " Usar facção segue o padrão dela e, se a facção não tiver alteração, o perfil de comportamento do NPC."
+ },
+ {
+  "en": "Overrides this module for the current scope.",
+  "ctx": "2 ] ] or",
+  "pt": "Altera este módulo no escopo atual."
+ },
+ {
+  "en": " World switches and valid task conditions always apply.",
+  "ctx": "help .. sourceHelp ..",
+  "pt": " As chaves globais e as condições válidas de tarefa sempre se aplicam."
+ },
+ {
+  "en": "APPLY ",
+  "ctx": "width - 24 ,",
+  "pt": "APLICAR "
+ },
+ {
+  "en": " TO FACTION",
+  "ctx": "[ 2 ] ..",
+  "pt": " À FACÇÃO"
+ },
+ {
+  "en": "ALLOWED",
+  "ctx": "drawText ( active and",
+  "pt": "PERMITIDO"
+ },
+ {
+  "en": "NOT SELECTED",
+  "ctx": "active and \"ALLOWED\" or",
+  "pt": "NÃO SELECIONADO"
+ },
+ {
+  "en": "CATALOG ERROR: ",
+  "ctx": "and \"\" or (",
+  "pt": "ERRO NO CATÁLOGO: "
+ },
+ {
+  "en": "  ON",
+  "ctx": "or ( enabled and",
+  "pt": "  LIGADO"
+ },
+ {
+  "en": "PREVIEW VARIATION",
+  "ctx": "enabledCount > 0 and",
+  "pt": "PRÉVIA DE VARIAÇÃO"
+ },
+ {
+  "en": "ENABLE AN OUTFIT SET TO PREVIEW",
+  "ctx": "0 and \"PREVIEW VARIATION\" or",
+  "pt": "ATIVE UM CONJUNTO DE ROUPAS PARA VER A PRÉVIA"
+ },
+ {
+  "en": "No outfit set is enabled for spawning",
+  "ctx": "0 and \"\" or",
+  "pt": "Nenhum conjunto de roupas está ativado para geração"
+ },
+ {
+  "en": "CUSTOM",
+  "ctx": "[ slot ] and",
+  "pt": "PERSONALIZADO"
+ },
+ {
+  "en": "NATIVE ITEM COLOR",
+  "ctx": "] and \"CUSTOM\" or",
+  "pt": "COR ORIGINAL DO ITEM"
+ },
+ {
+  "en": "Clear slot",
+  "ctx": "fullType == \"none\" and",
+  "pt": "Limpar espaço"
+ },
+ {
+  "en": "WEAPON ATTACHMENTS",
+  "ctx": "24 , 18 ,",
+  "pt": "ACESSÓRIOS DE ARMA"
+ },
+ {
+  "en": "Choose a primary or secondary firearm first.",
+  "ctx": "24 , 58 ,",
+  "pt": "Escolha primeiro uma arma de fogo principal ou secundária."
+ },
+ {
+  "en": "CLOSE",
+  "ctx": "64 , 116 ,",
+  "pt": "FECHAR"
+ },
+ {
+  "en": "Weapon choice",
+  "ctx": "24 , 52 ,",
+  "pt": "Escolha de arma"
+ },
+ {
+  "en": "PAGE 1 / 1",
+  "ctx": "height - 60 ,",
+  "pt": "PÁGINA 1 / 1"
+ },
+ {
+  "en": "0 ATTACHED",
+  "ctx": "height - 60 ,",
+  "pt": "0 INSTALADOS"
+ },
+ {
+  "en": "PAGE ",
+  "ctx": "pageLabel : setName (",
+  "pt": "PÁGINA "
+ },
+ {
+  "en": " ATTACHED TO THIS WEAPON",
+  "ctx": "( count ) ..",
+  "pt": " INSTALADOS NESTA ARMA"
+ },
+ {
+  "en": "ATTACHED - CLICK TO REMOVE",
+  "ctx": "detail = picked and",
+  "pt": "INSTALADO - CLIQUE PARA REMOVER"
+ },
+ {
+  "en": "UNVERIFIED MOD PART",
+  "ctx": "compatible and \"COMPATIBLE\" or",
+  "pt": "PEÇA DE MOD NÃO VERIFICADA"
+ },
+ {
+  "en": "Only parts whose mount list names this weapon.",
+  "ctx": "warning : setName (",
+  "pt": "Só peças cuja lista de encaixe cita esta arma."
+ },
+ {
+  "en": "MODDED / UNSAFE",
+  "ctx": "filterY , filterW ,",
+  "pt": "DE MOD / INSEGURO"
+ },
+ {
+  "en": "UNVERIFIED MOD PARTS MAY ERROR OR CRASH - USE AT YOUR OWN RISK.",
+  "ctx": "warning : setName (",
+  "pt": "PEÇAS DE MOD NÃO VERIFICADAS PODEM DAR ERRO OU TRAVAR O JOGO - USE POR SUA CONTA E RISCO."
+ },
+ {
+  "en": "Only parts whose mount list names this weapon.",
+  "ctx": "24 , warningY ,",
+  "pt": "Só peças cuja lista de encaixe cita esta arma."
+ },
+ {
+  "en": "REMOVE ALL",
+  "ctx": "4 , 120 ,",
+  "pt": "REMOVER TUDO"
+ },
+ {
+  "en": "CANCEL",
+  "ctx": "64 , 108 ,",
+  "pt": "CANCELAR"
+ },
+ {
+  "en": "APPLY",
+  "ctx": "64 , 116 ,",
+  "pt": "APLICAR"
+ },
+ {
+  "en": "SELECT ITEM",
+  "ctx": "upper ( title or",
+  "pt": "SELECIONAR ITEM"
+ },
+ {
+  "en": "Click to preview. Apply to keep.",
+  "ctx": "24 , 46 ,",
+  "pt": "Clique para ver a prévia. Aplique para manter."
+ },
+ {
+  "en": "Search item name or type...",
+  "ctx": "search : setPlaceholderText (",
+  "pt": "Buscar nome ou tipo do item..."
+ },
+ {
+  "en": "Enable multiple options",
+  "ctx": "multipleTick : addOption (",
+  "pt": "Permitir várias opções"
+ },
+ {
+  "en": "ACTIVE CHOICES",
+  "ctx": "24 , 82 ,",
+  "pt": "ESCOLHAS ATIVAS"
+ },
+ {
+  "en": "ATTACHMENTS",
+  "ctx": "126 , railW ,",
+  "pt": "ACESSÓRIOS"
+ },
+ {
+  "en": "SELECTED 0 / 4",
+  "ctx": "height - 60 ,",
+  "pt": "SELECIONADOS 0 / 4"
+ },
+ {
+  "en": "SELECTED ",
+  "ctx": "selectionLabel : setName (",
+  "pt": "SELECIONADOS "
+ },
+ {
+  "en": "COLLISION DETECTED",
+  "ctx": "self . conflict and",
+  "pt": "CONFLITO DETECTADO"
+ },
+ {
+  "en": "ACTIVE",
+  "ctx": "conflict and \"COLLISION DETECTED\" or",
+  "pt": "ATIVO"
+ },
+ {
+  "en": "SLOT EMPTY",
+  "ctx": "self : drawTextCentre (",
+  "pt": "ESPAÇO VAZIO"
+ },
+ {
+  "en": "NO ICON",
+  "ctx": "\"none\" and \"x\" or",
+  "pt": "SEM ÍCONE"
+ },
+ {
+  "en": "COLLISION DETECTED",
+  "ctx": "self : drawTextCentre (",
+  "pt": "CONFLITO DETECTADO"
+ },
+ {
+  "en": "LIVE",
+  "ctx": "or fallback ) ,",
+  "pt": "AO VIVO"
+ },
+ {
+  "en": "DEFAULT",
+  "ctx": ") , mirror and",
+  "pt": "PADRÃO"
+ },
+ {
+  "en": "OFFLINE DEFAULT",
+  "ctx": "mirror and \"DEFAULT\" or",
+  "pt": "PADRÃO OFFLINE"
+ },
+ {
+  "en": "PLAYER  ",
+  "ctx": "effectiveRelationStatus : setName (",
+  "pt": "JOGADOR  "
+ },
+ {
+  "en": "Default (",
+  "ctx": "options = { {",
+  "pt": "Padrão ("
+ },
+ {
+  "en": " - text only",
+  "ctx": ".. \" audio\" ) or",
+  "pt": " - só texto"
+ },
+ {
+  "en": "Faction voice sample: ",
+  "ctx": "== \"\" and (",
+  "pt": "Amostra de voz da facção: "
+ },
+ {
+  "en": "text only",
+  "ctx": "profile . label or",
+  "pt": "só texto"
+ },
+ {
+  "en": "Text-only personality.",
+  "ctx": "captionOnly == true and",
+  "pt": "Personalidade só em texto."
+ },
+ {
+  "en": " recordings + contextual text. Preview a reaction below.",
+  "ctx": "or 0 ) ..",
+  "pt": " gravações + texto contextual. Ouça a prévia de uma reação abaixo."
+ },
+ {
+  "en": "Unknown profile - the runtime will use the roaming hostile fallback.",
+  "ctx": "definition . summary or",
+  "pt": "Perfil desconhecido - o jogo vai usar o padrão de hostil errante."
+ },
+ {
+  "en": "NPC audio disabled for voice review. Text dialogue remains enabled.",
+  "ctx": "voicePreviewStatus : setName (",
+  "pt": "Áudio dos NPCs desativado para revisão de voz. Os diálogos em texto continuam ativos."
+ },
+ {
+  "en": "No lines for this reaction.",
+  "ctx": "voicePreviewStatus : setName (",
+  "pt": "Nenhuma fala para esta reação."
+ },
+ {
+  "en": "AUDIO UNAVAILABLE ",
+  "ctx": "entry . sound and",
+  "pt": "ÁUDIO INDISPONÍVEL "
+ },
+ {
+  "en": "TEXT ",
+  "ctx": "sound and \"AUDIO UNAVAILABLE \" or",
+  "pt": "TEXTO "
+ },
+ {
+  "en": " / Custom",
+  "ctx": "window . currentFactionCustom and",
+  "pt": " / Personalizada"
+ },
+ {
+  "en": " / Built-in override",
+  "ctx": "currentFactionCustom and \" / Custom\" or",
+  "pt": " / Alteração do padrão"
+ },
+ {
+  "en": "World: ",
+  "ctx": "factionLoneWeight : setPlaceholderText (",
+  "pt": "Mundo: "
+ },
+ {
+  "en": "World: ",
+  "ctx": "factionPartyGroupWeight : setPlaceholderText (",
+  "pt": "Mundo: "
+ },
+ {
+  "en": "  /  NPC Preset",
+  "ctx": ". faction ) ..",
+  "pt": "  /  Predefinição de NPC"
+ },
+ {
+  "en": " / Custom",
+  "ctx": "window . currentProfileCustom and",
+  "pt": " / Personalizado"
+ },
+ {
+  "en": " / Built-in override",
+  "ctx": "currentProfileCustom and \" / Custom\" or",
+  "pt": " / Alteração do padrão"
+ },
+ {
+  "en": "Faction: ",
+  "ctx": "profileFaction : setName (",
+  "pt": "Facção: "
+ },
+ {
+  "en": "BEHAVIOR  /  ",
+  "ctx": "profileSummaryBehavior : setName (",
+  "pt": "COMPORTAMENTO  /  "
+ },
+ {
+  "en": "LOADOUT  /  ",
+  "ctx": "profileSummaryLoadout : setName (",
+  "pt": "EQUIPAMENTO  /  "
+ },
+ {
+  "en": "STATS  /  HP ",
+  "ctx": "profileSummaryStats : setName (",
+  "pt": "ATRIBUTOS  /  PV "
+ },
+ {
+  "en": "   STR ",
+  "ctx": "general ) ) ..",
+  "pt": "   FOR "
+ },
+ {
+  "en": "   AIM ",
+  "ctx": "\"strength\" ) ) ..",
+  "pt": "   MIR "
+ },
+ {
+  "en": " CLEARED",
+  "ctx": "( slot ) ..",
+  "pt": " LIMPO"
+ },
+ {
+  "en": "Clean shaven",
+  "ctx": "kind == \"beard\" and",
+  "pt": "Barbeado"
+ },
+ {
+  "en": "Bald / no hair",
+  "ctx": "\"beard\" and \"Clean shaven\" or",
+  "pt": "Careca / sem cabelo"
+ },
+ {
+  "en": "Not available for female body",
+  "ctx": "\"\" , label =",
+  "pt": "Indisponível para corpo feminino"
+ },
+ {
+  "en": "Not available",
+  "ctx": "window . profileFemaleValue and",
+  "pt": "Indisponível"
+ },
+ {
+  "en": "CUSTOM",
+  "ctx": ".. ( tint and",
+  "pt": "PERSONALIZADO"
+ },
+ {
+  "en": "NATIVE ITEM COLOR",
+  "ctx": "tint and \"CUSTOM\" or",
+  "pt": "COR ORIGINAL DO ITEM"
+ },
+ {
+  "en": "BEARD CREATOR",
+  "ctx": "kind == \"beard\" and",
+  "pt": "CRIADOR DE BARBA"
+ },
+ {
+  "en": "HAIR CREATOR",
+  "ctx": "\"beard\" and \"BEARD CREATOR\" or",
+  "pt": "CRIADOR DE CABELO"
+ },
+ {
+  "en": "Vanilla Build 42 styles plus loaded mod styles. Select a head to apply it.",
+  "ctx": "24 , 46 ,",
+  "pt": "Estilos originais da Build 42 mais os estilos de mods carregados. Selecione uma cabeça para aplicar."
+ },
+ {
+  "en": "Search style name...",
+  "ctx": "search : setPlaceholderText (",
+  "pt": "Buscar nome do estilo..."
+ },
+ {
+  "en": "COLOR PRESETS",
+  "ctx": "24 , 112 ,",
+  "pt": "CORES PREDEFINIDAS"
+ },
+ {
+  "en": "CUSTOM COLOR",
+  "ctx": "136 , customW ,",
+  "pt": "COR PERSONALIZADA"
+ },
+ {
+  "en": "ACTIVE: ",
+  "ctx": "112 or 170 ,",
+  "pt": "ATIVO: "
+ },
+ {
+  "en": "PAGE 1 / 1",
+  "ctx": "height - 59 ,",
+  "pt": "PÁGINA 1 / 1"
+ },
+ {
+  "en": "VANILLA NONE",
+  "ctx": "id == \"\" and",
+  "pt": "NENHUM (ORIGINAL)"
+ },
+ {
+  "en": "ACTIVE: ",
+  "ctx": "activeLabel : setName (",
+  "pt": "ATIVO: "
+ },
+ {
+  "en": "PAGE ",
+  "ctx": "label : setName (",
+  "pt": "PÁGINA "
+ },
+ {
+  "en": "FOLDER ACTIONS",
+  "ctx": "16 , existing and",
+  "pt": "AÇÕES DA PASTA"
+ },
+ {
+  "en": "CREATE FOLDER",
+  "ctx": "existing and \"FOLDER ACTIONS\" or",
+  "pt": "CRIAR PASTA"
+ },
+ {
+  "en": "Folder name",
+  "ctx": "18 , 52 ,",
+  "pt": "Nome da pasta"
+ },
+ {
+  "en": "Example: Raiders, Story factions, Test groups...",
+  "ctx": "entry : setPlaceholderText (",
+  "pt": "Exemplo: Saqueadores, Facções da história, Grupos de teste..."
+ },
+ {
+  "en": "DELETE FOLDER",
+  "ctx": "44 , 112 ,",
+  "pt": "EXCLUIR PASTA"
+ },
+ {
+  "en": "Delete folder '",
+  "ctx": "440 , 150 ,",
+  "pt": "Excluir a pasta '"
+ },
+ {
+  "en": "CANCEL",
+  "ctx": "44 , 94 ,",
+  "pt": "CANCELAR"
+ },
+ {
+  "en": "RENAME",
+  "ctx": "98 , existing and",
+  "pt": "RENOMEAR"
+ },
+ {
+  "en": "CREATE",
+  "ctx": "existing and \"RENAME\" or",
+  "pt": "CRIAR"
+ },
+ {
+  "en": "Move this folder up",
+  "ctx": "moveUpButton . tooltip =",
+  "pt": "Mover esta pasta para cima"
+ },
+ {
+  "en": "Move this folder down",
+  "ctx": "moveDownButton . tooltip =",
+  "pt": "Mover esta pasta para baixo"
+ },
+ {
+  "en": "Folder actions: rename, copy or delete",
+  "ctx": "renameButton . tooltip =",
+  "pt": "Ações da pasta: renomear, copiar ou excluir"
+ },
+ {
+  "en": "MOVING",
+  "ctx": "self : drawTextRight (",
+  "pt": "MOVENDO"
+ },
+ {
+  "en": "INFINITE",
+  "ctx": "== true then return",
+  "pt": "INFINITA"
+ },
+ {
+  "en": "no limit",
+  "ctx": "then return \"INFINITE\" ,",
+  "pt": "sem limite"
+ },
+ {
+  "en": "melee",
+  "ctx": "then return \"-\" ,",
+  "pt": "corpo a corpo"
+ },
+ {
+  "en": "0 MAGS",
+  "ctx": "<= 0 then return",
+  "pt": "0 CARREG."
+ },
+ {
+  "en": "dry",
+  "ctx": "then return \"0 MAGS\" ,",
+  "pt": "sem munição"
+ },
+ {
+  "en": " MAG",
+  "ctx": "magazines == 1 and",
+  "pt": " CARREG."
+ },
+ {
+  "en": " MAGS",
+  "ctx": "1 and \" MAG\" or",
+  "pt": " CARREG."
+ },
+ {
+  "en": " each",
+  "ctx": "( capacity ) ..",
+  "pt": " cada"
+ },
+ {
+  "en": "capacity by weapon",
+  "ctx": ".. \" each\" ) or",
+  "pt": "capacidade conforme a arma"
+ },
+ {
+  "en": "UNARMED",
+  "ctx": "\"none\" ) then return",
+  "pt": "DESARMADO"
+ },
+ {
+  "en": "NO AMMO",
+  "ctx": "~= true then return",
+  "pt": "SEM MUNIÇÃO"
+ },
+ {
+  "en": "ACTIVE",
+  "ctx": ", 0.45 end return",
+  "pt": "ATIVO"
+ },
+ {
+  "en": "ACTIVE",
+  "ctx": "( record ) ~=",
+  "pt": "ATIVO"
+ },
+ {
+  "en": "ISSUES  ",
+  "ctx": "issuesButton : setTitle (",
+  "pt": "PROBLEMAS  "
+ },
+ {
+  "en": "MEMBER PRESETS   ",
+  "ctx": "rosterHeader : setName (",
+  "pt": "MEMBROS PREDEFINIDOS   "
+ },
+ {
+  "en": "Primary",
+  "ctx": ") local kind =",
+  "pt": "Principal"
+ },
+ {
+  "en": "Melee",
+  "ctx": ". melee ) ,",
+  "pt": "Corpo a corpo"
+ },
+ {
+  "en": "NO NPC PRESET",
+  "ctx": "profileHeader : setName (",
+  "pt": "SEM PREDEFINIÇÃO DE NPC"
+ },
+ {
+  "en": "Select or create a member",
+  "ctx": "profileBreadcrumb : setName (",
+  "pt": "Selecione ou crie um membro"
+ },
+ {
+  "en": "Game day",
+  "ctx": "{ { label =",
+  "pt": "Dia de jogo"
+ },
+ {
+  "en": "Lone size",
+  "ctx": ", { label =",
+  "pt": "Tamanho solo"
+ },
+ {
+  "en": "Group size",
+  "ctx": ", { label =",
+  "pt": "Tamanho do grupo"
+ },
+ {
+  "en": "Support size",
+  "ctx": ", { label =",
+  "pt": "Tamanho do apoio"
+ },
+ {
+  "en": "Support calls",
+  "ctx": ", { label =",
+  "pt": "Chamadas de apoio"
+ },
+ {
+  "en": "Spawn weight",
+  "ctx": ", { label =",
+  "pt": "Peso de geração"
+ },
+ {
+  "en": "Lone weight",
+  "ctx": ", { label =",
+  "pt": "Peso solo"
+ },
+ {
+  "en": "Group weight",
+  "ctx": ", { label =",
+  "pt": "Peso de grupo"
+ },
+ {
+  "en": " to ",
+  "ctx": ". floor ) ..",
+  "pt": " a "
+ },
+ {
+  "en": "  /  CUSTOM",
+  "ctx": "faction . id ..",
+  "pt": "  /  PERSONALIZADA"
+ },
+ {
+  "en": "SAVED",
+  "ctx": "window . saveStateLabel ,",
+  "pt": "SALVO"
+ },
+ {
+  "en": "SAVED",
+  "ctx": "window . factionSaveStateLabel ,",
+  "pt": "SALVO"
+ },
+ {
+  "en": "Could not save faction. Your edits are still open.",
+  "ctx": "window . saveError =",
+  "pt": "Não foi possível salvar a facção. Suas edições continuam abertas."
+ },
+ {
+  "en": " (Copy)",
+  "ctx": ". name ) ..",
+  "pt": " (Cópia)"
+ },
+ {
+  "en": "FACTION DELETE FAILED - COULD NOT SAVE",
+  "ctx": "statusLabel : setName (",
+  "pt": "FALHA AO EXCLUIR FACÇÃO - NÃO FOI POSSÍVEL SALVAR"
+ },
+ {
+  "en": "FACTION AND ITS NPC PRESETS REMOVED",
+  "ctx": "statusLabel : setName (",
+  "pt": "FACÇÃO E SUAS PREDEFINIÇÕES DE NPC REMOVIDAS"
+ },
+ {
+  "en": "SELECT A FACTION TO EXPORT",
+  "ctx": "statusLabel : setName (",
+  "pt": "SELECIONE UMA FACÇÃO PARA EXPORTAR"
+ },
+ {
+  "en": "EXPORT FAILED: ",
+  "ctx": "statusLabel : setName (",
+  "pt": "FALHA AO EXPORTAR: "
+ },
+ {
+  "en": "CODE COPIED - ",
+  "ctx": "copied then status =",
+  "pt": "CÓDIGO COPIADO - "
+ },
+ {
+  "en": " NPCS - ",
+  "ctx": "# profiles ) ..",
+  "pt": " NPCS - "
+ },
+ {
+  "en": " KB - PASTE IT ON DISCORD",
+  "ctx": "1000 ) ) ..",
+  "pt": " KB - COLE NO DISCORD"
+ },
+ {
+  "en": "TOO LONG TO COPY - CODE SAVED TO ZOMBOID/LUA/ALIFE_FACTION_CODE.TXT",
+  "ctx": "saved then status =",
+  "pt": "LONGO DEMAIS PARA COPIAR - CÓDIGO SALVO EM ZOMBOID/LUA/ALIFE_FACTION_CODE.TXT"
+ },
+ {
+  "en": "EXPORT FAILED: CODE COULD NOT BE COPIED OR SAVED",
+  "ctx": "\"TOO LONG TO COPY - CODE SAVED TO ZOMBOID\" else status =",
+  "pt": "FALHA AO EXPORTAR: NÃO FOI POSSÍVEL COPIAR NEM SALVAR O CÓDIGO"
+ },
+ {
+  "en": "NO CODE COPIED  -  COPY A SHARE CODE FIRST",
+  "ctx": "statusLabel : setName (",
+  "pt": "NENHUM CÓDIGO COPIADO  -  COPIE UM CÓDIGO DE COMPARTILHAMENTO PRIMEIRO"
+ },
+ {
+  "en": "IMPORT FAILED: ",
+  "ctx": "statusLabel : setName (",
+  "pt": "FALHA AO IMPORTAR: "
+ },
+ {
+  "en": "IMPORT CANCELLED",
+  "ctx": "statusLabel : setName (",
+  "pt": "IMPORTAÇÃO CANCELADA"
+ },
+ {
+  "en": "MISSING ITEMS - ",
+  "ctx": "statusLabel : setName (",
+  "pt": "ITENS FALTANDO - "
+ },
+ {
+  "en": " - FULL LIST IN CONSOLE.TXT",
+  "ctx": ". count ) ..",
+  "pt": " - LISTA COMPLETA NO CONSOLE.TXT"
+ },
+ {
+  "en": "IMPORT FAILED: FACTION COULD NOT BE SAVED",
+  "ctx": "statusLabel : setName (",
+  "pt": "FALHA AO IMPORTAR: NÃO FOI POSSÍVEL SALVAR A FACÇÃO"
+ },
+ {
+  "en": "IMPORT PARTIAL: FACTION ADDED, NPCS FAILED",
+  "ctx": "statusLabel : setName (",
+  "pt": "IMPORTAÇÃO PARCIAL: FACÇÃO ADICIONADA, NPCS FALHARAM"
+ },
+ {
+  "en": "FACTION PACK IMPORTED - ",
+  "ctx": "statusLabel : setName (",
+  "pt": "PACOTE DE FACÇÃO IMPORTADO - "
+ },
+ {
+  "en": " NPCS",
+  "ctx": "# profiles ) ..",
+  "pt": " NPCS"
+ },
+ {
+  "en": " ITEMS MISSING",
+  "ctx": ". count ) ..",
+  "pt": " ITENS FALTANDO"
+ },
+ {
+  "en": " / Custom",
+  "ctx": "profile . id ..",
+  "pt": " / Personalizado"
+ },
+ {
+  "en": "Could not save NPC. Your edits are still open.",
+  "ctx": "window . saveError =",
+  "pt": "Não foi possível salvar o NPC. Suas edições continuam abertas."
+ },
+ {
+  "en": "Delete this NPC?",
+  "ctx": "150 , isProfile and",
+  "pt": "Excluir este NPC?"
+ },
+ {
+  "en": "Delete this faction and all its NPC presets?",
+  "ctx": "isProfile and \"Delete this NPC?\" or",
+  "pt": "Excluir esta facção e todas as suas predefinições de NPC?"
+ },
+ {
+  "en": "SYNCING CREATOR TO SERVER...",
+  "ctx": "statusLabel : setName (",
+  "pt": "SINCRONIZANDO O CRIADOR COM O SERVIDOR..."
+ },
+ {
+  "en": "SAVED LOCALLY -- APPLIES WHEN YOU START OR HOST A WORLD",
+  "ctx": "statusLabel : setName (",
+  "pt": "SALVO LOCALMENTE -- VALE QUANDO VOCÊ INICIAR OU HOSPEDAR UM MUNDO"
+ },
+ {
+  "en": "APPLIED ",
+  "ctx": "window . saveStateLabel ,",
+  "pt": "APLICADO: "
+ },
+ {
+  "en": " TO ALL MEMBERS",
+  "ctx": "( domain ) ..",
+  "pt": " A TODOS OS MEMBROS"
+ },
+ {
+  "en": " TO ALL MEMBERS",
+  "ctx": "( groupId ) ..",
+  "pt": " A TODOS OS MEMBROS"
+ },
+ {
+  "en": "Primary firearm",
+  "ctx": "window . primaryCombo ,",
+  "pt": "Arma de fogo principal"
+ },
+ {
+  "en": "Secondary firearm",
+  "ctx": "window . secondaryCombo ,",
+  "pt": "Arma de fogo secundária"
+ },
+ {
+  "en": "Melee weapon",
+  "ctx": "window . meleeCombo ,",
+  "pt": "Arma corpo a corpo"
+ },
+ {
+  "en": "Click to edit ",
+  "ctx": "addTooltip ( hit ,",
+  "pt": "Clique para editar "
+ },
+ {
+  "en": ". Right-click to clear.",
+  "ctx": "4 ] ) ..",
+  "pt": ". Clique direito para limpar."
+ },
+ {
+  "en": "Health (HP)",
+  "ctx": "stats = { {",
+  "pt": "Vida (PV)"
+ },
+ {
+  "en": "Strength",
+  "ctx": "\"healthHP\" } , {",
+  "pt": "Força"
+ },
+ {
+  "en": "Endurance",
+  "ctx": "\"strength\" } , {",
+  "pt": "Resistência"
+ },
+ {
+  "en": "Awareness",
+  "ctx": "\"endurance\" } , {",
+  "pt": "Percepção"
+ },
+ {
+  "en": "Aiming",
+  "ctx": "\"awareness\" } , {",
+  "pt": "Pontaria"
+ },
+ {
+  "en": "VITALITY & SKILLS",
+  "ctx": "8 , statsH ,",
+  "pt": "VITALIDADE E HABILIDADES"
+ },
+ {
+  "en": "None",
+  "ctx": "dropOptions = { {",
+  "pt": "Nenhuma"
+ },
+ {
+  "en": "Very Low",
+  "ctx": "0 } , {",
+  "pt": "Muito baixa"
+ },
+ {
+  "en": "Low",
+  "ctx": "5 } , {",
+  "pt": "Baixa"
+ },
+ {
+  "en": "Moderate",
+  "ctx": "20 } , {",
+  "pt": "Moderada"
+ },
+ {
+  "en": "High",
+  "ctx": "50 } , {",
+  "pt": "Alta"
+ },
+ {
+  "en": "Very High",
+  "ctx": "75 } , {",
+  "pt": "Muito alta"
+ },
+ {
+  "en": "Always",
+  "ctx": "90 } , {",
+  "pt": "Sempre"
+ },
+ {
+  "en": "DAMAGE",
+  "ctx": "8 , damageH ,",
+  "pt": "DANO"
+ },
+ {
+  "en": "Weapon damage dealt (%)",
+  "ctx": "ipairs ( { {",
+  "pt": "Dano causado pela arma (%)"
+ },
+ {
+  "en": "Incoming damage blocked (%)",
+  "ctx": "100 } , {",
+  "pt": "Dano recebido bloqueado (%)"
+ },
+ {
+  "en": "Multiplies the weapon's damage: 25% = one quarter, 100% = normal, 200% = double.",
+  "ctx": "window . damageOutput ,",
+  "pt": "Multiplica o dano da arma: 25% = um quarto, 100% = normal, 200% = o dobro."
+ },
+ {
+  "en": "Reduces incoming damage. At 25%, the NPC takes 75% of the hit. Maximum reduction: 90%.",
+  "ctx": "window . damageReduction ,",
+  "pt": "Reduz o dano recebido. Com 25%, o NPC sofre 75% do golpe. Redução máxima: 90%."
+ },
+ {
+  "en": "LOOT",
+  "ctx": "8 , lootH ,",
+  "pt": "SAQUE"
+ },
+ {
+  "en": "Weapon drop chance",
+  "ctx": "12 , 32 ,",
+  "pt": "Chance de largar a arma"
+ },
+ {
+  "en": "Armor drop chance",
+  "ctx": "loot , 2 ,",
+  "pt": "Chance de largar a armadura"
+ },
+ {
+  "en": "Weapon condition",
+  "ctx": "loot , 3 ,",
+  "pt": "Estado da arma"
+ },
+ {
+  "en": "Armor condition",
+  "ctx": "loot , 4 ,",
+  "pt": "Estado da armadura"
+ },
+ {
+  "en": "Loot after death, not the chance to spawn armed. Choose weapons in Loadout. Each NPC gets a stable chance within the range. Always (100%) keeps issued weapons; Off removes them. Does not create missing weapons or control magazine drops.",
+  "ctx": "window . dropWeaponChance ,",
+  "pt": "Saque após a morte, não a chance de surgir armado. Escolha as armas em Equipamento. Cada NPC recebe uma chance fixa dentro do intervalo. Sempre (100%) mantém as armas distribuídas; Desligado as remove. Não cria armas que faltam nem controla a queda de carregadores."
+ },
+ {
+  "en": "None 0% / Very Low 5% / Low 20% / Moderate 50% / High 75% / Very High 90% / Always 100%. Existing custom percentages are preserved.",
+  "ctx": "addTooltip ( combo ,",
+  "pt": "Nenhuma 0% / Muito baixa 5% / Baixa 20% / Moderada 50% / Alta 75% / Muito alta 90% / Sempre 100%. Porcentagens personalizadas existentes são mantidas."
+ },
+ {
+  "en": "COMBAT SUPPORT",
+  "ctx": "8 , 262 ,",
+  "pt": "APOIO DE COMBATE"
+ },
+ {
+  "en": "Calling permission",
+  "ctx": "12 , 34 ,",
+  "pt": "Permissão para chamar"
+ },
+ {
+  "en": "Use faction setting",
+  "ctx": "40 , { {",
+  "pt": "Usar configuração da facção"
+ },
+ {
+  "en": "Everyone / allow this NPC",
+  "ctx": "\"inherit\" } , {",
+  "pt": "Todos / permitir este NPC"
+ },
+ {
+  "en": "Radio operator",
+  "ctx": "\"any\" } , {",
+  "pt": "Operador de rádio"
+ },
+ {
+  "en": "Disabled",
+  "ctx": "\"radio\" } , {",
+  "pt": "Desativado"
+ },
+ {
+  "en": "Delivery",
+  "ctx": "12 , 95 ,",
+  "pt": "Chegada"
+ },
+ {
+  "en": "Use faction delivery",
+  "ctx": "40 , { {",
+  "pt": "Usar chegada da facção"
+ },
+ {
+  "en": "Ground vehicle",
+  "ctx": "\"inherit\" } , {",
+  "pt": "Veículo terrestre"
+ },
+ {
+  "en": "Helicopter",
+  "ctx": "\"ground\" } , {",
+  "pt": "Helicóptero"
+ },
+ {
+  "en": "Ground / helicopter",
+  "ctx": "\"heli\" } , {",
+  "pt": "Terrestre / helicóptero"
+ },
+ {
+  "en": "Helicopter role",
+  "ctx": "12 , 156 ,",
+  "pt": "Função do helicóptero"
+ },
+ {
+  "en": "Use faction role",
+  "ctx": "40 , { {",
+  "pt": "Usar função da facção"
+ },
+ {
+  "en": "No helicopter",
+  "ctx": "\"inherit\" } , {",
+  "pt": "Sem helicóptero"
+ },
+ {
+  "en": "Squad insertion",
+  "ctx": "\"none\" } , {",
+  "pt": "Inserção de esquadrão"
+ },
+ {
+  "en": "Spotlight",
+  "ctx": "\"support\" } , {",
+  "pt": "Holofote"
+ },
+ {
+  "en": "Use faction + assigned role preserves the faction policy. Yes gives this member radio-calling ability without replacing its combat specialist. Admin spawn overrides still take precedence.",
+  "ctx": "window . supportPolicy ,",
+  "pt": "Usar facção + função designada mantém a política da facção. Sim dá a este membro a capacidade de chamar pelo rádio sem substituir o especialista de combate dele. Alterações de geração do admin ainda têm prioridade."
+ },
+ {
+  "en": "Spotlight needs Helicopter or Ground / helicopter delivery. The combined setting brings a ground squad and the light; Helicopter alone brings only the light. With Squad insertion, the combined setting chooses either delivery per call.",
+  "ctx": "window . supportHeli ,",
+  "pt": "Holofote precisa de chegada por Helicóptero ou Terrestre / helicóptero. A opção combinada traz um esquadrão terrestre e a luz; Helicóptero sozinho traz só a luz. Com Inserção de esquadrão, a opção combinada escolhe um dos dois tipos de chegada a cada chamada."
+ },
+ {
+  "en": "Defaults: Faction settings > Support",
+  "ctx": "policy == \"inherit\" and",
+  "pt": "Padrões: Configurações da facção > Apoio"
+ },
+ {
+  "en": "This NPC cannot request backup.",
+  "ctx": "policy == \"disabled\" and",
+  "pt": "Este NPC não pode pedir reforços."
+ },
+ {
+  "en": "Squad size and backup faction use faction settings.",
+  "ctx": "\"disabled\" and \"This NPC cannot request backup.\" or",
+  "pt": "O tamanho do esquadrão e a facção de reforço usam as configurações da facção."
+ },
+ {
+  "en": "%02d:00 - %02d:00 (saved schedule)",
+  "ctx": "string . format (",
+  "pt": "%02d:00 - %02d:00 (horário salvo)"
+ },
+ {
+  "en": "to",
+  "ctx": "y + 2 ,",
+  "pt": "a"
+ },
+ {
+  "en": "SPAWN POLICY",
+  "ctx": "settings , 12 ,",
+  "pt": "REGRAS DE GERAÇÃO"
+ },
+ {
+  "en": "Enable natural spawning",
+  "ctx": "leftW - 28 ,",
+  "pt": "Ativar geração natural"
+ },
+ {
+  "en": "Player disposition",
+  "ctx": "14 , 83 ,",
+  "pt": "Atitude com o jogador"
+ },
+ {
+  "en": "Friendly and neutral factions can appear naturally. Scouts, ambushes and raids require a hostile faction.",
+  "ctx": "window . factionPlayerRelation ,",
+  "pt": "Facções amigáveis e neutras podem aparecer naturalmente. Batedores, emboscadas e invasões exigem uma facção hostil."
+ },
+ {
+  "en": "Spawn weight",
+  "ctx": "settings , 120 ,",
+  "pt": "Peso de geração"
+ },
+ {
+  "en": "WHEN",
+  "ctx": "settings , 169 ,",
+  "pt": "QUANDO"
+ },
+ {
+  "en": "Game day",
+  "ctx": "settings , 207 ,",
+  "pt": "Dia de jogo"
+ },
+ {
+  "en": "Active hours",
+  "ctx": "14 , 249 ,",
+  "pt": "Horário ativo"
+ },
+ {
+  "en": "All day (00:00 - 24:00)",
+  "ctx": "178 , { {",
+  "pt": "O dia todo (00:00 - 24:00)"
+ },
+ {
+  "en": "Dawn (05:00 - 08:00)",
+  "ctx": "\"0|24\" } , {",
+  "pt": "Madrugada (05:00 - 08:00)"
+ },
+ {
+  "en": "Morning (08:00 - 12:00)",
+  "ctx": "\"5|8\" } , {",
+  "pt": "Manhã (08:00 - 12:00)"
+ },
+ {
+  "en": "Midday (12:00 - 14:00)",
+  "ctx": "\"8|12\" } , {",
+  "pt": "Meio-dia (12:00 - 14:00)"
+ },
+ {
+  "en": "Afternoon (14:00 - 18:00)",
+  "ctx": "\"12|14\" } , {",
+  "pt": "Tarde (14:00 - 18:00)"
+ },
+ {
+  "en": "Evening (18:00 - 22:00)",
+  "ctx": "\"14|18\" } , {",
+  "pt": "Noitinha (18:00 - 22:00)"
+ },
+ {
+  "en": "Night (22:00 - 05:00)",
+  "ctx": "\"18|22\" } , {",
+  "pt": "Noite (22:00 - 05:00)"
+ },
+ {
+  "en": "Daytime (06:00 - 18:00)",
+  "ctx": "\"22|5\" } , {",
+  "pt": "Diurno (06:00 - 18:00)"
+ },
+ {
+  "en": "Nighttime (18:00 - 06:00)",
+  "ctx": "\"6|18\" } , {",
+  "pt": "Noturno (18:00 - 06:00)"
+ },
+ {
+  "en": "When new encounters may begin. Existing squads finish their tasks; they do not disappear at the end of this window.",
+  "ctx": "window . factionHours ,",
+  "pt": "Quando novos encontros podem começar. Esquadrões existentes terminam suas tarefas; eles não somem no fim desse período."
+ },
+ {
+  "en": "PARTY SIZE",
+  "ctx": "settings , 326 ,",
+  "pt": "TAMANHO DO GRUPO"
+ },
+ {
+  "en": "Lone survivors + groups",
+  "ctx": "28 , { {",
+  "pt": "Solitários + grupos"
+ },
+ {
+  "en": "Lone survivors only",
+  "ctx": "\"both\" } , {",
+  "pt": "Só solitários"
+ },
+ {
+  "en": "Groups only",
+  "ctx": "\"lone\" } , {",
+  "pt": "Só grupos"
+ },
+ {
+  "en": "Lone weight",
+  "ctx": "settings , 491 ,",
+  "pt": "Peso solo"
+ },
+ {
+  "en": "Group weight",
+  "ctx": "settings , 530 ,",
+  "pt": "Peso de grupo"
+ },
+ {
+  "en": "Relative weight. Blank uses sandbox defaults; zero disables this party type.",
+  "ctx": "addTooltip ( entry ,",
+  "pt": "Peso relativo. Em branco usa os padrões do sandbox; zero desativa este tipo de grupo."
+ },
+ {
+  "en": "Placement distance is managed by A-Life.",
+  "ctx": "14 , 573 ,",
+  "pt": "A distância de posicionamento é controlada pelo A-Life."
+ },
+ {
+  "en": "ALLOWED ENCOUNTERS",
+  "ctx": "encounters , 12 ,",
+  "pt": "ENCONTROS PERMITIDOS"
+ },
+ {
+  "en": "ROAMING",
+  "ctx": "presets = { {",
+  "pt": "ERRANTES"
+ },
+ {
+  "en": "RESIDENTS",
+  "ctx": "} } , {",
+  "pt": "MORADORES"
+ },
+ {
+  "en": "ALL",
+  "ctx": "} } , {",
+  "pt": "TODOS"
+ },
+ {
+  "en": "NONE",
+  "ctx": "true } , {",
+  "pt": "NENHUM"
+ },
+ {
+  "en": "any kind of outpost",
+  "ctx": "seats == 0 and",
+  "pt": "qualquer tipo de posto avançado"
+ },
+ {
+  "en": " of ",
+  "ctx": "( seats ) ..",
+  "pt": " de "
+ },
+ {
+  "en": " outpost kinds",
+  "ctx": ". outpostSeats ) ..",
+  "pt": " tipos de posto avançado"
+ },
+ {
+  "en": "None selected - no natural encounters",
+  "ctx": "count == 0 and",
+  "pt": "Nada selecionado - sem encontros naturais"
+ },
+ {
+  "en": " selected  /  ",
+  "ctx": "( count ) ..",
+  "pt": " selecionados  /  "
+ },
+ {
+  "en": "  /  events still follow sandbox triggers",
+  "ctx": "\" selected  /  \" .. kinds ..",
+  "pt": "  /  eventos ainda seguem os gatilhos do sandbox"
+ },
+ {
+  "en": "POLICY",
+  "ctx": "jumps = { {",
+  "pt": "REGRAS"
+ },
+ {
+  "en": "ENCOUNTERS",
+  "ctx": "0 } , {",
+  "pt": "ENCONTROS"
+ },
+ {
+  "en": "LOCATION",
+  "ctx": "8 } , {",
+  "pt": "LOCAL"
+ },
+ {
+  "en": "WHERE",
+  "ctx": "location , 12 ,",
+  "pt": "ONDE"
+ },
+ {
+  "en": "Anywhere",
+  "ctx": ") , { {",
+  "pt": "Qualquer lugar"
+ },
+ {
+  "en": "Selected towns",
+  "ctx": "\"anywhere\" } , {",
+  "pt": "Cidades selecionadas"
+ },
+ {
+  "en": "Wilderness only",
+  "ctx": "\"towns\" } , {",
+  "pt": "Só áreas selvagens"
+ },
+ {
+  "en": "Roads & highways",
+  "ctx": "\"wilderness\" } , {",
+  "pt": "Estradas e rodovias"
+ },
+ {
+  "en": "Specific building types",
+  "ctx": "\"highways\" } , {",
+  "pt": "Tipos específicos de prédio"
+ },
+ {
+  "en": "Include wilderness with selected towns",
+  "ctx": "width - 28 ,",
+  "pt": "Incluir áreas selvagens junto com as cidades selecionadas"
+ },
+ {
+  "en": "All towns",
+  "ctx": "width - 28 ,",
+  "pt": "Todas as cidades"
+ },
+ {
+  "en": "All registered towns, including towns added later. Untick to choose individual towns below.",
+  "ctx": "window . factionAllTowns ,",
+  "pt": "Todas as cidades registradas, incluindo as adicionadas depois. Desmarque para escolher cidades individuais abaixo."
+ },
+ {
+  "en": "Same faction",
+  "ctx": "combo : addOptionWithData (",
+  "pt": "Mesma facção"
+ },
+ {
+  "en": "SUPPORT DEFAULTS",
+  "ctx": "width , 408 ,",
+  "pt": "PADRÕES DE APOIO"
+ },
+ {
+  "en": "Who calls, how they arrive, and whether a night helicopter also searches the contact.",
+  "ctx": "408 , \"SUPPORT DEFAULTS\" ,",
+  "pt": "Quem chama, como chegam e se um helicóptero noturno também procura o contato."
+ },
+ {
+  "en": "Who can call backup?",
+  "ctx": "field ( 36 ,",
+  "pt": "Quem pode chamar reforços?"
+ },
+ {
+  "en": "Radio operator",
+  "ctx": "\"Who can call backup?\" , { {",
+  "pt": "Operador de rádio"
+ },
+ {
+  "en": "Everyone",
+  "ctx": "\"disabled\" } , {",
+  "pt": "Todos"
+ },
+ {
+  "en": "Radio operator: only the squad's radio operator can call. Everyone: any member may call. Disabled: no faction calls. The shared squad cooldown and call limit prevent repeated calls; NPC overrides still apply.",
+  "ctx": "window . factionSupportPolicy ,",
+  "pt": "Operador de rádio: só o operador de rádio do esquadrão pode chamar. Todos: qualquer membro pode chamar. Desativado: a facção não chama. A recarga e o limite de chamadas compartilhados do esquadrão evitam chamadas repetidas; alterações de NPC ainda se aplicam."
+ },
+ {
+  "en": "How does support arrive?",
+  "ctx": "field ( 106 ,",
+  "pt": "Como o apoio chega?"
+ },
+ {
+  "en": "Car pull-up (sound + squad)",
+  "ctx": "\"How does support arrive?\" , { {",
+  "pt": "Carro chegando (som + esquadrão)"
+ },
+ {
+  "en": "Helicopter role",
+  "ctx": "field ( 176 ,",
+  "pt": "Função do helicóptero"
+ },
+ {
+  "en": "None",
+  "ctx": "\"Helicopter role\" , { {",
+  "pt": "Nenhuma"
+ },
+ {
+  "en": "Support - rappel troops",
+  "ctx": "\"none\" } , {",
+  "pt": "Apoio - tropas de rapel"
+ },
+ {
+  "en": "Spotlight - night / outdoors",
+  "ctx": "\"support\" } , {",
+  "pt": "Holofote - noite / ao ar livre"
+ },
+ {
+  "en": "Helicopter + spotlight + troops",
+  "ctx": "\"spotlight\" } , {",
+  "pt": "Helicóptero + holofote + tropas"
+ },
+ {
+  "en": "Pull-up sound (no vehicle is spawned)",
+  "ctx": "field ( 246 ,",
+  "pt": "Som de chegada (nenhum veículo é gerado)"
+ },
+ {
+  "en": "Automatic",
+  "ctx": "\"Pull-up sound (no vehicle is spawned)\" , { {",
+  "pt": "Automático"
+ },
+ {
+  "en": "Pickup truck",
+  "ctx": "\"\" } , {",
+  "pt": "Picape"
+ },
+ {
+  "en": "Police car",
+  "ctx": "\"offroad\" } , {",
+  "pt": "Viatura de polícia"
+ },
+ {
+  "en": "NPCs per call (1-8)",
+  "ctx": "14 , 321 ,",
+  "pt": "NPCs por chamada (1-8)"
+ },
+ {
+  "en": "Calls per squad (0-10)",
+  "ctx": "half , 321 ,",
+  "pt": "Chamadas por esquadrão (0-10)"
+ },
+ {
+  "en": "Maximum lifetime calls for the calling squad; zero disables requests. The world's call cap, cooldown and active-NPC budget may reduce this number. Reinforcements cannot call more reinforcements.",
+  "ctx": "window . factionSupportCalls ,",
+  "pt": "Máximo de chamadas durante toda a vida do esquadrão; zero desativa os pedidos. O limite global de chamadas, a recarga e o limite de NPCs ativos podem reduzir esse número. Reforços não podem chamar mais reforços."
+ },
+ {
+  "en": "BACKUP FACTIONS",
+  "ctx": "width , 312 ,",
+  "pt": "FACÇÕES DE REFORÇO"
+ },
+ {
+  "en": "Call ",
+  "ctx": "14 , y ,",
+  "pt": "Chamada "
+ },
+ {
+  "en": "Same faction",
+  "ctx": "28 , { {",
+  "pt": "Mesma facção"
+ },
+ {
+  "en": "Uses this faction for this call, not a random pool. Another faction must be friendly or allied in at least one direction; otherwise backup uses the caller's own faction. Calls after the third use the same faction.",
+  "ctx": "[ index ] ,",
+  "pt": "Usa esta facção nesta chamada, em vez de um sorteio. Outra facção precisa ser amigável ou aliada em pelo menos um sentido; senão o reforço vem da própria facção de quem chamou. Chamadas depois da terceira usam a mesma facção."
+ },
+ {
+  "en": "Add backup choices: set factions Friendly / Allied in Relations.",
+  "ctx": "258 , fitText (",
+  "pt": "Para ter opções de reforço, marque facções como Amigável / Aliado em Relações."
+ },
+ {
+  "en": "Disabled by default; NPC overrides may allow calls.",
+  "ctx": "= not enabled and",
+  "pt": "Desativado por padrão; alterações de NPC podem permitir chamadas."
+ },
+ {
+  "en": "Car sound + distant squad; radio position updates for five seconds.",
+  "ctx": "delivery == \"ground\" and",
+  "pt": "Som de carro + esquadrão distante; a posição pelo rádio atualiza por cinco segundos."
+ },
+ {
+  "en": "No helicopter role: backup falls back to ground.",
+  "ctx": "heli == \"none\" and",
+  "pt": "Sem função de helicóptero: o reforço vem por terra."
+ },
+ {
+  "en": "Ground squad + night/outdoor searchlight.",
+  "ctx": "delivery == \"both\" and",
+  "pt": "Esquadrão terrestre + holofote noturno/ao ar livre."
+ },
+ {
+  "en": "Night/outdoor searchlight reports to the calling squad; no troops.",
+  "ctx": "\"both\" and \"Ground squad + night/outdoor searchlight\" or",
+  "pt": "O holofote noturno/ao ar livre informa o esquadrão que chamou; sem tropas."
+ },
+ {
+  "en": "Helicopter insertion plus a spotlight on the same identified outdoor target at night.",
+  "ctx": "heli == \"support_spotlight\" and",
+  "pt": "Inserção por helicóptero mais um holofote no mesmo alvo identificado ao ar livre, à noite."
+ },
+ {
+  "en": "Ground or helicopter squad, chosen per call.",
+  "ctx": "delivery == \"both\" and",
+  "pt": "Esquadrão terrestre ou de helicóptero, escolhido a cada chamada."
+ },
+ {
+  "en": "Helicopter squad insertion; world limits still apply.",
+  "ctx": "\"both\" and \"Ground or helicopter squad, chosen per c\" or",
+  "pt": "Inserção de esquadrão por helicóptero; os limites globais ainda se aplicam."
+ },
+ {
+  "en": "OUTFIT",
+  "ctx": "filters = { {",
+  "pt": "ROUPA"
+ },
+ {
+  "en": "ARMOR",
+  "ctx": "\"core\" } , {",
+  "pt": "ARMADURA"
+ },
+ {
+  "en": "LAYERS",
+  "ctx": "\"armor\" } , {",
+  "pt": "CAMADAS"
+ },
+ {
+  "en": "MAKEUP",
+  "ctx": "\"extras\" } , {",
+  "pt": "MAQUIAGEM"
+ },
+ {
+  "en": "FACTIONS",
+  "ctx": "{ { \"factions\" ,",
+  "pt": "FACÇÕES"
+ },
+ {
+  "en": "MEMBERS",
+  "ctx": ", { \"members\" ,",
+  "pt": "MEMBROS"
+ },
+ {
+  "en": "EDITOR + MODEL",
+  "ctx": ", { \"editor\" ,",
+  "pt": "EDITOR + MODELO"
+ },
+ {
+  "en": "FACTION LIST",
+  "ctx": "12 , 9 ,",
+  "pt": "LISTA DE FACÇÕES"
+ },
+ {
+  "en": "Search factions...",
+  "ctx": "factionSearch : setPlaceholderText (",
+  "pt": "Buscar facções..."
+ },
+ {
+  "en": "+ NEW",
+  "ctx": "34 , 94 ,",
+  "pt": "+ NOVA"
+ },
+ {
+  "en": "PAGE 1 / 1",
+  "ctx": "height - 135 ,",
+  "pt": "PÁGINA 1 / 1"
+ },
+ {
+  "en": "Create a new faction",
+  "ctx": "window . newFactionPlusButton ,",
+  "pt": "Criar uma nova facção"
+ },
+ {
+  "en": "NEW FOLDER",
+  "ctx": "/ 2 ) ,",
+  "pt": "NOVA PASTA"
+ },
+ {
+  "en": "+ NEW FACTION",
+  "ctx": "/ 2 ) ,",
+  "pt": "+ NOVA FACÇÃO"
+ },
+ {
+  "en": "OPEN SETTINGS",
+  "ctx": "66 , editFactionWidth ,",
+  "pt": "ABRIR CONFIGURAÇÕES"
+ },
+ {
+  "en": "COPY CODE",
+  "ctx": "66 , shareFactionWidth ,",
+  "pt": "COPIAR CÓDIGO"
+ },
+ {
+  "en": "LOAD CODE",
+  "ctx": "66 , shareFactionWidth ,",
+  "pt": "CARREGAR CÓDIGO"
+ },
+ {
+  "en": "Copies this faction and all its NPCs as one share code. Paste it on Discord. Also saved to Zomboid/Lua/alife_faction_code.txt as a backup.",
+  "ctx": "window . exportFactionButton ,",
+  "pt": "Copia esta facção e todos os seus NPCs como um único código de compartilhamento. Cole no Discord. Também é salvo em Zomboid/Lua/alife_faction_code.txt como backup."
+ },
+ {
+  "en": "Copy a share code, then click: it is added as a new faction. With no code copied, loads Zomboid/Lua/alife_faction_code.txt.",
+  "ctx": "window . importFactionButton ,",
+  "pt": "Copie um código de compartilhamento e clique: ele é adicionado como uma nova facção. Sem nenhum código copiado, carrega Zomboid/Lua/alife_faction_code.txt."
+ },
+ {
+  "en": "DUPLICATE FACTION",
+  "ctx": "34 , factionButtonW ,",
+  "pt": "DUPLICAR FACÇÃO"
+ },
+ {
+  "en": "DELETE",
+  "ctx": "34 , factionButtonW ,",
+  "pt": "EXCLUIR"
+ },
+ {
+  "en": "Select a faction",
+  "ctx": "self : drawText (",
+  "pt": "Selecione uma facção"
+ },
+ {
+  "en": "none",
+  "ctx": ", \", \" ) or",
+  "pt": "nenhum"
+ },
+ {
+  "en": "INHERITED MODULES",
+  "ctx": "self : drawText (",
+  "pt": "MÓDULOS HERDADOS"
+ },
+ {
+  "en": "DEFAULT PROGRAM",
+  "ctx": "self : drawText (",
+  "pt": "PROGRAMA PADRÃO"
+ },
+ {
+  "en": "NATURAL PARTIES",
+  "ctx": "self : drawText (",
+  "pt": "GRUPOS NATURAIS"
+ },
+ {
+  "en": "Groups: ",
+  "ctx": "== \"group\" and (",
+  "pt": "Grupos: "
+ },
+ {
+  "en": "MEMBER PRESETS   0",
+  "ctx": "12 , 9 ,",
+  "pt": "MEMBROS PREDEFINIDOS   0"
+ },
+ {
+  "en": "SELECT A FACTION",
+  "ctx": "240 , 9 ,",
+  "pt": "SELECIONE UMA FACÇÃO"
+ },
+ {
+  "en": "Search members...",
+  "ctx": "profileSearch : setPlaceholderText (",
+  "pt": "Buscar membros..."
+ },
+ {
+  "en": "+ NEW MEMBER",
+  "ctx": "Creator . textWidth (",
+  "pt": "+ NOVO MEMBRO"
+ },
+ {
+  "en": "+ NEW MEMBER",
+  "ctx": "83 , newMemberW ,",
+  "pt": "+ NOVO MEMBRO"
+ },
+ {
+  "en": "ALL",
+  "ctx": "{ { \"all\" ,",
+  "pt": "TODOS"
+ },
+ {
+  "en": "RANGED",
+  "ctx": ", { \"ranged\" ,",
+  "pt": "À DISTÂNCIA"
+ },
+ {
+  "en": "MELEE",
+  "ctx": ", { \"melee\" ,",
+  "pt": "CORPO A CORPO"
+ },
+ {
+  "en": "ISSUES",
+  "ctx": ", { \"issues\" ,",
+  "pt": "PROBLEMAS"
+ },
+ {
+  "en": "MEMBER",
+  "ctx": "width end head (",
+  "pt": "MEMBRO"
+ },
+ {
+  "en": "BEHAVIOR",
+  "ctx": "nameW ) head (",
+  "pt": "COMPORT."
+ },
+ {
+  "en": "WEAPON",
+  "ctx": "behaviorW ) head (",
+  "pt": "ARMA"
+ },
+ {
+  "en": "AMMO",
+  "ctx": "variantW ) head (",
+  "pt": "MUNIÇÃO"
+ },
+ {
+  "en": "WT",
+  "ctx": "ammoW ) head (",
+  "pt": "PESO"
+ },
+ {
+  "en": "STATUS",
+  "ctx": "weightW ) head (",
+  "pt": "SITUAÇÃO"
+ },
+ {
+  "en": "NO LOADOUT ISSUES",
+  "ctx": "rosterFilter == \"issues\" and",
+  "pt": "SEM PROBLEMAS DE EQUIPAMENTO"
+ },
+ {
+  "en": "NO MEMBERS MATCH THIS VIEW",
+  "ctx": "\"issues\" and \"NO LOADOUT ISSUES\" or",
+  "pt": "NENHUM MEMBRO CORRESPONDE A ESTE FILTRO"
+ },
+ {
+  "en": "PAGE 1 / 1",
+  "ctx": "height - 67 ,",
+  "pt": "PÁGINA 1 / 1"
+ },
+ {
+  "en": "DUPLICATE NPC",
+  "ctx": "34 , rosterButtonW ,",
+  "pt": "DUPLICAR NPC"
+ },
+ {
+  "en": "DELETE",
+  "ctx": "34 , rosterButtonW ,",
+  "pt": "EXCLUIR"
+ },
+ {
+  "en": "NO NPC PRESET",
+  "ctx": "12 , 8 ,",
+  "pt": "SEM PREDEFINIÇÃO DE NPC"
+ },
+ {
+  "en": "Faction / NPC Preset",
+  "ctx": "12 , 30 ,",
+  "pt": "Facção / Predefinição de NPC"
+ },
+ {
+  "en": "NO MEMBER SELECTED",
+  "ctx": "12 , 122 ,",
+  "pt": "NENHUM MEMBRO SELECIONADO"
+ },
+ {
+  "en": "Choose a preset from the roster, or create a new member for this faction.",
+  "ctx": "12 , 150 ,",
+  "pt": "Escolha uma predefinição da lista ou crie um novo membro para esta facção."
+ },
+ {
+  "en": "+ NEW MEMBER",
+  "ctx": "180 , 172 ,",
+  "pt": "+ NOVO MEMBRO"
+ },
+ {
+  "en": "Create a member in the currently selected faction.",
+  "ctx": "window . emptyNewMemberButton ,",
+  "pt": "Criar um membro na facção selecionada."
+ },
+ {
+  "en": "Previous member - saves pending edits first.",
+  "ctx": "window . previousMemberButton ,",
+  "pt": "Membro anterior - salva as edições pendentes antes."
+ },
+ {
+  "en": "Next member - keep faction settings open while previewing the roster.",
+  "ctx": "window . nextMemberButton ,",
+  "pt": "Próximo membro - mantém as configurações da facção abertas enquanto você percorre a lista."
+ },
+ {
+  "en": "DELETE",
+  "ctx": "Creator . textWidth (",
+  "pt": "EXCLUIR"
+ },
+ {
+  "en": "DUPLICATE NPC",
+  "ctx": "Creator . textWidth (",
+  "pt": "DUPLICAR NPC"
+ },
+ {
+  "en": "DUPLICATE NPC",
+  "ctx": "8 , duplicateW ,",
+  "pt": "DUPLICAR NPC"
+ },
+ {
+  "en": "DELETE",
+  "ctx": "8 , deleteW ,",
+  "pt": "EXCLUIR"
+ },
+ {
+  "en": "Faction: -",
+  "ctx": "12 , 0 ,",
+  "pt": "Facção: -"
+ },
+ {
+  "en": "WHO IS THIS NPC?",
+  "ctx": "identityW , whoH ,",
+  "pt": "QUEM É ESTE NPC?"
+ },
+ {
+  "en": "Readable identity first; internal IDs stay out of the way.",
+  "ctx": "whoH , \"WHO IS THIS NPC?\" ,",
+  "pt": "Identidade legível primeiro; IDs internos ficam fora do caminho."
+ },
+ {
+  "en": "TAG & SPAWN",
+  "ctx": "identityW , roleH ,",
+  "pt": "TAG E GERAÇÃO"
+ },
+ {
+  "en": "Tag describes the member's job. Spawn Weight In Group controls how often this preset is selected.",
+  "ctx": "roleH , \"TAG & SPAWN\" ,",
+  "pt": "A tag descreve a função do membro. Peso de geração no grupo controla com que frequência esta predefinição é escolhida."
+ },
+ {
+  "en": "DISCOVERY & ADMIN NOTES",
+  "ctx": "identityW , 150 ,",
+  "pt": "BUSCA E NOTAS DO ADMIN"
+ },
+ {
+  "en": "Tags improve filtering. Notes are private creator metadata.",
+  "ctx": "150 , \"DISCOVERY & ADMIN NOTES\" ,",
+  "pt": "Tags ajudam na filtragem. As notas são metadados privados do criador."
+ },
+ {
+  "en": "Display name",
+  "ctx": "12 , 53 ,",
+  "pt": "Nome exibido"
+ },
+ {
+  "en": "Gender",
+  "ctx": "12 , 87 ,",
+  "pt": "Gênero"
+ },
+ {
+  "en": "Tag",
+  "ctx": "45 , half ,",
+  "pt": "Tag"
+ },
+ {
+  "en": "Spawn Weight In Group",
+  "ctx": "45 , half ,",
+  "pt": "Peso de geração no grupo"
+ },
+ {
+  "en": "Gender",
+  "ctx": "12 , 89 ,",
+  "pt": "Gênero"
+ },
+ {
+  "en": "Tag",
+  "ctx": "identityW - 24 ,",
+  "pt": "Tag"
+ },
+ {
+  "en": "Spawn Weight In Group",
+  "ctx": "identityW - 24 ,",
+  "pt": "Peso de geração no grupo"
+ },
+ {
+  "en": "How often this preset is selected within its faction. Common is the normal rate; Rare and Very Rare keep specialists from taking over a squad.",
+  "ctx": "window . profileSpawnWeight ,",
+  "pt": "Com que frequência esta predefinição é escolhida dentro da facção. Comum é a taxa normal; Raro e Muito raro evitam que especialistas dominem um esquadrão."
+ },
+ {
+  "en": "Filter tags",
+  "ctx": "12 , 52 ,",
+  "pt": "Tags de filtro"
+ },
+ {
+  "en": "outdoor, rifle, medic, trader",
+  "ctx": "profileTags : setPlaceholderText (",
+  "pt": "ao ar livre, rifle, médico, comerciante"
+ },
+ {
+  "en": "Notes",
+  "ctx": "12 , 96 ,",
+  "pt": "Notas"
+ },
+ {
+  "en": "CHARACTER APPEARANCE",
+  "ctx": "12 , 0 ,",
+  "pt": "APARÊNCIA DO PERSONAGEM"
+ },
+ {
+  "en": "Skin tone",
+  "ctx": "12 , 31 ,",
+  "pt": "Tom de pele"
+ },
+ {
+  "en": "Hair",
+  "ctx": "12 , 70 ,",
+  "pt": "Cabelo"
+ },
+ {
+  "en": "Bald / no hair",
+  "ctx": "74 , 70 ,",
+  "pt": "Careca / sem cabelo"
+ },
+ {
+  "en": "CHOOSE HAIR",
+  "ctx": "63 , 114 ,",
+  "pt": "ESCOLHER CABELO"
+ },
+ {
+  "en": "Beard",
+  "ctx": "12 , 106 ,",
+  "pt": "Barba"
+ },
+ {
+  "en": "Clean shaven",
+  "ctx": "74 , 106 ,",
+  "pt": "Barbeado"
+ },
+ {
+  "en": "CHOOSE BEARD",
+  "ctx": "99 , 114 ,",
+  "pt": "ESCOLHER BARBA"
+ },
+ {
+  "en": "OUTFIT SETS",
+  "ctx": "12 , outfitsY ,",
+  "pt": "CONJUNTOS DE ROUPA"
+ },
+ {
+  "en": "Enable this set for spawning",
+  "ctx": "outfitEnabled : addOption (",
+  "pt": "Ativar este conjunto para geração"
+ },
+ {
+  "en": "Enable multiple options",
+  "ctx": ") , 245 ,",
+  "pt": "Permitir várias opções"
+ },
+ {
+  "en": "Keep up to four random spawn options per clothing slot. Off: the next click replaces the slot.",
+  "ctx": "window . multipleClothing ,",
+  "pt": "Manter até quatro opções aleatórias de geração por espaço de roupa. Desligado: o próximo clique substitui o espaço."
+ },
+ {
+  "en": "PREVIEW VARIATION",
+  "ctx": "32 - seasonW ,",
+  "pt": "PRÉVIA DE VARIAÇÃO"
+ },
+ {
+  "en": "Cycles only through outfit sets marked Enable this set for spawning. A random pool choice is shown each time.",
+  "ctx": "window . previewOutfitButton ,",
+  "pt": "Percorre só os conjuntos marcados com Ativar este conjunto para geração. A cada vez é mostrada uma escolha aleatória."
+ },
+ {
+  "en": "BODY SLOTS",
+  "ctx": "outfitsY + 142 ,",
+  "pt": "ESPAÇOS DO CORPO"
+ },
+ {
+  "en": "Open the icon catalog for ",
+  "ctx": "\" choices\" ) end ,",
+  "pt": "Abrir o catálogo de ícones de "
+ },
+ {
+  "en": ". Select up to four spawn choices.",
+  "ctx": "\"Open the icon catalog for \" .. clothingSlot ..",
+  "pt": ". Selecione até quatro opções de geração."
+ },
+ {
+  "en": "TOP COLOR: NATIVE ITEM COLOR",
+  "ctx": "12 , tintY ,",
+  "pt": "COR DA PARTE DE CIMA: COR ORIGINAL DO ITEM"
+ },
+ {
+  "en": "NATIVE",
+  "ctx": "24 , 76 ,",
+  "pt": "ORIGINAL"
+ },
+ {
+  "en": "Keep the authored color of the selected clothing item. It stays stable across preview refreshes.",
+  "ctx": "addTooltip ( nativeTint ,",
+  "pt": "Manter a cor original da peça de roupa selecionada. Ela não muda quando a prévia é atualizada."
+ },
+ {
+  "en": "Apply this exact color to the selected clothing slot.",
+  "ctx": "addTooltip ( swatch ,",
+  "pt": "Aplicar exatamente esta cor ao espaço de roupa selecionado."
+ },
+ {
+  "en": "CUSTOM COLOR",
+  "ctx": "- 12 ) ,",
+  "pt": "COR PERSONALIZADA"
+ },
+ {
+  "en": "Open the full color picker for the selected clothing slot.",
+  "ctx": ") end ) ,",
+  "pt": "Abrir o seletor de cores completo para o espaço de roupa selecionado."
+ },
+ {
+  "en": "FACES",
+  "ctx": "12 , 0 ,",
+  "pt": "ROSTOS"
+ },
+ {
+  "en": "MODDED FACE OVERLAYS",
+  "ctx": "8 , 158 ,",
+  "pt": "CAMADAS DE ROSTO DE MODS"
+ },
+ {
+  "en": "Optional compatibility layer",
+  "ctx": "158 , \"MODDED FACE OVERLAYS\" ,",
+  "pt": "Camada opcional de compatibilidade"
+ },
+ {
+  "en": "Compatible overlays appear here only when their source mod is enabled.",
+  "ctx": "12 , 52 ,",
+  "pt": "Camadas compatíveis só aparecem aqui quando o mod de origem está ativado."
+ },
+ {
+  "en": "FACE OVERLAY",
+  "ctx": "24 , 62 ,",
+  "pt": "CAMADA DE ROSTO"
+ },
+ {
+  "en": "Face overlays",
+  "ctx": "window . faceCombo ,",
+  "pt": "Camadas de rosto"
+ },
+ {
+  "en": "Choose a compatible modded face overlay. This does not replace the vanilla face model.",
+  "ctx": "\"Face overlays\" ) end ,",
+  "pt": "Escolha uma camada de rosto compatível vinda de mod. Isso não substitui o modelo de rosto original."
+ },
+ {
+  "en": "LOADOUT",
+  "ctx": "12 , 0 ,",
+  "pt": "EQUIPAMENTO"
+ },
+ {
+  "en": "Enable multiple options",
+  "ctx": "- 122 ) ,",
+  "pt": "Permitir várias opções"
+ },
+ {
+  "en": "Keep up to four random spawn options per weapon slot. Off: the next click replaces the slot.",
+  "ctx": "window . multipleWeapons ,",
+  "pt": "Manter até quatro opções aleatórias de geração por espaço de arma. Desligado: o próximo clique substitui o espaço."
+ },
+ {
+  "en": "PRIMARY",
+  "ctx": "weaponSpecs = { {",
+  "pt": "PRINCIPAL"
+ },
+ {
+  "en": "Main weapon carried in hand.",
+  "ctx": "window . primaryCombo ,",
+  "pt": "Arma principal levada na mão."
+ },
+ {
+  "en": "SIDEARM",
+  "ctx": "\"Main weapon carried in hand.\" } , {",
+  "pt": "SECUNDÁRIA"
+ },
+ {
+  "en": "Backup firearm available when the primary is unsuitable.",
+  "ctx": "window . secondaryCombo ,",
+  "pt": "Arma de fogo reserva, usada quando a principal não serve."
+ },
+ {
+  "en": "MELEE / BELT",
+  "ctx": "\"Backup firearm available when the primar\" } , {",
+  "pt": "CORPO A CORPO / CINTO"
+ },
+ {
+  "en": "Close-range fallback carried on the belt or back.",
+  "ctx": "window . meleeCombo ,",
+  "pt": "Alternativa de curto alcance levada no cinto ou nas costas."
+ },
+ {
+  "en": " Click to open the full vanilla and modded icon catalog. Right-click to clear this slot.",
+  "ctx": "end , help ..",
+  "pt": " Clique para abrir o catálogo completo de ícones do jogo e de mods. Clique direito para limpar este espaço."
+ },
+ {
+  "en": "AMMUNITION",
+  "ctx": "8 , ammoCardH ,",
+  "pt": "MUNIÇÃO"
+ },
+ {
+  "en": "Counts are complete magazines, tubes or cylinders - not loose rounds.",
+  "ctx": "ammoCardH , \"AMMUNITION\" ,",
+  "pt": "A contagem é de carregadores, tubos ou tambores completos - não de balas soltas."
+ },
+ {
+  "en": "Primary magazines",
+  "ctx": "12 , 54 ,",
+  "pt": "Carregadores da principal"
+ },
+ {
+  "en": "Sidearm magazines",
+  "ctx": "10 , 54 ,",
+  "pt": "Carregadores da secundária"
+ },
+ {
+  "en": "Infinite ammunition",
+  "ctx": "width - 24 ,",
+  "pt": "Munição infinita"
+ },
+ {
+  "en": "Sidearm magazines",
+  "ctx": "12 , 90 ,",
+  "pt": "Carregadores da secundária"
+ },
+ {
+  "en": "Unlimited combat reloads. Death loot still rolls once per authored magazine below.",
+  "ctx": "window . infiniteAmmo ,",
+  "pt": "Recargas ilimitadas em combate. O saque após a morte ainda é sorteado uma vez por carregador definido abaixo."
+ },
+ {
+  "en": "Drop magazines on death",
+  "ctx": "width - 24 ,",
+  "pt": "Largar carregadores ao morrer"
+ },
+ {
+  "en": "Magazine drop chance (%)",
+  "ctx": "ammoCardH - 42 ,",
+  "pt": "Chance de largar carregador (%)"
+ },
+ {
+  "en": "One independent roll per primary/sidearm magazine. Three magazines at 20% means three rolls, even with infinite ammo. Fixed magazines drop loose rounds.",
+  "ctx": "window . magazineDropChance ,",
+  "pt": "Um sorteio independente por carregador da principal/secundária. Três carregadores a 20% significam três sorteios, mesmo com munição infinita. Carregadores fixos largam balas soltas."
+ },
+ {
+  "en": "FIREARM ATTACHMENTS",
+  "ctx": "formW - 8 ,",
+  "pt": "ACESSÓRIOS DE ARMA DE FOGO"
+ },
+ {
+  "en": "Configure compatible scopes, sights, slings, recoil pads and other parts for the selected firearms.",
+  "ctx": "window . weaponAttachmentsButton ,",
+  "pt": "Configure lunetas, miras, bandoleiras, amortecedores de coice e outras peças compatíveis para as armas de fogo selecionadas."
+ },
+ {
+  "en": " each | ",
+  "ctx": "( primaryCapacity ) ..",
+  "pt": " cada | "
+ },
+ {
+  "en": " each | ",
+  "ctx": "( secondaryCapacity ) ..",
+  "pt": " cada | "
+ },
+ {
+  "en": "BEHAVIOR & VOICE",
+  "ctx": "12 , 0 ,",
+  "pt": "COMPORTAMENTO E VOZ"
+ },
+ {
+  "en": "Behavior profile",
+  "ctx": "12 , 35 ,",
+  "pt": "Perfil de comportamento"
+ },
+ {
+  "en": "Selects the complete baseline behavior package: priorities, engagement style and allowed abilities.",
+  "ctx": "window . profileBehaviorProfile ,",
+  "pt": "Escolhe o pacote completo de comportamento base: prioridades, estilo de combate e habilidades permitidas."
+ },
+ {
+  "en": "Primary doctrine",
+  "ctx": "12 , 69 ,",
+  "pt": "Doutrina principal"
+ },
+ {
+  "en": "Assigns one specialist doctrine. Use Modules for smaller per-NPC exceptions.",
+  "ctx": "window . profilePrimaryBehavior ,",
+  "pt": "Define uma doutrina de especialista. Use Módulos para exceções menores por NPC."
+ },
+ {
+  "en": "Combat ready",
+  "ctx": "12 , 103 ,",
+  "pt": "Pronto para combate"
+ },
+ {
+  "en": "Controls whether the NPC initially appears armed and prepared. Mixed follows the authored loadout pool.",
+  "ctx": "window . profileCombatReady ,",
+  "pt": "Controla se o NPC aparece já armado e preparado. Misto segue o conjunto de equipamento definido."
+ },
+ {
+  "en": "Select a behavior profile to see exactly what it does.",
+  "ctx": "12 , 137 ,",
+  "pt": "Selecione um perfil de comportamento para ver exatamente o que ele faz."
+ },
+ {
+  "en": "VOICE PROFILE",
+  "ctx": "12 , 176 ,",
+  "pt": "PERFIL DE VOZ"
+ },
+ {
+  "en": "Profile",
+  "ctx": "12 , 206 ,",
+  "pt": "Perfil"
+ },
+ {
+  "en": "Chooses the voice pack used for warnings, combat reactions and death sounds.",
+  "ctx": "window . profileVoice ,",
+  "pt": "Escolhe o pacote de voz usado em avisos, reações de combate e sons de morte."
+ },
+ {
+  "en": "Reaction",
+  "ctx": "12 , 240 ,",
+  "pt": "Reação"
+ },
+ {
+  "en": "Select the reaction category used by Play voice preview. It does not change combat behavior.",
+  "ctx": "window . profileVoiceEvent ,",
+  "pt": "Escolha a categoria de reação usada no teste de voz. Não muda o comportamento em combate."
+ },
+ {
+  "en": "PLAYTEST VOICE",
+  "ctx": "274 , 132 ,",
+  "pt": "TESTAR VOZ"
+ },
+ {
+  "en": "Select a voice and reaction to preview.",
+  "ctx": "12 , 311 ,",
+  "pt": "Selecione uma voz e uma reação para ouvir."
+ },
+ {
+  "en": "NPC ABILITIES",
+  "ctx": "12 , 0 ,",
+  "pt": "HABILIDADES DO NPC"
+ },
+ {
+  "en": "Hover a setting or its info icon for a plain-language explanation.",
+  "ctx": "154 , 3 ,",
+  "pt": "Passe o mouse sobre uma opção ou o ícone de informação para ver uma explicação simples."
+ },
+ {
+  "en": "INHERIT = USE FACTION SETTING | ON/OFF = THIS NPC ONLY",
+  "ctx": "12 , moduleBottom ,",
+  "pt": "HERDAR = USAR CONFIG. DA FACÇÃO | LIGADO/DESLIGADO = SÓ ESTE NPC"
+ },
+ {
+  "en": "RESET ALL TO INHERIT",
+  "ctx": "28 , 196 ,",
+  "pt": "VOLTAR TUDO PARA HERDAR"
+ },
+ {
+  "en": "APPLY ABILITIES TO FACTION",
+  "ctx": "28 , 216 ,",
+  "pt": "APLICAR HABILIDADES À FACÇÃO"
+ },
+ {
+  "en": "LIVE CHARACTER",
+  "ctx": "self : drawTextCentre (",
+  "pt": "PERSONAGEM AO VIVO"
+ },
+ {
+  "en": "ANIMATION",
+  "ctx": "self : drawTextCentre (",
+  "pt": "ANIMAÇÃO"
+ },
+ {
+  "en": "IN HAND",
+  "ctx": "slotLabel = held and",
+  "pt": "NA MÃO"
+ },
+ {
+  "en": "PRIMARY",
+  "ctx": "index == 1 and",
+  "pt": "PRINCIPAL"
+ },
+ {
+  "en": "SIDEARM",
+  "ctx": "index == 2 and",
+  "pt": "SECUNDÁRIA"
+ },
+ {
+  "en": "MELEE",
+  "ctx": "2 and \"SIDEARM\" or",
+  "pt": "CORPO A CORPO"
+ },
+ {
+  "en": "Empty",
+  "ctx": "entry . label or",
+  "pt": "Vazio"
+ },
+ {
+  "en": "Idle",
+  "ctx": "24 , { {",
+  "pt": "Parado"
+ },
+ {
+  "en": "Walking",
+  "ctx": "\"idle\" } , {",
+  "pt": "Andando"
+ },
+ {
+  "en": "Running",
+  "ctx": "\"walk\" } , {",
+  "pt": "Correndo"
+ },
+ {
+  "en": "Sprinting",
+  "ctx": "\"run\" } , {",
+  "pt": "Disparando"
+ },
+ {
+  "en": "Aiming",
+  "ctx": "\"sprint\" } , {",
+  "pt": "Mirando"
+ },
+ {
+  "en": "Crouching",
+  "ctx": "\"aim\" } , {",
+  "pt": "Agachado"
+ },
+ {
+  "en": "Hands up",
+  "ctx": "\"aim-sneak\" } , {",
+  "pt": "Mãos para cima"
+ },
+ {
+  "en": "MODEL",
+  "ctx": "44 , 84 ,",
+  "pt": "MODELO"
+ },
+ {
+  "en": "CLOSE",
+  "ctx": "8 , 76 ,",
+  "pt": "FECHAR"
+ },
+ {
+  "en": "Saved",
+  "ctx": "height - 33 ,",
+  "pt": "Salvo"
+ },
+ {
+  "en": "SAVE NOW",
+  "ctx": "38 , 104 ,",
+  "pt": "SALVAR AGORA"
+ },
+ {
+  "en": "Save current faction and NPC edits now. Shortcut: Ctrl + S.",
+  "ctx": "window . saveNowButton ,",
+  "pt": "Salvar agora as edições atuais da facção e do NPC. Atalho: Ctrl + S."
+ },
+ {
+  "en": "FACTION SETTINGS",
+  "ctx": "16 , 14 ,",
+  "pt": "CONFIGURAÇÕES DA FACÇÃO"
+ },
+ {
+  "en": "CHARACTER",
+  "ctx": "14 , 90 ,",
+  "pt": "PERSONAGEM"
+ },
+ {
+  "en": "Saved",
+  "ctx": "height - 34 ,",
+  "pt": "Salvo"
+ },
+ {
+  "en": "IDENTITY",
+  "ctx": "{ { \"overview\" ,",
+  "pt": "IDENTIDADE"
+ },
+ {
+  "en": "RELATIONS",
+  "ctx": ", { \"relations\" ,",
+  "pt": "RELAÇÕES"
+ },
+ {
+  "en": "SPAWNING",
+  "ctx": ", { \"spawning\" ,",
+  "pt": "GERAÇÃO"
+ },
+ {
+  "en": "BEHAVIOR DEFAULTS",
+  "ctx": ", { \"group_modules\" ,",
+  "pt": "COMPORTAMENTO PADRÃO"
+ },
+ {
+  "en": "SUPPORT",
+  "ctx": ", { \"support\" ,",
+  "pt": "APOIO"
+ },
+ {
+  "en": "FACTION IDENTITY",
+  "ctx": "10 , 14 ,",
+  "pt": "IDENTIDADE DA FACÇÃO"
+ },
+ {
+  "en": "Faction name",
+  "ctx": "10 , 50 ,",
+  "pt": "Nome da facção"
+ },
+ {
+  "en": "Category",
+  "ctx": "10 , 122 ,",
+  "pt": "Categoria"
+ },
+ {
+  "en": "Description",
+  "ctx": "10 , 194 ,",
+  "pt": "Descrição"
+ },
+ {
+  "en": "Unknown faction disposition",
+  "ctx": "10 , 273 ,",
+  "pt": "Atitude com facções desconhecidas"
+ },
+ {
+  "en": "SET UP SPAWNING",
+  "ctx": "351 , shortcutW ,",
+  "pt": "CONFIGURAR GERAÇÃO"
+ },
+ {
+  "en": "SET UP SUPPORT",
+  "ctx": "351 , shortcutW ,",
+  "pt": "CONFIGURAR APOIO"
+ },
+ {
+  "en": "RELATIONS TO OTHER FACTIONS",
+  "ctx": "10 , 12 ,",
+  "pt": "RELAÇÕES COM OUTRAS FACÇÕES"
+ },
+ {
+  "en": "PLAYER  -",
+  "ctx": "10 , 40 ,",
+  "pt": "JOGADOR  -"
+ },
+ {
+  "en": "REFRESH LIVE",
+  "ctx": "32 , 116 ,",
+  "pt": "ATUALIZAR AO VIVO"
+ },
+ {
+  "en": "Search faction name...",
+  "ctx": "relationSearch : setPlaceholderText (",
+  "pt": "Buscar nome da facção..."
+ },
+ {
+  "en": "BEHAVIOR DEFAULTS",
+  "ctx": "10 , 4 ,",
+  "pt": "COMPORTAMENTO PADRÃO"
+ },
+ {
+  "en": "NPC overrides win; world switches still apply.",
+  "ctx": "30 , fitText (",
+  "pt": "Alterações de NPC têm prioridade; as chaves globais ainda se aplicam."
+ },
+ {
+  "en": "USE EACH NPC'S PROFILE DEFAULTS",
+  "ctx": "- 30 ) ,",
+  "pt": "USAR OS PADRÕES DO PERFIL DE CADA NPC"
+ },
+ {
+  "en": "EXTERNAL MODULE OVERRIDES",
+  "ctx": "28 , 352 ,",
+  "pt": "ALTERAÇÕES DE MÓDULOS EXTERNOS"
+ },
+ {
+  "en": "Core AI stays active. Assign a loaded custom module ID only when a separate module provides one.",
+  "ctx": "28 , 376 ,",
+  "pt": "A IA principal continua ativa. Só defina o ID de um módulo personalizado carregado quando um módulo separado o fornecer."
+ },
+ {
+  "en": "No custom override",
+  "ctx": "entry : setPlaceholderText (",
+  "pt": "Sem alteração personalizada"
+ },
+ {
+  "en": "NOT ASSIGNED",
+  "ctx": "y + 25 ,",
+  "pt": "NÃO DEFINIDO"
+ },
+ {
+  "en": "CHANGES SAVE AUTOMATICALLY",
+  "ctx": "28 , 564 ,",
+  "pt": "AS ALTERAÇÕES SÃO SALVAS AUTOMATICAMENTE"
+ },
+ {
+  "en": "SYSTEMS & MODULES",
+  "ctx": "self : drawTextCentre (",
+  "pt": "SISTEMAS E MÓDULOS"
+ },
+ {
+  "en": "Built-in systems and optional integrations - not a live health report",
+  "ctx": "self : drawTextCentre (",
+  "pt": "Sistemas embutidos e integrações opcionais - não é um relatório de saúde ao vivo"
+ },
+ {
+  "en": "NPC BRAIN",
+  "ctx": "cards = { {",
+  "pt": "CÉREBRO DO NPC"
+ },
+ {
+  "en": "Decision tree / persistent task queue",
+  "ctx": "{ { \"NPC BRAIN\" ,",
+  "pt": "Árvore de decisão / fila de tarefas persistente"
+ },
+ {
+  "en": "PERCEPTION",
+  "ctx": "\"Decision tree / persistent task queue\" } , {",
+  "pt": "PERCEPÇÃO"
+ },
+ {
+  "en": "Targets, memory, hearing and threat scoring",
+  "ctx": ", { \"PERCEPTION\" ,",
+  "pt": "Alvos, memória, audição e avaliação de ameaças"
+ },
+ {
+  "en": "MOVEMENT",
+  "ctx": "\"Targets, memory, hearing and threat scor\" } , {",
+  "pt": "MOVIMENTO"
+ },
+ {
+  "en": "Pathing, vaulting, formation and recovery",
+  "ctx": ", { \"MOVEMENT\" ,",
+  "pt": "Rotas, pulos de obstáculos, formação e recuperação"
+ },
+ {
+  "en": "COMBAT",
+  "ctx": "\"Pathing, vaulting, formation and recover\" } , {",
+  "pt": "COMBATE"
+ },
+ {
+  "en": "Aiming, melee, suppression and retreat",
+  "ctx": ", { \"COMBAT\" ,",
+  "pt": "Mira, corpo a corpo, supressão e recuo"
+ },
+ {
+  "en": "SCAVENGING",
+  "ctx": "\"Aiming, melee, suppression and retreat\" } , {",
+  "pt": "COLETA"
+ },
+ {
+  "en": "World search, reservations and inventory",
+  "ctx": ", { \"SCAVENGING\" ,",
+  "pt": "Busca no mundo, reservas e inventário"
+ },
+ {
+  "en": "VOICE",
+  "ctx": "\"World search, reservations and inventory\" } , {",
+  "pt": "VOZ"
+ },
+ {
+  "en": "Speech, combat barks and death sounds",
+  "ctx": ", { \"VOICE\" ,",
+  "pt": "Fala, gritos de combate e sons de morte"
+ },
+ {
+  "en": "ENCOUNTER",
+  "ctx": "\"Speech, combat barks and death sounds\" } , {",
+  "pt": "ENCONTRO"
+ },
+ {
+  "en": "Group placement and encounter startup",
+  "ctx": ", { \"ENCOUNTER\" ,",
+  "pt": "Posicionamento de grupos e início de encontros"
+ },
+ {
+  "en": "FULL RAID",
+  "ctx": "\"Group placement and encounter startup\" } , {",
+  "pt": "INVASÃO TOTAL"
+ },
+ {
+  "en": "Raid waves, staging and persistence",
+  "ctx": ", { \"FULL RAID\" ,",
+  "pt": "Ondas da invasão, preparação e persistência"
+ },
+ {
+  "en": "BUILT-IN",
+  "ctx": "self : drawText (",
+  "pt": "EMBUTIDO"
+ },
+ {
+  "en": "OVERRIDE SET",
+  "ctx": "setName ( active and",
+  "pt": "ALTERAÇÃO DEFINIDA"
+ },
+ {
+  "en": "NOT ASSIGNED",
+  "ctx": "active and \"OVERRIDE SET\" or",
+  "pt": "NÃO DEFINIDO"
+ },
+ {
+  "en": "ENCOUNTER CATALOG",
+  "ctx": "margin , 12 ,",
+  "pt": "CATÁLOGO DE ENCONTROS"
+ },
+ {
+  "en": "Exact runtime rules: chance, squad size, location, time, placement, scene and AI profile.",
+  "ctx": "margin , 45 ,",
+  "pt": "Regras exatas em jogo: chance, tamanho do esquadrão, local, horário, posicionamento, cena e perfil de IA."
+ },
+ {
+  "en": " TEMPLATES | ",
+  "ctx": "# definitions ) ..",
+  "pt": " MODELOS | "
+ },
+ {
+  "en": " RANDOM WEIGHT",
+  "ctx": "( totalWeight ) ..",
+  "pt": " PESO ALEATÓRIO"
+ },
+ {
+  "en": "DISABLED",
+  "ctx": "0 then chanceLabel =",
+  "pt": "DESATIVADO"
+ },
+ {
+  "en": "FILTERED BY DEBUG OVERRIDE",
+  "ctx": "randomEligible then chanceLabel =",
+  "pt": "FILTRADO POR ALTERAÇÃO DE DEPURAÇÃO"
+ },
+ {
+  "en": "WEIGHT %d | %.1f%% OF RANDOM ROLLS",
+  "ctx": "string . format (",
+  "pt": "PESO %d | %.1f%% DOS SORTEIOS"
+ },
+ {
+  "en": "SQUAD",
+  "ctx": "self : drawText (",
+  "pt": "ESQUADRÃO"
+ },
+ {
+  "en": " NPCs | ",
+  "ctx": "or 1 ) ..",
+  "pt": " NPCs | "
+ },
+ {
+  "en": "WHEN",
+  "ctx": "self : drawText (",
+  "pt": "QUANDO"
+ },
+ {
+  "en": "ANY TIME",
+  "ctx": "item . timeOfDay ,",
+  "pt": "QUALQUER HORA"
+ },
+ {
+  "en": "WHERE",
+  "ctx": "self : drawText (",
+  "pt": "ONDE"
+ },
+ {
+  "en": "ANYWHERE",
+  "ctx": "item . locations ,",
+  "pt": "QUALQUER LUGAR"
+ },
+ {
+  "en": "PLACEMENT & AI",
+  "ctx": "self : drawText (",
+  "pt": "POSICIONAMENTO E IA"
+ },
+ {
+  "en": "RING",
+  "ctx": "item . placement or",
+  "pt": "ANEL"
+ },
+ {
+  "en": "DEFAULT",
+  "ctx": "item . profile or",
+  "pt": "PADRÃO"
+ },
+ {
+  "en": " | SCENE ",
+  "ctx": "detail = detail ..",
+  "pt": " | CENA "
+ },
+ {
+  "en": "STANCE ",
+  "ctx": "+ 1 ] =",
+  "pt": "POSTURA "
+ },
+ {
+  "en": "PERSISTENT",
+  "ctx": "+ 1 ] =",
+  "pt": "PERSISTENTE"
+ },
+ {
+  "en": "AWARENESS ",
+  "ctx": "+ 1 ] =",
+  "pt": "PERCEPÇÃO "
+ },
+ {
+  "en": "STANDARD LIFECYCLE",
+  "ctx": ", \" | \" ) or",
+  "pt": "CICLO DE VIDA PADRÃO"
+ },
+ {
+  "en": "PROJECT A-LIFE CREATOR",
+  "ctx": "self : drawTextCentre (",
+  "pt": "CRIADOR DO PROJECT A-LIFE"
+ },
+ {
+  "en": "no faction",
+  "ctx": ". name ) or",
+  "pt": "sem facção"
+ },
+ {
+  "en": "no NPC picked",
+  "ctx": ". name ) or",
+  "pt": "nenhum NPC escolhido"
+ },
+ {
+  "en": "DROP ON A FOLDER",
+  "ctx": ") local destination =",
+  "pt": "SOLTE NUMA PASTA"
+ },
+ {
+  "en": "MOVE TO UNFILED",
+  "ctx": "folderId then destination =",
+  "pt": "MOVER PARA SEM PASTA"
+ },
+ {
+  "en": "MOVE TO ",
+  "ctx": "folderId then destination =",
+  "pt": "MOVER PARA "
+ },
+ {
+  "en": "REORDER FOLDER",
+  "ctx": "drag . folderName and",
+  "pt": "REORDENAR PASTA"
+ },
+ {
+  "en": "NPC SETTINGS",
+  "ctx": "{ { \"workbench\" ,",
+  "pt": "CONFIGURAÇÕES DO NPC"
+ },
+ {
+  "en": "FACTION SETTINGS",
+  "ctx": ", { \"faction\" ,",
+  "pt": "CONFIGURAÇÕES DA FACÇÃO"
+ },
+ {
+  "en": "CATALOG LOADING",
+  "ctx": "height - 34 ,",
+  "pt": "CARREGANDO CATÁLOGO"
+ },
+ {
+  "en": "SYNC TO SERVER",
+  "ctx": "38 , 168 ,",
+  "pt": "SINCRONIZAR COM O SERVIDOR"
+ },
+ {
+  "en": "CLOSE",
+  "ctx": "38 , 100 ,",
+  "pt": "FECHAR"
+ },
+ {
+  "en": "UNSAVED  -  AUTOSAVING",
+  "ctx": "or ( dirty and",
+  "pt": "NÃO SALVO  -  SALVANDO AUTOMATICAMENTE"
+ },
+ {
+  "en": "SAVED",
+  "ctx": "dirty and \"UNSAVED  -  AUTOSAVING\" or",
+  "pt": "SALVO"
+ },
+ {
+  "en": "SERVER SYNC COMPLETE",
+  "ctx": "ok == true and",
+  "pt": "SINCRONIZAÇÃO COM O SERVIDOR CONCLUÍDA"
+ },
+ {
+  "en": "SERVER SYNC FAILED: ",
+  "ctx": "and \"SERVER SYNC COMPLETE\" or (",
+  "pt": "FALHA NA SINCRONIZAÇÃO: "
+ },
+ {
+  "en": "unknown",
+  "ctx": "args . reason or",
+  "pt": "desconhecido"
+ },
+ {
+  "en": "Project A-Life Creator",
+  "ctx": "context : addOption (",
+  "pt": "Criador do Project A-Life"
+ },
+ {
+  "en": "Factions & NPC settings",
+  "ctx": "drawText ( fitText (",
+  "pt": "Configurações de facções e NPCs"
+ },
+ {
+  "en": "DONE",
+  "ctx": "64 , 120 ,",
+  "pt": "CONCLUÍDO"
+ },
+ {
+  "en": "Neutral",
+  "ctx": "\"friendly\" } , {",
+  "pt": "Neutro"
+ },
+ {
+  "en": "No",
+  "ctx": "\"yes\" } , {",
+  "pt": "Não"
+ },
+ {
+  "en": "Any season",
+  "ctx": "outfitSeasonChoices = { {",
+  "pt": "Qualquer estação"
+ },
+ {
+  "en": "Spring only",
+  "ctx": "\"random\" } , {",
+  "pt": "Só na primavera"
+ },
+ {
+  "en": "Summer only",
+  "ctx": "\"spring\" } , {",
+  "pt": "Só no verão"
+ },
+ {
+  "en": "Autumn only",
+  "ctx": "\"summer\" } , {",
+  "pt": "Só no outono"
+ },
+ {
+  "en": "Winter only",
+  "ctx": "\"autumn\" } , {",
+  "pt": "Só no inverno"
+ },
+ {
+  "en": "Unarmed",
+  "ctx": "not item then return",
+  "pt": "Desarmado"
+ },
+ {
+  "en": "Empty",
+  "ctx": ") , 0 ,",
+  "pt": "Vazio"
+ },
+ {
+  "en": "Empty",
+  "ctx": "tile . poolCount =",
+  "pt": "Vazio"
+ },
+ {
+  "en": "VEST",
+  "ctx": "self . title ==",
+  "pt": "COLETE"
+ },
+ {
+  "en": "BACK",
+  "ctx": "self . title ==",
+  "pt": "COSTAS"
+ },
+ {
+  "en": "HAT",
+  "ctx": "self . title ==",
+  "pt": "CHAPÉU"
+ },
+ {
+  "en": "SIDEARM",
+  "ctx": "self . title ==",
+  "pt": "SECUNDÁRIA"
+ },
+ {
+  "en": "MELEE / BELT",
+  "ctx": "self . title ==",
+  "pt": "CORPO A CORPO / CINTO"
+ },
+ {
+  "en": "  OFF",
+  "ctx": "enabled and \"  ON\" or",
+  "pt": "  DESLIGADO"
+ },
+ {
+  "en": " COLOR: ",
+  "ctx": "( slot ) ..",
+  "pt": " - COR: "
+ },
+ {
+  "en": "COMPATIBLE",
+  "ctx": "item . compatible and",
+  "pt": "COMPATÍVEL"
+ },
+ {
+  "en": "COMPATIBLE",
+  "ctx": "filterY , filterW ,",
+  "pt": "COMPATÍVEL"
+ },
+ {
+  "en": " audio",
+  "ctx": "\" - \" .. clips ..",
+  "pt": " áudio"
+ },
+ {
+  "en": "AUDIO ",
+  "ctx": "status = played and",
+  "pt": "ÁUDIO "
+ },
+ {
+  "en": "COPY NPC FOLDER",
+  "ctx": "44 , 150 ,",
+  "pt": "COPIAR PASTA DE NPCS"
+ },
+ {
+  "en": "FOLDER COPY FAILED - COULD NOT SAVE",
+  "ctx": "statusLabel : setName (",
+  "pt": "FALHA AO COPIAR PASTA - NÃO FOI POSSÍVEL SALVAR"
+ },
+ {
+  "en": "FOLDER COPIED - FACTIONS: ",
+  "ctx": "statusLabel : setName (",
+  "pt": "PASTA COPIADA - FACÇÕES: "
+ },
+ {
+  "en": "Unfiled",
+  "ctx": "unfiledId , name =",
+  "pt": "Sem pasta"
+ },
+ {
+  "en": "  -  ACTIVE",
+  "ctx": ".. ( hidesCurrent and",
+  "pt": "  -  ATIVA"
+ },
+ {
+  "en": " preset",
+  "ctx": "count == 1 and",
+  "pt": " predefinição"
+ },
+ {
+  "en": " presets",
+  "ctx": "1 and \" preset\" or",
+  "pt": " predefinições"
+ },
+ {
+  "en": "New Faction",
+  "ctx": "general . name ==",
+  "pt": "Nova facção"
+ },
+ {
+  "en": "RESET FAILED - DEFAULT FACTIONS NOT LOADED",
+  "ctx": "statusLabel : setName (",
+  "pt": "FALHA AO REDEFINIR - FACÇÕES PADRÃO NÃO CARREGADAS"
+ },
+ {
+  "en": "FACTIONS RESET TO DEFAULT",
+  "ctx": "setName ( ok and",
+  "pt": "FACÇÕES REDEFINIDAS PARA O PADRÃO"
+ },
+ {
+  "en": "RESET FAILED - COULD NOT SAVE",
+  "ctx": "ok and \"FACTIONS RESET TO DEFAULT\" or",
+  "pt": "FALHA AO REDEFINIR - NÃO FOI POSSÍVEL SALVAR"
+ },
+ {
+  "en": "Are you sure?\nBuilt-in factions go back to default and deleted ones come back.\nFactions you made yourself stay.",
+  "ctx": "440 , 150 ,",
+  "pt": "Tem certeza?\nAs facções embutidas voltam ao padrão e as excluídas reaparecem.\nAs facções que você criou continuam."
+ },
+ {
+  "en": "Accuracy vs players (%)",
+  "ctx": "\"aiming\" } , {",
+  "pt": "Precisão contra jogadores (%)"
+ },
+ {
+  "en": "Accuracy vs zombies (%)",
+  "ctx": "\"aimPlayerPercent\" } , {",
+  "pt": "Precisão contra zumbis (%)"
+ },
+ {
+  "en": "ALL",
+  "ctx": "\"makeup\" } , {",
+  "pt": "TODOS"
+ },
+ {
+  "en": " weight",
+  "ctx": "Creator . spawnWeightChoices ,",
+  "pt": " peso"
+ },
+ {
+  "en": "Any season: this set can spawn all year. A season: it only spawns then, and in that season it replaces the any-season sets. The date is checked when the NPC is first created. Winter is Dec-Feb, spring Mar-May, summer Jun-Aug, autumn Sep-Nov.",
+  "ctx": "window . outfitSeasonCombo ,",
+  "pt": "Qualquer estação: este conjunto pode aparecer o ano todo. Uma estação: só aparece nela e, nessa estação, substitui os conjuntos de qualquer estação. A data é verificada quando o NPC é criado. No jogo (hemisfério norte), inverno é dez-fev, primavera mar-mai, verão jun-ago e outono set-nov."
+ },
+ {
+  "en": " COLOR: ",
+  "ctx": "( clothingSlot ) ..",
+  "pt": " - COR: "
+ },
+ {
+  "en": " choices",
+  "ctx": "] , clothingSlot ..",
+  "pt": " opções"
+ },
+ {
+  "en": " choices",
+  "ctx": "combo , title ..",
+  "pt": " opções"
+ },
+ {
+  "en": " total",
+  "ctx": "* primaryMags ) ..",
+  "pt": " no total"
+ },
+ {
+  "en": " total",
+  "ctx": "* secondaryMags ) ..",
+  "pt": " no total"
+ },
+ {
+  "en": "ROSTER",
+  "ctx": "14 , 98 ,",
+  "pt": "LISTA"
+ },
+ {
+  "en": "DIRECTOR: ",
+  "ctx": "trigger then chanceLabel =",
+  "pt": "DIRETOR: "
+ },
+ {
+  "en": "RESET FACTIONS TO DEFAULT",
+  "ctx": "52 , 240 ,",
+  "pt": "REDEFINIR FACÇÕES PARA O PADRÃO"
+ },
+ {
+  "en": "Built-in factions go back to default. Factions you made yourself stay.",
+  "ctx": "window . resetFactionsButton ,",
+  "pt": "As facções embutidas voltam ao padrão. As facções que você criou continuam."
+ },
+ {
+  "en": "Road blockade",
+  "ctx": "\"Hold elevated positions\" } , {",
+  "pt": "Bloqueio na estrada"
+ },
+ {
+  "en": "Decision module",
+  "ctx": "PROFILE_MODULES = { {",
+  "pt": "Módulo de decisão"
+ },
+ {
+  "en": "Full face",
+  "ctx": "{ { \"MakeUpFullFace\" ,",
+  "pt": "Rosto inteiro"
+ },
+ {
+  "en": "Eyes",
+  "ctx": ", { \"MakeUpEyes\" ,",
+  "pt": "Olhos"
+ },
+ {
+  "en": "Eyeshadow",
+  "ctx": ", { \"MakeUpEyesShadow\" ,",
+  "pt": "Sombra"
+ },
+ {
+  "en": "Lips",
+  "ctx": ", { \"MakeUpLips\" ,",
+  "pt": "Lábios"
+ },
+ {
+  "en": "' and everything in it?\n",
+  "ctx": "( name ) ..",
+  "pt": "' e tudo o que há nela?\n"
+ },
+ {
+  "en": " factions and all their NPCs will be deleted.",
+  "ctx": "( count ) ..",
+  "pt": " facções e todos os NPCs delas serão excluídos."
+ },
+ {
+  "en": "SHARE CODE",
+  "ctx": "44 , 150 ,",
+  "pt": "COMPARTILHAR CÓDIGO"
+ },
+ {
+  "en": "enter a value.",
+  "ctx": ". blankOk then return",
+  "pt": "digite um valor."
+ },
+ {
+  "en": "from ",
+  "ctx": ") ) or (",
+  "pt": "a partir de "
+ },
+ {
+  "en": "use ",
+  "ctx": "floor ) ) return",
+  "pt": "use "
+ },
+ {
+  "en": "whole numbers ",
+  "ctx": "rule . whole and",
+  "pt": "números inteiros "
+ },
+ {
+  "en": "maximum must be at least the minimum.",
+  "ctx": "1 ] then return",
+  "pt": "o máximo precisa ser pelo menos igual ao mínimo."
+ },
+ {
+  "en": "Folder",
+  "ctx": "folder . name or",
+  "pt": "Pasta"
+ },
+ {
+  "en": "SHARE FAILED - THE FOLDER HAS NO FACTIONS",
+  "ctx": "statusLabel : setName (",
+  "pt": "FALHA AO COMPARTILHAR - A PASTA NÃO TEM FACÇÕES"
+ },
+ {
+  "en": "FOLDER CODE COPIED - FACTIONS: ",
+  "ctx": "statusLabel : setName (",
+  "pt": "CÓDIGO DA PASTA COPIADO - FACÇÕES: "
+ },
+ {
+  "en": " - PASTE IT ON DISCORD",
+  "ctx": "( npcs ) ..",
+  "pt": " - COLE NO DISCORD"
+ },
+ {
+  "en": "TOO LONG TO COPY - FOLDER CODE SAVED TO ZOMBOID/LUA/ALIFE_FACTION_CODE.TXT",
+  "ctx": "statusLabel : setName (",
+  "pt": "LONGO DEMAIS PARA COPIAR - CÓDIGO DA PASTA SALVO EM ZOMBOID/LUA/ALIFE_FACTION_CODE.TXT"
+ },
+ {
+  "en": "SHARE FAILED: CODE COULD NOT BE COPIED OR SAVED",
+  "ctx": "statusLabel : setName (",
+  "pt": "FALHA AO COMPARTILHAR: NÃO FOI POSSÍVEL COPIAR NEM SALVAR O CÓDIGO"
+ },
+ {
+  "en": "Imported folder",
+  "ctx": ".. \" ([^\r\\n]*)\" ) or",
+  "pt": "Pasta importada"
+ },
+ {
+  "en": "FOLDER IMPORTED - FACTIONS: ",
+  "ctx": "statusLabel : setName (",
+  "pt": "PASTA IMPORTADA - FACÇÕES: "
+ },
+ {
+  "en": "FOLDER DELETED - FACTIONS DELETED: ",
+  "ctx": "statusLabel : setName (",
+  "pt": "PASTA EXCLUÍDA - FACÇÕES EXCLUÍDAS: "
+ },
+ {
+  "en": "FOLDER DELETE FAILED - COULD NOT SAVE (",
+  "ctx": "statusLabel : setName (",
+  "pt": "FALHA AO EXCLUIR PASTA - NÃO FOI POSSÍVEL SALVAR ("
+ },
+ {
+  "en": " FACTIONS DELETED)",
+  "ctx": "# ids ) ..",
+  "pt": " FACÇÕES EXCLUÍDAS)"
+ },
+ {
+  "en": "Base HP, 1-200; the world health multiplier applies on spawn. Default: ",
+  "ctx": "statEntries . healthHP ,",
+  "pt": "PV base, 1-200; o multiplicador de vida do mundo se aplica ao surgir. Padrão: "
+ },
+ {
+  "en": " HP. Other skills use 1-10 ratings.",
+  "ctx": "} ) ) ..",
+  "pt": " PV. As outras habilidades usam notas de 1 a 10."
+ },
+ {
+  "en": "Relative faction selection weight, 0 to ",
+  "ctx": "window . factionChance ,",
+  "pt": "Peso relativo na escolha da facção, de 0 a "
+ },
+ {
+  "en": ", not a percentage. Zero disables natural spawning. Sandbox settings control overall encounter frequency.",
+  "ctx": ". weightCeiling ) ..",
+  "pt": ", não é uma porcentagem. Zero desativa a geração natural. As opções de sandbox controlam a frequência geral de encontros."
+ },
+ {
+  "en": "Day 0",
+  "ctx": "factionDayStart : setPlaceholderText (",
+  "pt": "Dia 0"
+ },
+ {
+  "en": "No end",
+  "ctx": "factionDayEnd : setPlaceholderText (",
+  "pt": "Sem fim"
+ },
+ {
+  "en": "Inclusive first and last day; day 0 is the first. Leave either blank to keep that end open.",
+  "ctx": "window . factionDayEnd ,",
+  "pt": "Primeiro e último dia, inclusive; o dia 0 é o primeiro. Deixe qualquer um em branco para não ter limite naquela ponta."
+ },
+ {
+  "en": "Lone size (1-",
+  "ctx": "settings , 409 ,",
+  "pt": "Tamanho solo (1-"
+ },
+ {
+  "en": "Group size (",
+  "ctx": "settings , 450 ,",
+  "pt": "Tamanho do grupo ("
+ },
+ {
+  "en": "Camo pickup",
+  "ctx": "\"pickup\" } , {",
+  "pt": "Picape camuflada"
+ },
+ {
+  "en": "Step van",
+  "ctx": "\"truck\" } , {",
+  "pt": "Furgão de entregas"
+ },
+ {
+  "en": "Station wagon",
+  "ctx": "\"workvan\" } , {",
+  "pt": "Perua"
+ },
+ {
+  "en": "Off-roader",
+  "ctx": "\"wagon\" } , {",
+  "pt": "Utilitário 4x4"
+ },
+ {
+  "en": "CHOOSE",
+  "ctx": "7 , 114 ,",
+  "pt": "ESCOLHER"
+ },
+ {
+  "en": " makeup",
+  "ctx": "[ 2 ] ..",
+  "pt": " - maquiagem"
+ },
+ {
+  "en": "Makeup for the outfit set selected below. The swatch is the shade itself: the game ships every lipstick and eyeshadow colour as its own item, and the face paints as textures, so there is no tint to pick. A beard is a model and makeup is a skin texture: the game always draws the beard over it.",
+  "ctx": "[ slot ] ,",
+  "pt": "Maquiagem do conjunto de roupas selecionado abaixo. A amostra é o próprio tom: o jogo traz cada cor de batom e de sombra como um item separado, e as pinturas de rosto como texturas, então não há cor para escolher. A barba é um modelo e a maquiagem é uma textura de pele: o jogo sempre desenha a barba por cima."
+ },
+ {
+  "en": "Lone survivors: ",
+  "ctx": "== \"lone\" and (",
+  "pt": "Solitários: "
+ },
+ {
+  "en": "Lone ",
+  "ctx": ") ) or (",
+  "pt": "Solitários "
+ },
+ {
+  "en": " / Groups ",
+  "ctx": "\"Lone \" .. lone ..",
+  "pt": " / Grupos "
+ },
+ {
+  "en": "None",
+  "ctx": "74 , y ,",
+  "pt": "Nenhuma"
+ },
+ {
+  "en": "None",
+  "ctx": "0 then name =",
+  "pt": "Nenhuma"
+ },
+ {
+  "en": " FAILED",
+  "ctx": "( failed ) ..",
+  "pt": " FALHARAM"
+ },
+ {
+  "en": " OF ",
+  "ctx": "( removed ) ..",
+  "pt": " DE "
+ }
+]

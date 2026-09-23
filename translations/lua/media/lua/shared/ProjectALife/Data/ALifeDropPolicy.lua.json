@@ -1,0 +1,97 @@
+[
+ {
+  "en": "Broken (0/10)",
+  "ctx": "conditions = { {",
+  "pt": "Quebrado (0/10)"
+ },
+ {
+  "en": "Scrap, a shot or two (1/10)",
+  "ctx": "0 } , {",
+  "pt": "Sucata, um ou dois tiros (1/10)"
+ },
+ {
+  "en": "Very poor, a few shots (2/10)",
+  "ctx": "1 } , {",
+  "pt": "Muito ruim, poucos tiros (2/10)"
+ },
+ {
+  "en": "Poor (3/10)",
+  "ctx": "2 } , {",
+  "pt": "Ruim (3/10)"
+ },
+ {
+  "en": "Worn (4/10)",
+  "ctx": "3 } , {",
+  "pt": "Gasto (4/10)"
+ },
+ {
+  "en": "Used, half gone (5/10)",
+  "ctx": "4 } , {",
+  "pt": "Usado, meio gasto (5/10)"
+ },
+ {
+  "en": "Serviceable (6/10)",
+  "ctx": "5 } , {",
+  "pt": "Utilizável (6/10)"
+ },
+ {
+  "en": "Good (7/10)",
+  "ctx": "6 } , {",
+  "pt": "Bom (7/10)"
+ },
+ {
+  "en": "Very good (8/10)",
+  "ctx": "7 } , {",
+  "pt": "Muito bom (8/10)"
+ },
+ {
+  "en": "Near new (9/10)",
+  "ctx": "8 } , {",
+  "pt": "Quase novo (9/10)"
+ },
+ {
+  "en": "Issue fresh (10/10)",
+  "ctx": "9 } , {",
+  "pt": "Novo em folha (10/10)"
+ },
+ {
+  "en": "Off (0%)",
+  "ctx": "presets = { {",
+  "pt": "Desligado (0%)"
+ },
+ {
+  "en": "Very low (0-10%)",
+  "ctx": "0 } , {",
+  "pt": "Muito baixa (0-10%)"
+ },
+ {
+  "en": "Low (10-20%)",
+  "ctx": "10 } , {",
+  "pt": "Baixa (10-20%)"
+ },
+ {
+  "en": "Moderate (20-30%)",
+  "ctx": "20 } , {",
+  "pt": "Moderada (20-30%)"
+ },
+ {
+  "en": "High (30-50%)",
+  "ctx": "30 } , {",
+  "pt": "Alta (30-50%)"
+ },
+ {
+  "en": "Very high (50-70%)",
+  "ctx": "50 } , {",
+  "pt": "Muito alta (50-70%)"
+ },
+ {
+  "en": "Almost always (70-99%)",
+  "ctx": "70 } , {",
+  "pt": "Quase sempre (70-99%)"
+ },
+ {
+  "en": "Always (100%)",
+  "ctx": "99 } , {",
+  "pt": "Sempre (100%)"
+ }
+]

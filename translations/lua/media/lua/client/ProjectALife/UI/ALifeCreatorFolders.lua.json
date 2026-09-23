@@ -1,0 +1,42 @@
+[
+ {
+  "en": "New Folder",
+  "ctx": "== \"\" then return",
+  "pt": "Nova pasta"
+ },
+ {
+  "en": "New Folder",
+  "ctx": "blank ( id ,",
+  "pt": "Nova pasta"
+ },
+ {
+  "en": "ALife Law Enforcement",
+  "ctx": "\"alife_law\" , name =",
+  "pt": "ALife Forças da Lei"
+ },
+ {
+  "en": "ALife Government",
+  "ctx": "\"alife_government\" , name =",
+  "pt": "ALife Governo"
+ },
+ {
+  "en": "ALife Families",
+  "ctx": "\"alife_families\" , name =",
+  "pt": "ALife Famílias"
+ },
+ {
+  "en": "ALife Businesses",
+  "ctx": "\"alife_businesses\" , name =",
+  "pt": "ALife Comércios"
+ },
+ {
+  "en": "ALife Lone Survivors",
+  "ctx": "\"alife_lone\" , name =",
+  "pt": "ALife Sobreviventes Solitários"
+ },
+ {
+  "en": "ALife Outlaws",
+  "ctx": "\"alife_outlaws\" , name =",
+  "pt": "ALife Foras da Lei"
+ }
+]

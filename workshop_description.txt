@@ -1,0 +1,31 @@
+[h1]Project A-Life [ALIFE NPCS] - Tradução PT-BR[/h1]
+
+Tradução para português do Brasil do mod [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3803984183][b]Project A-Life [ALIFE NPCS][/b][/url], de Vice e equipe.
+
+[b]Requer o mod original:[/b] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3803984183]Project A-Life [ALIFE NPCS][/url]
+Este item não inclui o mod original. Ele só contém a interface e os textos traduzidos.
+
+[h2]O que está traduzido[/h2]
+[list]
+[*] Criador de facções e NPCs
+[*] Menus de contexto, conversa com NPCs, rádio dos postos avançados, mapa de esquadrões e console de encontros
+[*] Painel de geração do admin e janela de status
+[*] Descrições de comportamentos, módulos, encontros e papéis de NPC
+[*] Opções de sandbox (com o jogo em Português do Brasil) e nomes de itens
+[/list]
+
+[h2]Ainda não traduzido[/h2]
+[list]
+[*] Falas dos NPCs (diálogos, gritos de combate e o rádio do Condado de Knox)
+[*] O chat para conversar com NPCs continua entendendo só inglês
+[/list]
+
+[h2]Importante[/h2]
+Coloque este mod [b]depois[/b] do Project A-Life na ordem de carregamento. Quando o mod original for atualizado, esta tradução também precisa ser atualizada. Se algo quebrar logo depois de uma atualização do original, desative a tradução até sair a nova versão.
+
+Tradução feita com IA generativa (Claude Opus 5.5, da Anthropic). Se encontrar um termo estranho ou um texto que não cabe na tela, avise nos comentários.
+
+Os créditos do mod são todos do autor original. Discord do Project A-Life: [url=https://discord.gg/alife]discord.gg/alife[/url]
+
+Workshop ID do original: 3803984183
+Mod ID: ProjectALifeNPCs_PTBR

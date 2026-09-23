@@ -1,0 +1,302 @@
+[
+ {
+  "en": "Edit NPC...",
+  "ctx": "menu : addOption (",
+  "pt": "Editar NPC..."
+ },
+ {
+  "en": "Persistent",
+  "ctx": "checkedOption ( editMenu ,",
+  "pt": "Persistente"
+ },
+ {
+  "en": "Stationary",
+  "ctx": "checkedOption ( editMenu ,",
+  "pt": "Parado"
+ },
+ {
+  "en": "Leash radius...",
+  "ctx": "editMenu : addOption (",
+  "pt": "Raio de alcance..."
+ },
+ {
+  "en": "Off",
+  "ctx": "radius == 0 and",
+  "pt": "Desligado"
+ },
+ {
+  "en": " tiles",
+  "ctx": "( radius ) ..",
+  "pt": " quadrados"
+ },
+ {
+  "en": "Loading factions - reopen this menu",
+  "ctx": "menu : addOption (",
+  "pt": "Carregando facções - reabra este menu"
+ },
+ {
+  "en": "Automatic faction",
+  "ctx": "submenu : addOption (",
+  "pt": "Facção automática"
+ },
+ {
+  "en": "Loading faction choices - reopen menu",
+  "ctx": "submenu : addOption (",
+  "pt": "Carregando opções de facção - reabra o menu"
+ },
+ {
+  "en": "Runtime status",
+  "ctx": "menu : addOption (",
+  "pt": "Status de execução"
+ },
+ {
+  "en": "Open faction & NPC Creator",
+  "ctx": "menu : addOption (",
+  "pt": "Abrir Criador de facções e NPCs"
+ },
+ {
+  "en": "Open spawn panel",
+  "ctx": "menu : addOption (",
+  "pt": "Abrir painel de geração"
+ },
+ {
+  "en": "Spawn faction squad here...",
+  "ctx": "menu : addOption (",
+  "pt": "Gerar esquadrão de facção aqui..."
+ },
+ {
+  "en": "Spawn encounter here...",
+  "ctx": "menu : addOption (",
+  "pt": "Gerar encontro aqui..."
+ },
+ {
+  "en": "Delete nearest outpost",
+  "ctx": "menu : addOption (",
+  "pt": "Excluir posto avançado mais próximo"
+ },
+ {
+  "en": "Build staffed outpost here...",
+  "ctx": "menu : addOption (",
+  "pt": "Construir posto avançado com guarnição aqui..."
+ },
+ {
+  "en": "Configure full-scale raid...",
+  "ctx": "menu : addOption (",
+  "pt": "Configurar invasão em grande escala..."
+ },
+ {
+  "en": "Play a meta event here...",
+  "ctx": "menu : addOption (",
+  "pt": "Tocar um evento de ambiente aqui..."
+ },
+ {
+  "en": "Distant gunfire",
+  "ctx": "ipairs ( { {",
+  "pt": "Tiros distantes"
+ },
+ {
+  "en": "Helicopter",
+  "ctx": "\"gunfire\" } , {",
+  "pt": "Helicóptero"
+ },
+ {
+  "en": "Car crash",
+  "ctx": "\"heli\" } , {",
+  "pt": "Batida de carro"
+ },
+ {
+  "en": "Ambience (siren, scream, radio)",
+  "ctx": "\"crash\" } , {",
+  "pt": "Ambiente (sirene, grito, rádio)"
+ },
+ {
+  "en": "Session siren",
+  "ctx": "\"ambience\" } , {",
+  "pt": "Sirene da sessão"
+ },
+ {
+  "en": "Diagnostics...",
+  "ctx": "menu : addOption (",
+  "pt": "Diagnósticos..."
+ },
+ {
+  "en": "Toggle encounter arrows",
+  "ctx": "diagnostics : addOption (",
+  "pt": "Alternar setas de encontro"
+ },
+ {
+  "en": "Toggle A-Life squads on world map",
+  "ctx": "diagnostics : addOption (",
+  "pt": "Alternar esquadrões A-Life no mapa do mundo"
+ },
+ {
+  "en": "Dump module QA to console.txt",
+  "ctx": "diagnostics : addOption (",
+  "pt": "Despejar QA dos módulos em console.txt"
+ },
+ {
+  "en": "Silence world audio (stuck helicopter)",
+  "ctx": "diagnostics : addOption (",
+  "pt": "Silenciar áudio do mundo (helicóptero travado)"
+ },
+ {
+  "en": "Remove NPCs...",
+  "ctx": "menu : addOption (",
+  "pt": "Remover NPCs..."
+ },
+ {
+  "en": "Within ",
+  "ctx": "removeMenu : addOption (",
+  "pt": "Num raio de "
+ },
+ {
+  "en": " tiles of here",
+  "ctx": "( reach ) ..",
+  "pt": " quadrados daqui"
+ },
+ {
+  "en": "A-Life: removing actors within ",
+  "ctx": "subject : Say (",
+  "pt": "A-Life: removendo atores num raio de "
+ },
+ {
+  "en": " tiles",
+  "ctx": "( reach ) ..",
+  "pt": " quadrados"
+ },
+ {
+  "en": "Every A-Life NPC on the map",
+  "ctx": "removeMenu : addOption (",
+  "pt": "Todos os NPCs A-Life do mapa"
+ },
+ {
+  "en": "A-Life: removing every actor",
+  "ctx": "subject : Say (",
+  "pt": "A-Life: removendo todos os atores"
+ },
+ {
+  "en": "Every squad on the map",
+  "ctx": "removeMenu : addOption (",
+  "pt": "Todos os esquadrões do mapa"
+ },
+ {
+  "en": "A-Life: removing every squad",
+  "ctx": "subject : Say (",
+  "pt": "A-Life: removendo todos os esquadrões"
+ },
+ {
+  "en": "Reset creator overrides",
+  "ctx": "menu : addOption (",
+  "pt": "Redefinir alterações do Criador"
+ },
+ {
+  "en": "A-Life: custom profiles and factions cleared",
+  "ctx": "subject : Say (",
+  "pt": "A-Life: perfis e facções personalizados apagados"
+ },
+ {
+  "en": "Invulnerable",
+  "ctx": "checkedOption ( editMenu ,",
+  "pt": "Invulnerável"
+ },
+ {
+  "en": "A-Life: session siren",
+  "ctx": "player : Say (",
+  "pt": "A-Life: sirene da sessão"
+ },
+ {
+  "en": "A-Life: meta event ",
+  "ctx": "player : Say (",
+  "pt": "A-Life: evento de ambiente "
+ },
+ {
+  "en": "A-Life: world audio silenced (",
+  "ctx": "subject : Say (",
+  "pt": "A-Life: áudio do mundo silenciado ("
+ },
+ {
+  "en": "Dump NPC blackbox to console.txt",
+  "ctx": "diagnostics : addOption (",
+  "pt": "Despejar caixa-preta dos NPCs em console.txt"
+ },
+ {
+  "en": "Diagnostics",
+  "ctx": "{ { label =",
+  "pt": "Diagnósticos"
+ },
+ {
+  "en": "Shows A-Life's debug tooling on this menu -- the spawn ",
+  "ctx": "toggleDiagnostics , tip =",
+  "pt": "Mostra as ferramentas de depuração do A-Life neste menu -- o painel de geração, o catálogo de encontros, o construtor de postos avançados, o configurador de invasões, Remover NPCs e os despejos -- e deixa esta máquina enviar esses comandos. Desligado por padrão. Fica salvo na sua pasta Zomboid, não no save, então continua ligado entre mundos. Só modo solo e admins de servidor."
+ },
+ {
+  "en": "panel, the encounter catalogue, the outpost builder, the ",
+  "ctx": "tip = \"Shows A-Life's debug tooling on this men\" ..",
+  "pt": ""
+ },
+ {
+  "en": "raid configurator, Remove NPCs and the dumps -- and lets ",
+  "ctx": "\"Shows A-Life's debug tooling on this men\" .. \"panel, the encounter catalogue, the outp\" ..",
+  "pt": ""
+ },
+ {
+  "en": "this machine send those commands. Off by default. Saved ",
+  "ctx": "\"panel, the encounter catalogue, the outp\" .. \"raid configurator, Remove NPCs and the d\" ..",
+  "pt": ""
+ },
+ {
+  "en": "in your Zomboid folder, not in the save, so it stays on ",
+  "ctx": "\"raid configurator, Remove NPCs and the d\" .. \"this machine send those commands. Off by\" ..",
+  "pt": ""
+ },
+ {
+  "en": "across worlds. Singleplayer and server admins only.",
+  "ctx": "\"this machine send those commands. Off by\" .. \"in your Zomboid folder, not in the save,\" ..",
+  "pt": ""
+ },
+ {
+  "en": "Flight recorder (blackbox)",
+  "ctx": ", { label =",
+  "pt": "Gravador de voo (caixa-preta)"
+ },
+ {
+  "en": "Records what every NPC was doing so a freeze can be read ",
+  "ctx": "false , tip =",
+  "pt": "Registra o que cada NPC estava fazendo para que um travamento possa ser analisado depois, e é o que alimenta 'Despejar caixa-preta dos NPCs' e 'Despejar QA dos módulos'. Custa cerca de quatro chamadas protegidas por NPC a cada 100 ms, por isso fica desligado a menos que você esteja caçando um bug -- ligue, reproduza o problema e depois despeje. Exige Diagnósticos."
+ },
+ {
+  "en": "out afterwards, and is what fills 'Dump NPC blackbox' and ",
+  "ctx": "tip = \"Records what every NPC was doing so a fr\" ..",
+  "pt": ""
+ },
+ {
+  "en": "'Dump module QA'. Costs about four protected calls per NPC ",
+  "ctx": "\"Records what every NPC was doing so a fr\" .. \"out afterwards, and is what fills 'Dump \" ..",
+  "pt": ""
+ },
+ {
+  "en": "every 100 ms, so it is off unless you are chasing a bug -- ",
+  "ctx": "\"out afterwards, and is what fills 'Dump \" .. \"'Dump module QA'. Costs about four prote\" ..",
+  "pt": ""
+ },
+ {
+  "en": "switch it on, reproduce the fault, then dump. Needs ",
+  "ctx": "\"'Dump module QA'. Costs about four prote\" .. \"every 100 ms, so it is off unless you ar\" ..",
+  "pt": ""
+ },
+ {
+  "en": "Diagnostics.",
+  "ctx": "\"every 100 ms, so it is off unless you ar\" .. \"switch it on, reproduce the fault, then \" ..",
+  "pt": ""
+ },
+ {
+  "en": " on",
+  "ctx": ".. ( state and",
+  "pt": " ligado"
+ },
+ {
+  "en": " off",
+  "ctx": "state and \" on\" or",
+  "pt": " desligado"
+ }
+]

@@ -1,0 +1,137 @@
+[
+ {
+  "en": "A-LIFE  /  CONVERSATION",
+  "ctx": "self : setTitle (",
+  "pt": "A-LIFE  /  CONVERSA"
+ },
+ {
+  "en": "More topics",
+  "ctx": "self . rowHeight ,",
+  "pt": "Mais assuntos"
+ },
+ {
+  "en": "[Leave]  See you around.",
+  "ctx": "self . rowHeight ,",
+  "pt": "[Sair]  Até mais."
+ },
+ {
+  "en": "Survivor",
+  "ctx": "self . npcName or",
+  "pt": "Sobrevivente"
+ },
+ {
+  "en": "Waiting for a reply",
+  "ctx": "self . stance or",
+  "pt": "Aguardando resposta"
+ },
+ {
+  "en": "More  /  ",
+  "ctx": "more : setTitle (",
+  "pt": "Mais  /  "
+ },
+ {
+  "en": " of ",
+  "ctx": ". page ) ..",
+  "pt": " de "
+ },
+ {
+  "en": "Yeah... I'm doing alright.",
+  "ctx": "id == \"YES\" and",
+  "pt": "É... estou me virando."
+ },
+ {
+  "en": "No. Not really.",
+  "ctx": "\"YES\" and \"Yeah... I'm doing alright.\" or",
+  "pt": "Não. Na verdade, não."
+ },
+ {
+  "en": "Ask to travel with their group; this does not recruit or command them.",
+  "ctx": "choice . friendly and",
+  "pt": "Pedir para viajar com o grupo deles; isso não os recruta nem os coloca sob seu comando."
+ },
+ {
+  "en": "You",
+  "ctx": "color = speaker ==",
+  "pt": "Você"
+ },
+ {
+  "en": "You",
+  "ctx": "choice . text ,",
+  "pt": "Você"
+ },
+ {
+  "en": "The conversation system is not loaded. Restart after updating the mod.",
+  "ctx": "self : append (",
+  "pt": "O sistema de conversa não está carregado. Reinicie depois de atualizar o mod."
+ },
+ {
+  "en": "No reply yet. You can try again.",
+  "ctx": "self : append (",
+  "pt": "Sem resposta ainda. Você pode tentar de novo."
+ },
+ {
+  "en": "Get within six tiles, on the same floor.",
+  "ctx": "= { too_far =",
+  "pt": "Fique a até seis quadrados, no mesmo andar."
+ },
+ {
+  "en": "Get on the same side of the wall first.",
+  "ctx": "\"Get within six tiles, on the same floor.\" , blocked =",
+  "pt": "Primeiro fique do mesmo lado da parede."
+ },
+ {
+  "en": "They're hostile. This isn't a good time to chat.",
+  "ctx": "\"Get on the same side of the wall first.\" , hostile =",
+  "pt": "Está hostil. Não é uma boa hora para conversar."
+ },
+ {
+  "en": "They're fighting. Try again when it's safe.",
+  "ctx": "\"They're hostile. This isn't a good time \" , busy =",
+  "pt": "Estão lutando. Tente de novo quando for seguro."
+ },
+ {
+  "en": "They don't trust you enough to travel together.",
+  "ctx": "\"They're fighting. Try again when it's sa\" , not_friendly =",
+  "pt": "Não confiam em você o bastante para viajarem juntos."
+ },
+ {
+  "en": "They haven't asked you a yes-or-no question.",
+  "ctx": "\"They don't trust you enough to travel to\" , no_question =",
+  "pt": "Não te fizeram nenhuma pergunta de sim ou não."
+ },
+ {
+  "en": "Give them a second.",
+  "ctx": "\"They haven't asked you a yes-or-no quest\" , rate_limited =",
+  "pt": "Dê um segundo a eles."
+ },
+ {
+  "en": "They have nothing to add right now.",
+  "ctx": "\"Give them a second.\" , no_reply =",
+  "pt": "Não têm mais nada a dizer agora."
+ },
+ {
+  "en": "NPC conversations are disabled on this server.",
+  "ctx": "\"They have nothing to add right now.\" , disabled =",
+  "pt": "Conversas com NPCs estão desativadas neste servidor."
+ },
+ {
+  "en": "That person is no longer available.",
+  "ctx": "\"NPC conversations are disabled on this s\" , unavailable =",
+  "pt": "Essa pessoa não está mais disponível."
+ },
+ {
+  "en": "They aren't answering right now.",
+  "ctx": ". reason ] or",
+  "pt": "Não estão respondendo agora."
+ },
+ {
+  "en": "[A-LIFE] Talk to someone nearby",
+  "ctx": "context : addOption (",
+  "pt": "[A-LIFE] Falar com alguém por perto"
+ },
+ {
+  "en": "Survivor ",
+  "ctx": "( name or (",
+  "pt": "Sobrevivente "
+ }
+]

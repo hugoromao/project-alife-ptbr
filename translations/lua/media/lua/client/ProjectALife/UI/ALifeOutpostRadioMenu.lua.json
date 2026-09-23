@@ -1,0 +1,87 @@
+[
+ {
+  "en": "[A-LIFE] Outpost radio",
+  "ctx": "context : addOption (",
+  "pt": "[A-LIFE] Rádio do posto avançado"
+ },
+ {
+  "en": "Disable communications in this outpost",
+  "ctx": "menu : addOption (",
+  "pt": "Desativar as comunicações deste posto avançado"
+ },
+ {
+  "en": "Use the radio: call the outpost's faction",
+  "ctx": "menu : addOption (",
+  "pt": "Usar o rádio: chamar a facção do posto avançado"
+ },
+ {
+  "en": "I just cut off all communications for that outpost, go to hell.",
+  "ctx": ". cutLines = {",
+  "pt": "Acabei de cortar todas as comunicações daquele posto avançado. Vão pro inferno."
+ },
+ {
+  "en": "Come and get me.",
+  "ctx": "= { \"I just cut off all communications for th\" ,",
+  "pt": "Venham me pegar."
+ },
+ {
+  "en": "That was their radio. They won't forget who cut it.",
+  "ctx": "Menu . friendlyCutLine =",
+  "pt": "Era o rádio deles. Não vão esquecer quem cortou."
+ },
+ {
+  "en": "They're sending people. Hold on.",
+  "ctx": "] , help_called =",
+  "pt": "Estão mandando gente. Aguenta firme."
+ },
+ {
+  "en": "Static... then a voice asking where exactly you are.",
+  "ctx": "\"They're sending people. Hold on.\" , bait =",
+  "pt": "Estática... e depois uma voz perguntando onde exatamente você está."
+ },
+ {
+  "en": "Get closer to the radio.",
+  "ctx": "\"Static... then a voice asking where exac\" , too_far =",
+  "pt": "Chegue mais perto do rádio."
+ },
+ {
+  "en": "This radio is already dead.",
+  "ctx": "\"Get closer to the radio.\" , already_disabled =",
+  "pt": "Este rádio já está morto."
+ },
+ {
+  "en": "Dead air. Someone already killed this radio.",
+  "ctx": "\"This radio is already dead.\" , comms_down =",
+  "pt": "Silêncio total. Alguém já destruiu este rádio."
+ },
+ {
+  "en": "The channel is busy. Try again later.",
+  "ctx": "\"Dead air. Someone already killed this ra\" , radio_busy =",
+  "pt": "O canal está ocupado. Tente de novo mais tarde."
+ },
+ {
+  "en": "Nobody is listening on this frequency.",
+  "ctx": "\"The channel is busy. Try again later.\" , site_not_active =",
+  "pt": "Ninguém está ouvindo nesta frequência."
+ },
+ {
+  "en": "Nobody is listening on this frequency.",
+  "ctx": "\"Nobody is listening on this frequency.\" , no_site =",
+  "pt": "Ninguém está ouvindo nesta frequência."
+ },
+ {
+  "en": "Slow down.",
+  "ctx": "\"Nobody is listening on this frequency.\" , rate_limited =",
+  "pt": "Vá com calma."
+ },
+ {
+  "en": "Done.",
+  "ctx": "== true ) and",
+  "pt": "Feito."
+ },
+ {
+  "en": "Nothing happens (",
+  "ctx": "and \"Done.\" or (",
+  "pt": "Nada acontece ("
+ }
+]

@@ -1,0 +1,42 @@
+[
+ {
+  "en": "Follow orders",
+  "ctx": "\"orders\" , label =",
+  "pt": "Seguir ordens"
+ },
+ {
+  "en": "Investigate noises",
+  "ctx": "\"investigate\" , label =",
+  "pt": "Investigar ruídos"
+ },
+ {
+  "en": "Regroup",
+  "ctx": "\"regroup\" , label =",
+  "pt": "Reagrupar"
+ },
+ {
+  "en": "Group march",
+  "ctx": "\"groupMarch\" , label =",
+  "pt": "Marcha em grupo"
+ },
+ {
+  "en": "Obeys hold/move orders issued by an admin or the director.",
+  "ctx": "\"Follow orders\" , summary =",
+  "pt": "Obedece a ordens de parar/mover dadas por um admin ou pelo diretor."
+ },
+ {
+  "en": "Walks toward gunfire and other sounds it did not make.",
+  "ctx": "\"Investigate noises\" , summary =",
+  "pt": "Vai na direção de tiros e outros sons que não fez."
+ },
+ {
+  "en": "Closes back up with the rest of the group when it drifts apart.",
+  "ctx": "\"Regroup\" , summary =",
+  "pt": "Volta a se juntar ao resto do grupo quando se afasta."
+ },
+ {
+  "en": "Shares one travel heading with the rest of the group.",
+  "ctx": "\"Group march\" , summary =",
+  "pt": "Segue a mesma direção de viagem que o resto do grupo."
+ }
+]

@@ -1,0 +1,87 @@
+[
+ {
+  "en": "None",
+  "ctx": "\"normal\" , label =",
+  "pt": "Nenhum"
+ },
+ {
+  "en": "Surrender",
+  "ctx": "\"surrender\" , label =",
+  "pt": "Render-se"
+ },
+ {
+  "en": "Wave",
+  "ctx": "\"wave\" , label =",
+  "pt": "Acenar"
+ },
+ {
+  "en": "Follow me",
+  "ctx": "\"follow\" , label =",
+  "pt": "Siga-me"
+ },
+ {
+  "en": "Stop",
+  "ctx": "\"stop\" , label =",
+  "pt": "Pare"
+ },
+ {
+  "en": "Thumbs up",
+  "ctx": "\"thumbs_up\" , label =",
+  "pt": "Joinha"
+ },
+ {
+  "en": "Salute",
+  "ctx": "\"salute\" , label =",
+  "pt": "Continência"
+ },
+ {
+  "en": "Yes",
+  "ctx": "\"yes\" , label =",
+  "pt": "Sim"
+ },
+ {
+  "en": "Shrug",
+  "ctx": "\"shrug\" , label =",
+  "pt": "Dar de ombros"
+ },
+ {
+  "en": "Shout",
+  "ctx": "\"shout\" , label =",
+  "pt": "Gritar"
+ },
+ {
+  "en": "Come here",
+  "ctx": "\"come_here\" , label =",
+  "pt": "Venha aqui"
+ },
+ {
+  "en": "Taunt",
+  "ctx": "\"insult\" , label =",
+  "pt": "Provocar"
+ },
+ {
+  "en": "Thumbs down",
+  "ctx": "\"thumbs_down\" , label =",
+  "pt": "Polegar para baixo"
+ },
+ {
+  "en": "Hesitate",
+  "ctx": "\"undecided\" , label =",
+  "pt": "Hesitar"
+ },
+ {
+  "en": "Heavy breathing",
+  "ctx": "\"breathe\" , label =",
+  "pt": "Respiração ofegante"
+ },
+ {
+  "en": "Tired stretch",
+  "ctx": "\"tired\" , label =",
+  "pt": "Alongamento cansado"
+ },
+ {
+  "en": "Refuse",
+  "ctx": "\"no_thanks\" , label =",
+  "pt": "Recusar"
+ }
+]

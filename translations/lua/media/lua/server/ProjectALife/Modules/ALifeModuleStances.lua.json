@@ -1,0 +1,12 @@
+[
+ {
+  "en": "Encounter stance",
+  "ctx": "\"orders\" , label =",
+  "pt": "Postura no encontro"
+ },
+ {
+  "en": "Holds the post an encounter was spawned for: garrisons, roadblocks, routes, upper floors, a broken car.",
+  "ctx": "\"Encounter stance\" , summary =",
+  "pt": "Mantém o posto para o qual o encontro foi gerado: guarnições, bloqueios, rotas, andares de cima, um carro quebrado."
+ }
+]

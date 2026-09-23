@@ -1,0 +1,164 @@
+"""Build the PT-BR translation mod from the current upstream files.
+
+  1. For each translations/lua/<path>.json, take upstream <path>, replace the anchored
+     string literals with their Portuguese text (non-ASCII as \\ddd UTF-8 bytes).
+  2. Apply translations/patches.py (code-level display tweaks).
+  3. Copy translations/Translate/PTBR/*.json.
+  4. Write mod.info, images and the Workshop upload folder.
+
+Reports entries that no longer match upstream (stale) so an upstream update is easy to
+review. Exits non-zero when a patch anchor is missing.
+
+Usage: python3 build.py [--strict]
+"""
+import importlib.util
+import json
+import shutil
+import sys
+from pathlib import Path
+
+from anchors import literals_with_context
+from lualex import encode_string, tokenize
+from paths import ROOT, upstream_version_dir
+
+MOD_ID = 'ProjectALifeNPCs_PTBR'
+OUT = ROOT / 'build'
+MOD_DIR = OUT / 'Workshop' / MOD_ID / 'Contents' / 'mods' / MOD_ID
+VERSION_DIR = MOD_DIR / '42'
+
+MOD_INFO = """name=Project A-Life [ALIFE NPCS] - Tradução PT-BR
+id={mod_id}
+require=ProjectALifeNPCs
+loadModAfter=ProjectALifeNPCs
+modversion={version}
+versionMin=42.20.0
+poster=poster.png
+icon=icon.png
+description=Tradução para português do Brasil do Project A-Life [ALIFE NPCS] (interface, Criador, menus, rádio e opções de sandbox). Requer o mod original ProjectALifeNPCs. Não inclui o mod original. Feita para a versão {upstream_version} do original.
+"""
+
+
+def lua_literal(original_token_text, value):
+    quote = original_token_text[0] if original_token_text[0] in '"\'' else '"'
+    return quote + encode_string(value, quote) + quote
+
+
+def translate_file(src, entries):
+    """Return (new source, set of used entry keys)."""
+    table = {(e['en'], e['ctx']): e['pt'] for e in entries}
+    used = set()
+    edits = []
+    for tok, ctx in literals_with_context(src):
+        key = (tok.value, ctx)
+        if key in table:
+            used.add(key)
+            edits.append((tok.start, tok.end, lua_literal(tok.text, table[key])))
+    for start, end, text in reversed(edits):
+        src = src[:start] + text + src[end:]
+    return src, used
+
+
+def escape_non_ascii_strings(src):
+    """Re-encode any string literal holding raw non-ASCII (from patches) as \\ddd bytes."""
+    edits = []
+    for tok in tokenize(src):
+        if tok.kind == 'string' and any(ord(c) > 127 for c in tok.text):
+            edits.append((tok.start, tok.end, lua_literal(tok.text, tok.value)))
+    for start, end, text in reversed(edits):
+        src = src[:start] + text + src[end:]
+    return src
+
+
+def load_patches():
+    spec = importlib.util.spec_from_file_location('patches', ROOT / 'translations/patches.py')
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod.PATCHES
+
+
+def main():
+    strict = '--strict' in sys.argv
+    version = (ROOT / 'VERSION').read_text().strip() if (ROOT / 'VERSION').exists() else '1.0.0'
+    up_root = upstream_version_dir()
+    print('upstream:', up_root.name)
+    if OUT.exists():
+        shutil.rmtree(OUT)
+    VERSION_DIR.mkdir(parents=True)
+
+    outputs = {}
+    stale_total = 0
+    for jf in sorted((ROOT / 'translations/lua').rglob('*.json')):
+        rel = str(jf.relative_to(ROOT / 'translations/lua'))[:-len('.json')]
+        entries = json.loads(jf.read_text(encoding='utf-8'))
+        up_file = up_root / rel
+        if not up_file.exists():
+            print(f'STALE FILE {rel}: gone from upstream ({len(entries)} entries)')
+            stale_total += len(entries)
+            continue
+        src, used = translate_file(up_file.read_text(encoding='utf-8'), entries)
+        for e in entries:
+            if (e['en'], e['ctx']) not in used:
+                stale_total += 1
+                print(f'STALE {rel}: {e["en"]!r} [{e["ctx"]}]')
+        outputs[rel] = src
+
+    failed = False
+    for p in load_patches():
+        rel = p['file']
+        if rel not in outputs:
+            outputs[rel] = (up_root / rel).read_text(encoding='utf-8')
+        n = outputs[rel].count(p['find'])
+        if n == 0 or (p['count'] is not None and n != p['count']):
+            print(f'PATCH FAILED {rel}: expected {p["count"] or ">=1"} match(es), found {n}: {p["find"][:60]!r}')
+            failed = True
+            continue
+        outputs[rel] = outputs[rel].replace(p['find'], p['replace'])
+
+    for rel, src in outputs.items():
+        dest = VERSION_DIR / rel
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        dest.write_text(escape_non_ascii_strings(src), encoding='utf-8')
+
+    # Sandbox/ItemName JSON: report keys upstream added or reworded since translation.
+    for en_file in (up_root / 'media/lua/shared/Translate/EN').glob('*.json'):
+        en = json.loads(en_file.read_text(encoding='utf-8'))
+        pt_file = ROOT / 'translations/Translate/PTBR' / en_file.name
+        base_file = ROOT / 'translations/Translate/EN_base' / en_file.name
+        pt = json.loads(pt_file.read_text(encoding='utf-8')) if pt_file.exists() else {}
+        base = json.loads(base_file.read_text(encoding='utf-8')) if base_file.exists() else {}
+        for k, v in en.items():
+            if k not in pt:
+                stale_total += 1
+                print(f'MISSING {en_file.name}: {k} = {v[:80]!r}')
+            elif base and base.get(k) != v:
+                stale_total += 1
+                print(f'CHANGED {en_file.name}: {k} (English text changed upstream)')
+
+    tr_src = ROOT / 'translations/Translate/PTBR'
+    tr_dst = VERSION_DIR / 'media/lua/shared/Translate/PTBR'
+    tr_dst.mkdir(parents=True, exist_ok=True)
+    for f in tr_src.glob('*.json'):
+        shutil.copy2(f, tr_dst / f.name)
+
+    upstream_version = '?'
+    for line in (up_root / 'mod.info').read_text(encoding='utf-8', errors='replace').splitlines():
+        if line.startswith('modversion='):
+            upstream_version = line.split('=', 1)[1].strip()
+    (VERSION_DIR / 'mod.info').write_text(
+        MOD_INFO.format(mod_id=MOD_ID, version=version, upstream_version=upstream_version), encoding='utf-8')
+    art = ROOT / 'art'
+    for name in ('poster.png', 'icon.png'):
+        if (art / name).exists():
+            shutil.copy2(art / name, VERSION_DIR / name)
+    (MOD_DIR / 'common').mkdir(exist_ok=True)
+    (MOD_DIR / 'common' / '.keep').write_text('')
+    if (art / 'preview.png').exists():
+        shutil.copy2(art / 'preview.png', OUT / 'Workshop' / MOD_ID / 'preview.png')
+
+    print(f'{len(outputs)} Lua files, {stale_total} stale entries -> {MOD_DIR}')
+    if failed or (strict and stale_total):
+        sys.exit(1)
+
+
+if __name__ == '__main__':
+    main()

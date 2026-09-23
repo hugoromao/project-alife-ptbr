@@ -1,0 +1,122 @@
+[
+ {
+  "en": "Refresh",
+  "ctx": "100 , 24 ,",
+  "pt": "Atualizar"
+ },
+ {
+  "en": "Waiting for server status...",
+  "ctx": "then lines = {",
+  "pt": "Aguardando o status do servidor..."
+ },
+ {
+  "en": "Actors: ",
+  "ctx": "else lines = {",
+  "pt": "Atores: "
+ },
+ {
+  "en": "Active / spawning: ",
+  "ctx": "or 0 ) ,",
+  "pt": "Ativos / surgindo: "
+ },
+ {
+  "en": "Dormant / dead: ",
+  "ctx": "or 0 ) ,",
+  "pt": "Inativos / mortos: "
+ },
+ {
+  "en": "Physical shells: ",
+  "ctx": "or 0 ) ,",
+  "pt": "Corpos físicos: "
+ },
+ {
+  "en": "Running actions: ",
+  "ctx": "or 0 ) ,",
+  "pt": "Ações em andamento: "
+ },
+ {
+  "en": "Pending spawns: ",
+  "ctx": "or 0 ) ,",
+  "pt": "Gerações pendentes: "
+ },
+ {
+  "en": "Watchdog recoveries: ",
+  "ctx": "or 0 ) ,",
+  "pt": "Recuperações do watchdog: "
+ },
+ {
+  "en": "disabled",
+  "ctx": "== false ) and",
+  "pt": "desativado"
+ },
+ {
+  "en": "enabled",
+  "ctx": ") and \"disabled\" or",
+  "pt": "ativado"
+ },
+ {
+  "en": "Health: ",
+  "ctx": "or \"enabled\" ) ,",
+  "pt": "Saúde: "
+ },
+ {
+  "en": " error(s)",
+  "ctx": "or 0 ) ..",
+  "pt": " erro(s)"
+ },
+ {
+  "en": "Runtime faults / overruns: ",
+  "ctx": "\" error(s)\" ) ) ,",
+  "pt": "Falhas / estouros de execução: "
+ },
+ {
+  "en": "Protected areas: ",
+  "ctx": "or 0 ) ,",
+  "pt": "Áreas protegidas: "
+ },
+ {
+  "en": "Tick ms (last / max): ",
+  "ctx": "or 0 ) ,",
+  "pt": "Tick ms (último / máx.): "
+ },
+ {
+  "en": "Tick count / budget: ",
+  "ctx": "or 0 ) ,",
+  "pt": "Contagem de ticks / orçamento: "
+ },
+ {
+  "en": "Reputation (last known)",
+  "ctx": "self : drawText (",
+  "pt": "Reputação (última conhecida)"
+ },
+ {
+  "en": "No faction overrides",
+  "ctx": "self : drawText (",
+  "pt": "Sem substituições de facção"
+ },
+ {
+  "en": "Project A-Life Status",
+  "ctx": "window : setTitle (",
+  "pt": "Status do Project A-Life"
+ },
+ {
+  "en": "Offline squads on the map: ",
+  "ctx": "or 0 ) ,",
+  "pt": "Esquadrões offline no mapa: "
+ },
+ {
+  "en": "Offline founded / refused: ",
+  "ctx": "or 0 ) ,",
+  "pt": "Offline criados / recusados: "
+ },
+ {
+  "en": "Encounter rolls / spawned: ",
+  "ctx": "or \"\" ) ,",
+  "pt": "Encontros sorteados / gerados: "
+ },
+ {
+  "en": "Runtime: ",
+  "ctx": "or 0 ) ,",
+  "pt": "Execução: "
+ }
+]

@@ -1,0 +1,82 @@
+[
+ {
+  "en": "A-Life squads: ",
+  "ctx": ") local text =",
+  "pt": "Esquadrões A-Life: "
+ },
+ {
+  "en": "  |  positions as of ",
+  "ctx": "text = text ..",
+  "pt": "  |  posições às "
+ },
+ {
+  "en": " game time",
+  "ctx": "* 60 ) ..",
+  "pt": " (hora do jogo)"
+ },
+ {
+  "en": "  |  refreshes every ",
+  "ctx": "text = text ..",
+  "pt": "  |  atualiza a cada "
+ },
+ {
+  "en": " game minutes while the map is open  |  hover a dot, right-click for actions",
+  "ctx": "0.5 ) ) ..",
+  "pt": " minutos de jogo com o mapa aberto  |  passe o mouse sobre um ponto, clique direito para ações"
+ },
+ {
+  "en": "A-Life: squad map ON (open the world map, hover a dot)",
+  "ctx": "player : Say (",
+  "pt": "A-Life: mapa de esquadrões LIGADO (abra o mapa do mundo e passe o mouse sobre um ponto)"
+ },
+ {
+  "en": "A-Life: squad map off",
+  "ctx": "player : Say (",
+  "pt": "A-Life: mapa de esquadrões desligado"
+ },
+ {
+  "en": "squad deleted",
+  "ctx": "= { debugSquadDeleteResult =",
+  "pt": "esquadrão excluído"
+ },
+ {
+  "en": "squad sent out",
+  "ctx": "\"squad deleted\" , debugOutpostSquadNowResult =",
+  "pt": "esquadrão enviado"
+ },
+ {
+  "en": "next squad delayed",
+  "ctx": "\"squad sent out\" , debugOutpostDelayResult =",
+  "pt": "próximo esquadrão adiado"
+ },
+ {
+  "en": "squad cap changed",
+  "ctx": "\"next squad delayed\" , debugOutpostSquadCapResult =",
+  "pt": "limite de esquadrões alterado"
+ },
+ {
+  "en": " removed)",
+  "ctx": ". removed ) ..",
+  "pt": " removidos)"
+ },
+ {
+  "en": " (next in ",
+  "ctx": "nil then extra =",
+  "pt": " (próximo em "
+ },
+ {
+  "en": " (cap ",
+  "ctx": "nil then extra =",
+  "pt": " (limite "
+ },
+ {
+  "en": "A-Life: refused - ",
+  "ctx": "extra else text =",
+  "pt": "A-Life: recusado - "
+ },
+ {
+  "en": "unknown",
+  "ctx": "payload . reason or",
+  "pt": "desconhecido"
+ }
+]

@@ -1,0 +1,62 @@
+[
+ {
+  "en": "Roaming hostile (Scout)",
+  "ctx": "\"seek_destroy\" , label =",
+  "pt": "Hostil errante (Batedor)"
+ },
+ {
+  "en": "Area patrol",
+  "ctx": "\"patrol\" , label =",
+  "pt": "Patrulha de área"
+ },
+ {
+  "en": "Scavenger",
+  "ctx": "\"scavenger\" , label =",
+  "pt": "Catador"
+ },
+ {
+  "en": "Squad member",
+  "ctx": "\"squad\" , label =",
+  "pt": "Membro de esquadrão"
+ },
+ {
+  "en": "Manhunt",
+  "ctx": "\"manhunt\" , label =",
+  "pt": "Caçada humana"
+ },
+ {
+  "en": "Roams between contacts, then hunts the nearest hostile and keeps pressure on it.",
+  "ctx": "\"Roaming hostile (Scout)\" , summary =",
+  "pt": "Vaga entre contatos, depois caça o hostil mais próximo e mantém a pressão."
+ },
+ {
+  "en": "Holds a route around its anchor and warns players off.",
+  "ctx": "\"Area patrol\" , summary =",
+  "pt": "Mantém uma rota em volta do seu ponto e manda os jogadores se afastarem."
+ },
+ {
+  "en": "Works containers for supplies and investigates noises.",
+  "ctx": "\"Scavenger\" , summary =",
+  "pt": "Revista contêineres atrás de suprimentos e investiga ruídos."
+ },
+ {
+  "en": "Moves and fights as part of a group.",
+  "ctx": "\"Squad member\" , summary =",
+  "pt": "Anda e luta como parte de um grupo."
+ },
+ {
+  "en": "Tracks players specifically and re-engages relentlessly.",
+  "ctx": "\"Manhunt\" , summary =",
+  "pt": "Rastreia especificamente jogadores e volta ao ataque sem parar."
+ },
+ {
+  "en": "TEST -- every module",
+  "ctx": "\"test_all\" , label =",
+  "pt": "TESTE -- todos os módulos"
+ },
+ {
+  "en": "Permits every behaviour module at once. For testing only.",
+  "ctx": "\"TEST -- every module\" , summary =",
+  "pt": "Permite todos os módulos de comportamento ao mesmo tempo. Só para testes."
+ }
+]

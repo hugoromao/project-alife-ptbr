@@ -1,0 +1,12 @@
+[
+ {
+  "en": "Scavenge",
+  "ctx": "\"scavenge\" , label =",
+  "pt": "Coleta"
+ },
+ {
+  "en": "Works a nearby building end to end, falling back to loose containers.",
+  "ctx": "\"Scavenge\" , summary =",
+  "pt": "Vasculha um prédio próximo de ponta a ponta e, se não der, contêineres soltos."
+ }
+]

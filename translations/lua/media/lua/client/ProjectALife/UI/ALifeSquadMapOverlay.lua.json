@@ -1,0 +1,152 @@
+[
+ {
+  "en": "Send a squad out now",
+  "ctx": "= { label =",
+  "pt": "Enviar um esquadrão agora"
+ },
+ {
+  "en": "Delay next squad by 1 hour",
+  "ctx": "= { label =",
+  "pt": "Adiar próximo esquadrão em 1 hora"
+ },
+ {
+  "en": "Delay next squad by 24 hours",
+  "ctx": "= { label =",
+  "pt": "Adiar próximo esquadrão em 24 horas"
+ },
+ {
+  "en": "Delay next squad by 7 days",
+  "ctx": "= { label =",
+  "pt": "Adiar próximo esquadrão em 7 dias"
+ },
+ {
+  "en": "Delay next squad by 30 days",
+  "ctx": "= { label =",
+  "pt": "Adiar próximo esquadrão em 30 dias"
+ },
+ {
+  "en": "Max squads +1",
+  "ctx": "= { label =",
+  "pt": "Máx. de esquadrões +1"
+ },
+ {
+  "en": "Max squads -1",
+  "ctx": "= { label =",
+  "pt": "Máx. de esquadrões -1"
+ },
+ {
+  "en": "Delete this squad (",
+  "ctx": "= { label =",
+  "pt": "Excluir este esquadrão ("
+ },
+ {
+  "en": " person)",
+  "ctx": "members == 1 and",
+  "pt": " pessoa)"
+ },
+ {
+  "en": " people)",
+  "ctx": "1 and \" person)\" or",
+  "pt": " pessoas)"
+ },
+ {
+  "en": "under a minute",
+  "ctx": "< 1 then return",
+  "pt": "menos de um minuto"
+ },
+ {
+  "en": "squad",
+  "ctx": "0 local kind =",
+  "pt": "esquadrão"
+ },
+ {
+  "en": "outpost",
+  "ctx": "true then kind =",
+  "pt": "posto avançado"
+ },
+ {
+  "en": "offline squad",
+  "ctx": "true then kind =",
+  "pt": "esquadrão offline"
+ },
+ {
+  "en": "squad",
+  "ctx": "squad . label or",
+  "pt": "esquadrão"
+ },
+ {
+  "en": " person",
+  "ctx": "members == 1 and",
+  "pt": " pessoa"
+ },
+ {
+  "en": " people",
+  "ctx": "1 and \" person\" or",
+  "pt": " pessoas"
+ },
+ {
+  "en": "From: ",
+  "ctx": "+ 1 ] =",
+  "pt": "Origem: "
+ },
+ {
+  "en": "Task: ",
+  "ctx": "+ 1 ] =",
+  "pt": "Tarefa: "
+ },
+ {
+  "en": "Now: ",
+  "ctx": "+ 1 ] =",
+  "pt": "Agora: "
+ },
+ {
+  "en": "Going to: ",
+  "ctx": "+ 1 ] =",
+  "pt": "Indo para: "
+ },
+ {
+  "en": "Arrives in ",
+  "ctx": "+ 1 ] =",
+  "pt": "Chega em "
+ },
+ {
+  "en": " (game time)",
+  "ctx": "( eta ) ..",
+  "pt": " (hora do jogo)"
+ },
+ {
+  "en": "Next squad in ",
+  "ctx": "+ 1 ] =",
+  "pt": "Próximo esquadrão em "
+ },
+ {
+  "en": " (game time)",
+  "ctx": "( nextIn ) ..",
+  "pt": " (hora do jogo)"
+ },
+ {
+  "en": "Squads out: ",
+  "ctx": "+ 1 ] =",
+  "pt": "Esquadrões na rua: "
+ },
+ {
+  "en": " of ",
+  "ctx": "or 0 ) ..",
+  "pt": " de "
+ },
+ {
+  "en": "Saved with the world",
+  "ctx": "persistent == true and",
+  "pt": "Salvo com o mundo"
+ },
+ {
+  "en": "This session only",
+  "ctx": "true and \"Saved with the world\" or",
+  "pt": "Só nesta sessão"
+ },
+ {
+  "en": "Right-click for actions",
+  "ctx": "+ 1 ] =",
+  "pt": "Clique direito para ações"
+ }
+]

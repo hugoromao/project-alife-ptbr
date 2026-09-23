@@ -1,0 +1,22 @@
+[
+ {
+  "en": "Door-stack",
+  "ctx": "60 , label =",
+  "pt": "Formação na porta"
+ },
+ {
+  "en": "CQB sweep",
+  "ctx": "92 , label =",
+  "pt": "Varredura em ambiente fechado"
+ },
+ {
+  "en": "A fireteam stacks on a door, holds fire on the wall, opens it, checks the doorway, and flows in to fanned corners.",
+  "ctx": "\"Door-stack\" , summary =",
+  "pt": "Uma equipe se enfileira numa porta, segura o fogo junto à parede, abre, confere a entrada e entra se abrindo para os cantos."
+ },
+ {
+  "en": "Indoors with nothing in sight the squad clears the floor room by room: doorway, the far side of the room, a look round, and never two men in one room.",
+  "ctx": "\"CQB sweep\" , summary =",
+  "pt": "Dentro de casa e sem nada à vista, o esquadrão limpa o andar cômodo por cômodo: a porta, o fundo do cômodo, uma olhada em volta, e nunca dois homens no mesmo cômodo."
+ }
+]

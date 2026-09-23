@@ -1,0 +1,12 @@
+[
+ {
+  "en": "A-Life: encounter arrows ON",
+  "ctx": "state . visible and",
+  "pt": "A-Life: setas de encontro LIGADAS"
+ },
+ {
+  "en": "A-Life: encounter arrows OFF",
+  "ctx": "visible and \"A-Life: encounter arrows ON\" or",
+  "pt": "A-Life: setas de encontro DESLIGADAS"
+ }
+]

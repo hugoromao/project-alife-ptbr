@@ -1,0 +1,182 @@
+[
+ {
+  "en": "Family - Man",
+  "ctx": "= { label =",
+  "pt": "Família - Homem"
+ },
+ {
+  "en": "Family - Woman",
+  "ctx": "= { label =",
+  "pt": "Família - Mulher"
+ },
+ {
+  "en": "Family - Elder",
+  "ctx": "= { label =",
+  "pt": "Família - Idoso"
+ },
+ {
+  "en": "Family - Young Adult",
+  "ctx": "= { label =",
+  "pt": "Família - Jovem adulto"
+ },
+ {
+  "en": "Civilian - Survivor",
+  "ctx": "= { label =",
+  "pt": "Civil - Sobrevivente"
+ },
+ {
+  "en": "Civilian - Survivor Woman",
+  "ctx": "= { label =",
+  "pt": "Civil - Sobrevivente mulher"
+ },
+ {
+  "en": "Civilian - Loner",
+  "ctx": "= { label =",
+  "pt": "Civil - Solitário"
+ },
+ {
+  "en": "Worker",
+  "ctx": "= { label =",
+  "pt": "Trabalhador"
+ },
+ {
+  "en": "Rescue - Firefighter",
+  "ctx": "= { label =",
+  "pt": "Resgate - Bombeiro"
+ },
+ {
+  "en": "Rescue - Medical",
+  "ctx": "= { label =",
+  "pt": "Resgate - Socorrista"
+ },
+ {
+  "en": "Rescue - Clergy",
+  "ctx": "= { label =",
+  "pt": "Resgate - Religioso"
+ },
+ {
+  "en": "Law Enforcement - Deputy Sheriff",
+  "ctx": "= { label =",
+  "pt": "Forças da Lei - Xerife adjunto"
+ },
+ {
+  "en": "Law Enforcement - Sheriff",
+  "ctx": "= { label =",
+  "pt": "Forças da Lei - Xerife"
+ },
+ {
+  "en": "Law Enforcement - Police Officer",
+  "ctx": "= { label =",
+  "pt": "Forças da Lei - Policial"
+ },
+ {
+  "en": "Law Enforcement - Sergeant",
+  "ctx": "= { label =",
+  "pt": "Forças da Lei - Sargento"
+ },
+ {
+  "en": "Law Enforcement - State Trooper",
+  "ctx": "= { label =",
+  "pt": "Forças da Lei - Patrulheiro estadual"
+ },
+ {
+  "en": "Law Enforcement - Corrections Officer",
+  "ctx": "= { label =",
+  "pt": "Forças da Lei - Agente penitenciário"
+ },
+ {
+  "en": "Law Enforcement - SWAT Team Leader",
+  "ctx": "= { label =",
+  "pt": "Forças da Lei - Líder da SWAT"
+ },
+ {
+  "en": "Law Enforcement - SWAT Operator",
+  "ctx": "= { label =",
+  "pt": "Forças da Lei - Operador da SWAT"
+ },
+ {
+  "en": "Military - Soldier",
+  "ctx": "= { label =",
+  "pt": "Militar - Soldado"
+ },
+ {
+  "en": "Military - Sergeant",
+  "ctx": "= { label =",
+  "pt": "Militar - Sargento"
+ },
+ {
+  "en": "Military - Trainee",
+  "ctx": "= { label =",
+  "pt": "Militar - Recruta"
+ },
+ {
+  "en": "Military - Deserter",
+  "ctx": "= { label =",
+  "pt": "Militar - Desertor"
+ },
+ {
+  "en": "Militia - Rifleman",
+  "ctx": "= { label =",
+  "pt": "Milícia - Fuzileiro"
+ },
+ {
+  "en": "Special Forces - Operator",
+  "ctx": "= { label =",
+  "pt": "Forças Especiais - Operador"
+ },
+ {
+  "en": "Delta - Operator",
+  "ctx": "= { label =",
+  "pt": "Delta - Operador"
+ },
+ {
+  "en": "Outlaw",
+  "ctx": "= { label =",
+  "pt": "Fora da lei"
+ },
+ {
+  "en": "Raider",
+  "ctx": "= { label =",
+  "pt": "Saqueador"
+ },
+ {
+  "en": "Raider - Boss",
+  "ctx": "= { label =",
+  "pt": "Saqueador - Chefe"
+ },
+ {
+  "en": "Gang - Soldier",
+  "ctx": "= { label =",
+  "pt": "Gangue - Soldado"
+ },
+ {
+  "en": "Gang - Shot Caller",
+  "ctx": "= { label =",
+  "pt": "Gangue - Mandachuva"
+ },
+ {
+  "en": "Motorcycle Club - Member",
+  "ctx": "= { label =",
+  "pt": "Motoclube - Membro"
+ },
+ {
+  "en": "Motorcycle Club - President",
+  "ctx": "= { label =",
+  "pt": "Motoclube - Presidente"
+ },
+ {
+  "en": "Crime - Associate",
+  "ctx": "= { label =",
+  "pt": "Crime - Comparsa"
+ },
+ {
+  "en": "Prison - Escapee",
+  "ctx": "= { label =",
+  "pt": "Prisão - Fugitivo"
+ },
+ {
+  "en": "Mercenary",
+  "ctx": "= { label =",
+  "pt": "Mercenário"
+ }
+]

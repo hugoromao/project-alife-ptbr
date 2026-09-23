@@ -1,0 +1,12 @@
+[
+ {
+  "en": "Is that a helicopter?",
+  "ctx": "player : addLineChatElement (",
+  "pt": "Aquilo é um helicóptero?"
+ },
+ {
+  "en": "You can see a helicopter rappeling people",
+  "ctx": "player : addLineChatElement (",
+  "pt": "Você vê um helicóptero descendo gente de rapel"
+ }
+]

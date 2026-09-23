@@ -1,0 +1,12 @@
+[
+ {
+  "en": "Aimed movement",
+  "ctx": "\"craft\" , label =",
+  "pt": "Movimento mirando"
+ },
+ {
+  "en": "Shooters keep the gun on the target, or where it was last seen, while they walk.",
+  "ctx": "\"Aimed movement\" , summary =",
+  "pt": "Atiradores mantêm a arma no alvo, ou onde ele foi visto por último, enquanto andam."
+ }
+]

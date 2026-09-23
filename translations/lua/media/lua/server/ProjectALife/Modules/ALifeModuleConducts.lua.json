@@ -1,0 +1,62 @@
+[
+ {
+  "en": "Stealth killer",
+  "ctx": "true , label =",
+  "pt": "Assassino furtivo"
+ },
+ {
+  "en": "Sniper",
+  "ctx": "true , label =",
+  "pt": "Atirador de elite"
+ },
+ {
+  "en": "Medic",
+  "ctx": "true , label =",
+  "pt": "Médico"
+ },
+ {
+  "en": "Ambusher",
+  "ctx": "true , label =",
+  "pt": "Emboscador"
+ },
+ {
+  "en": "Combat strafing (weave)",
+  "ctx": "\"positioning\" , label =",
+  "pt": "Movimento evasivo em combate"
+ },
+ {
+  "en": "Spread out",
+  "ctx": "\"upkeep\" , label =",
+  "pt": "Espalhar-se"
+ },
+ {
+  "en": "Shadows a person from behind, sneaking, and opens with a backstab at double damage. Picks locks instead of breaching.",
+  "ctx": "\"Stealth killer\" , summary =",
+  "pt": "Segue uma pessoa por trás, furtivamente, e abre com uma facada nas costas de dano dobrado. Arromba fechaduras em vez de derrubar portas."
+ },
+ {
+  "en": "Keeps distance, gives ground when the fight closes, and fires deliberate single shots.",
+  "ctx": "\"Sniper\" , summary =",
+  "pt": "Mantém distância, recua quando a luta chega perto e dá tiros únicos e calculados."
+ },
+ {
+  "en": "Finds the group's wounded after a fight, walks over, and dresses their wounds with its own bandages.",
+  "ctx": "\"Medic\" , summary =",
+  "pt": "Depois de uma luta, encontra os feridos do grupo, vai até eles e trata os ferimentos com as próprias ataduras."
+ },
+ {
+  "en": "Takes a hidden position, holds fire, and springs when the target walks in close.",
+  "ctx": "\"Ambusher\" , summary =",
+  "pt": "Fica numa posição escondida, segura o fogo e ataca quando o alvo chega perto."
+ },
+ {
+  "en": "Shooters sidestep left and right while trading fire with people.",
+  "ctx": "\"Combat strafing (weave)\" , summary =",
+  "pt": "Atiradores se deslocam para os lados enquanto trocam tiros com pessoas."
+ },
+ {
+  "en": "Squad members keep a couple of tiles of air between each other.",
+  "ctx": "\"Spread out\" , summary =",
+  "pt": "Membros do esquadrão mantêm uns dois quadrados de distância entre si."
+ }
+]
