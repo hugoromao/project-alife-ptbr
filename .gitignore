@@ -8,3 +8,4 @@ work/sandbox_en.txt
 tools/DepotDownloader
 build/
 __pycache__/
+tools/.lua/

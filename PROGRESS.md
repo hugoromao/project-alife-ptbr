@@ -19,7 +19,7 @@ Todo lote traduzido é salvo em `translations/speech/` e vai para um commit no G
 
 ## Etapas
 
-1. [ ] Infraestrutura (ganchos, formato do dicionário, build, ferramentas de fila e checagem)
+1. [x] Infraestrutura (ganchos, formato do dicionário, build, ferramentas de fila e checagem, `tools/test_runtime.sh`)
 2. [ ] Chat em português (intenções e normalização)
 3. [ ] Gritos e comentários (barks, cerca de 3,7 mil frases)
 4. [ ] Falas fixas do código: assalto, pânico, posturas, arrombamento, reações e vozes
@@ -28,8 +28,22 @@ Todo lote traduzido é salvo em `translations/speech/` e vai para um commit no G
 
 ## Próximo passo
 
-Etapa 1.
+Etapa 2: escrever `translations/chat/intents.json` (frases PT para as 150 intenções de
+`upstream/.../Dialogue/Data/ALifeDialogue_intents_1.lua`) e rodar `tools/test_runtime.sh`.
+
+## Como traduzir um lote (ciclo)
+
+```bash
+cd tools
+python3 speech_queue.py stats                 # situação
+python3 speech_queue.py next barks 150 > ../work/fila.txt   # próximo lote (grava work/queue_current.json)
+# escrever ../work/lote.txt com linhas "id<TAB>tradução" (uma por linha da fila)
+python3 speech_commit.py ../work/lote.txt     # valida, salva em translations/speech/, commit e push
+```
+
+Se a sessão cair no meio de um lote, rode `speech_queue.py next` de novo: ele só lista o que ainda falta.
 
 ## Registro
 
 - 2026-09-23: plano definido; medido o volume (cerca de 443 mil palavras no total).
+- 2026-09-23: infraestrutura pronta e testada (ganchos em DialogueData.load, Speech.render/say, chat).
