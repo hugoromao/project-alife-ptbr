@@ -17,3 +17,5 @@ work/queue_*.json
 work/lote_*.txt
 work/fila_*.txt
 work/.commit.lock
+work/parallel.log
+work/STOP

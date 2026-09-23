@@ -69,6 +69,15 @@ python3 speech_commit.py ../work/lote_talk_pK.txt --queue work/queue_talk_pK.jso
 
 O commit usa uma trava (`work/.commit.lock`), então vários tradutores podem salvar ao mesmo tempo.
 
+Automático (4 processos `claude -p --model sonnet`, independentes da conversa; sobrevivem ao fim da sessão
+e, se o limite de uso acabar, esperam e tentam de novo; dá para trocar de conta com `/login` no meio):
+
+```bash
+setsid nohup python3 tools/parallel_translate.py talk scenes radio > work/parallel.log 2>&1 &
+tail -f work/parallel.log      # acompanhar
+touch work/STOP                # parar depois do lote atual
+```
+
 ## Guia de estilo das falas
 
 - Português do Brasil falado e informal: "tá", "pra", "tô", "né", "a gente" quando soar natural.
