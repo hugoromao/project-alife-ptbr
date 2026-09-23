@@ -9,3 +9,7 @@ tools/DepotDownloader
 build/
 __pycache__/
 tools/.lua/
+work/fila.txt
+work/lote.txt
+work/queue_current.json
+work/intents_en.txt
