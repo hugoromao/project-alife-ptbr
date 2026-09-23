@@ -15,7 +15,8 @@ Mod ID da tradução: `ProjectALifeNPCs_PTBR`. Exige o mod original.
 
 > **Tradução feita com IA generativa.** Os textos em português, as ferramentas deste repositório e os
 > ajustes de código foram produzidos com o modelo **Claude Opus 5.5** (Anthropic), com a tradução espanhola
-> da comunidade como referência do que traduzir. Ainda não houve uma revisão humana completa, então
+> da comunidade como referência do que traduzir. Parte das falas dos NPCs (respostas da conversa, cenas e
+> rádio) foi traduzida pelo **Claude Sonnet 5**, seguindo o mesmo guia de estilo. Ainda não houve uma revisão humana completa, então
 > pode haver termos estranhos ou textos que não cabem na tela. Correções são bem-vindas via issue ou pull request.
 
 Este repositório não inclui o mod original nem outras traduções, que são de outros autores. As
