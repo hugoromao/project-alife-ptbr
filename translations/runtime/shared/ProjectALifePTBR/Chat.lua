@@ -59,10 +59,17 @@ function Chat.rewriteNo(s)
     return string.sub(s, 2, -2)
 end
 
+-- One-word answers map to the English words the matcher already scores exactly;
+-- as patterns, "nao"/"sim" would hit every sentence that merely contains them.
+Chat.oneWord = { nao = "no", n = "no", nope = "no", sim = "yes", s = "yes", ss = "yes", claro = "yes",
+    uhum = "yes", aham = "yes", beleza = "okay", blz = "okay", tranquilo = "okay", certo = "okay",
+    pode = "okay", para = "stop", pare = "stop", alto = "halt", vem = "come here", valeu = "thanks", vlw = "thanks", obrigado = "thanks", obrigada = "thanks" }
+
 function Chat.player(text)
     local s = string.lower(Chat.fold(tostring(text or "")))
-    local words = 0
-    for _ in string.gmatch(s, "%a+") do words = words + 1 end
+    local words, only = 0, nil
+    for word in string.gmatch(s, "%a+") do words = words + 1; only = word end
+    if words == 1 and Chat.oneWord[only] ~= nil then return Chat.oneWord[only] end
     if words < 2 then return text end
     return Chat.rewriteNo(s)
 end

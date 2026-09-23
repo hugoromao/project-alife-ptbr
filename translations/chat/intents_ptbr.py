@@ -106,13 +106,13 @@ i('JOIN_REQUEST', 'posso ir com voce|posso ir com voces|posso entrar no grupo de
   'all=ir com voce,ir com voces,ir junto,me leva,entrar no seu grupo,me juntar,juntar a voces,viajar com voce,andar com voce,ficar com o seu grupo,lugar para mais um,fazer parte;posso,me deixa,da para,eu,me,por favor,quero,mais um|none=vem comigo,entra no meu grupo,nosso grupo,meu grupo,voce devia,junta com a gente,vem com a gente')
 i('COME_WITH_ME', 'vem comigo|junta comigo|voce devia vir comigo|a gente devia se juntar|vamos nos juntar|quer entrar no meu grupo|vem com a gente|voce pode vir comigo',
   'all=vem comigo,vem com a gente,junta comigo,junta com a gente,entra no meu grupo,se juntar,nos juntar,fica comigo,viaja comigo,anda comigo,nosso grupo,meu grupo,fazer dupla;voce,a gente,devia,quer,vamos,vem,por favor,junto,juntos,pode|none=posso entrar,me deixa entrar,posso ir,me leva,seu grupo,nao me segue,fica longe,quantos')
-i('FOLLOW_ME', 'me segue|segue eu|por aqui|vem|vem ca|fica perto|acompanha|vem por aqui|segue minha lideranca|vamos',
+i('FOLLOW_ME', 'me segue|segue eu|vem ca|vem por aqui|fica perto|me acompanha|segue minha lideranca|vamos embora daqui|vem logo|vem atras de mim',
   'all=me segue,segue,siga,por aqui,acompanha,fica perto,atras de mim,vem ca,vem para ca,comigo;me,aqui,perto,agora,rapido,anda,logo,por|none=nao me segue,para de me seguir,voce esta me seguindo,por que voce esta me seguindo,te seguir,vem comigo,zumbi por aqui')
 i('WAIT_HERE', 'espera aqui|fica aqui|segura ai|espera|fica parado ai|aguenta ai|me espera|calma ai|peraí|pera',
   'all=espera,espere,fica,fique,segura,aguenta,aguarda,pera;aqui,por mim,ai,parado,um segundo,um minuto,um momento,quieto|none=posso ficar,ficar com voce,passar a noite,fique seguro,fica vivo,fica longe,fica firme,onde voce fica,esta noite,maos,nao aguento,nao vejo a hora,fica perto,aguenta firme')
 i('GO_AWAY', 'vai embora|me deixa em paz|some daqui|cai fora|sai daqui|se afasta|fica longe de mim|vaza|some',
   'all=vai embora,me deixa em paz,deixa a gente em paz,some,cai fora,sai daqui,se afasta,afasta,fica longe,vaza,vai se foder,para de me seguir,nao me segue;me,de mim,daqui,agora,so,por favor,embora,longe|none=como eu saio,como a gente sai,sair do condado,sair de knox,saida,sair da cidade,vamos sair,a gente precisa sair,sair vivo')
-i('STOP_FREEZE', 'para|parado|nao se mexe|para ai mesmo|segura ai|alto|fica onde esta|nem mais um passo|mao ninguem se mexe|ninguem se mexe',
+i('STOP_FREEZE', 'parado|para ai|para ai mesmo|nao se mexe|alto la|fica onde esta|nem mais um passo|ninguem se mexe|parado ai',
   'all=parado,para ai,alto la,nao se mexe,fica onde esta,nem mais um passo,ninguem se mexe,fica quieto;ai,agora,voce,mesmo,onde esta,passo,quieto,se mexe|none=para de apontar,para de atirar,para de me seguir,por favor para,para o sangramento,ponto de onibus,para de chorar')
 i('HANDS_UP', 'maos para cima|mao para cima|levanta as maos|maos ao alto|mostra as maos|coloca as maos para cima|maos onde eu possa ver|bota a mao na cabeca',
   'all=maos,mao;para cima,ao alto,levanta,mostra,onde eu possa ver,na cabeca,atras da cabeca|none=minhas maos,estou com as maos,mao na roda,lava as maos')
@@ -206,3 +206,74 @@ i('ASK_GUN_STORE', 'onde fica a loja de armas|onde eu acho armas|tem loja de arm
   'all=loja de armas,armeria,armas,arsenal,artigos esportivos,loja de penhores,rifles,estande de tiro;onde,tem,alguma,acho,consigo,sabe,mais perto|none=larga,abaixa,no chao')
 i('ASK_HOSPITAL', 'onde fica o hospital|tem medico|tem algum medico por aqui|tem clinica|onde eu acho um medico|o hospital ainda funciona|onde fica o hospital mais perto|tem farmacia',
   'all=hospital,medico,medicos,clinica,enfermeira,enfermeiro,pronto socorro,posto de saude,enfermaria,farmacia,ambulancia;onde,tem,algum,acho,mais perto,funciona,aberto,por aqui,sabe|none=eu preciso de um medico,eu sou medico,eu era medico,eu sou enfermeiro,voce e medico,voce era medico')
+
+# --- part 3: places, answers, greetings, personal questions -----------------------
+i('ASK_CHURCH', 'tem igreja|alguem rezando junto|onde fica a igreja|tem alguma igreja por aqui|onde eu posso rezar|as pessoas ainda vao na igreja|alguem esta fazendo culto|cade a igreja',
+  'all=igreja,igrejas,capela,culto,missa,congregacao,rezar junto,rezando junto,pastor,padre,ministro;tem,onde,alguma,alguem,sabe,ainda,achar,posso|none=posto de gasolina,voce vai na igreja,voce reza')
+i('ASK_FARM', 'tem fazenda por aqui|da para plantar comida|tem alguma fazenda|onde ficam as fazendas|da para plantar|alguem plantando por aqui|voce planta sua comida|tem criacao de animal por aqui',
+  'all=fazenda,fazendas,sitio,plantar,plantando,plantacao,colheita,horta,sementes,gado,vacas,galinhas,celeiro,milharal;tem,onde,da para,posso,voce,alguem,por aqui,como|none=cresci,crescer,usina')
+i('ASK_RIVER', 'e o rio|da para sair de barco|tem barco|da para atravessar o rio|e o rio ohio|da para nadar ate o outro lado|o rio esta vigiado|alguem atravessando o rio',
+  'all=rio,rio ohio,barco,barcos,canoa,balsa,jangada,nadar,atravessar,cais,marina,caiaque;e o,da para,posso,tem,sair,atravessando,de,vigiado,algum,como,seguro|none=riverside')
+i('ASK_OUTPOST', 'tem algum acampamento por aqui|tem algum assentamento|tem algum lugar murado|existe alguma comunidade|tem algum complexo perto|alguem fortificado por aqui|tem acampamento de sobreviventes|tem alguma colonia',
+  'all=acampamento,acampamentos,assentamento,assentamentos,murado,murada,complexo,fortificado,comunidade,colonia,posto avancado,fortaleza,barricada;tem,algum,alguma,por aqui,perto,existe,sabe,onde|none=seu acampamento,acampamento deles,saqueadores,ladroes,refugiados,fort knox,zona segura,fema,dormir no seu')
+i('ASK_CHECKPOINT', 'e esse posto de controle|a ponte esta bloqueada|quem esta no bloqueio|quem esta no posto de controle|da para passar pelo posto de controle|a ponte esta aberta|o que tem no bloqueio|por que tem um bloqueio',
+  'all=posto de controle,bloqueio,bloqueios,barricada,barreira,ponte;o que,quem,esta,da para,bloqueada,aberta,passar,vigiando,por que,e esse|none=como eu chego,o que aconteceu em louisville')
+i('ASK_LOCKED_DOOR', 'voce consegue abrir isso|voce tem a chave|tem a chave|consegue destrancar isso|abre a porta|consegue arrombar essa fechadura|essa porta esta trancada|como eu abro isso',
+  'all=chave,chaves,tranca,trancada,trancado,destrancar,abrir isso,abre a porta,abrir a porta,arrombar,fechadura,porta,portao;voce consegue,consegue,voce tem,tem,como eu,essa,ajuda,abre,abrir|none=chave do carro,bate,batendo,na porta,invadindo,fecha a porta,fala baixo')
+i('YES', 'sim|claro|pode ser|com certeza|bora|fechado|positivo|demorou|por que nao|claro que sim|conta comigo|pode crer|sim senhor|sim por favor|beleza entao vamos|vamos nessa')
+i('NO', 'nao obrigado|agora nao|de jeito nenhum|negativo|nem pensar|nao quero|nem a pau|estou fora|nunca|nao valeu|dispenso|melhor nao|claro que nao|nao nao|nao senhor|acho que nao|nao da')
+i('MAYBE', 'talvez|sei la|nao sei|pode ser que sim|vou pensar|nao tenho certeza|depende|quem sabe|veremos|acho que sim')
+i('REPEAT', 'repete|repete ai|fala de novo|nao entendi|o que voce disse|nao ouvi|como assim|fala mais alto|hein|como e que e|pode repetir')
+i('OK_ACK', 'entendi|entendido|certo entao|esta certo|beleza entao|esta bom entao|saquei|faz sentido|anotado|copiado|positivo e operante|justo')
+i('GREETING', 'oi|ola|opa|e ai|salve|bom dia|boa tarde|boa noite amigo|fala ai|eai|oi amigo|ola amigo|tudo bem')
+i('FAREWELL', 'tchau|ate mais|ate logo|falou|flw|se cuida|fica bem|fica seguro|boa sorte|ate a proxima|preciso ir|tenho que ir|adeus')
+i('THANKS', 'muito obrigado mesmo|valeu mesmo|deus te abencoe|voce salvou minha vida|agradeco muito|obrigadao|brigadao|valeu cara')
+i('LAUGH', 'hehe|hahahaha|muito engracado|voce e engracado|hilario|morri de rir|kkkkkk|kkkkkkk')
+i('INSULT', 'cala a boca|perdedor|voce e um lixo|vai para o inferno|voce e um idiota|covarde|voce e burro|seu inutil|vai se ferrar|arrombado')
+i('SWEAR_VENT', 'filho da puta|inferno na terra|que se dane|pelo amor de deus|eu odeio isso|isso e uma merda|que se foda|puta merda|meu deus do ceu|ai meu deus')
+i('CALM_DOWN', 'respira|todo mundo calmo|so relaxa|respira fundo|calma calma|nao precisa entrar em panico|mantem a calma|pega leve|sem panico')
+i('SORRY', 'peco desculpas|me perdoa|desculpa por isso|foi um acidente|nao quis te acertar|nao foi de proposito|acidente|culpa minha|mil desculpas')
+i('HOW_ARE_YOU', 'como voce esta|como voce esta aguentando|como vai|tudo bem com voce|como vao as coisas|como voce tem passado|voce esta bem|beleza com voce|tudo certo',
+  'all=como,tudo bem,tudo certo,beleza;voce esta,vai,vao as coisas,voce tem passado,aguentando,com voce,voce se sente|none=velho,vivo,sobreviveu,quanto tempo,quantos,longe,chego,matar,dormir,medo')
+i('ASK_NAME', 'qual e o seu nome|qual o seu nome|seu nome|como voce se chama|como te chamam|como eu te chamo|tem nome|qual e a sua graca',
+  'all=nome,se chama,te chamam,te chamo;seu,sua,voce,qual,como|none=meu nome,me chamo,me chamam,nome dessa cidade,nome da cidade,nome da rua')
+i('TELL_NAME', 'meu nome e|eu me chamo|me chama de|me chamam de|pode me chamar de|o nome e|sou o|sou a',
+  'all=nome,me chamo,me chama,me chamam,chamar de;meu,me,eu,pode|none=seu nome,qual,como voce,te chamam,chama ajuda,chama a policia')
+i('WHO_ARE_YOU', 'quem e voce|quem diabos e voce|quem sao voces|quem esta ai|quem porra e voce|se identifica|quem vem la|voce e o que',
+  'all=quem;e voce,sao voces,esta ai,vem la,e esse,e essa|none=com quem,trabalha para,no comando,lider,chefe,anda com,amigo de,se chama')
+i('ASK_GROUP', 'com quem voce anda|que grupo e esse|de que faccao voce e|para quem voce trabalha|com quem voce esta|voce e de que grupo|com quem voce roda|voce esta com alguem',
+  'all=grupo,faccao,bando,equipe,turma,trabalha para,de que lado,unidade,anda com,esta com alguem,faz parte;quem,que,qual,voce|none=entrar,vem comigo,meu grupo,nosso grupo,lider,chefe,no comando,quantos,onde,tamanho')
+i('ASK_LEADER', 'quem manda aqui|quem esta no comando|quem e o seu chefe|me leva ao seu lider|quem comanda isso|quem e o lider|quem da as ordens|quem e o seu lider',
+  'all=manda,comando,chefe,lider,comanda,da as ordens,patrao;quem,me leva,onde esta,cade,posso falar|none=eu sou o,eu mando,meu chefe,eu comando,eu era')
+i('ASK_HOW_MANY', 'quantos voces sao|quantos de voces tem|quantas pessoas tem no seu grupo|quantos sao|qual o tamanho do seu grupo|quantos tem no grupo|quantos caras voce tem|quanta gente voces tem',
+  'all=quantos,quantas,quanta,tamanho;voces,seu,sua,grupo,pessoas,caras,membros,gente,turma,sao|none=balas,municao,zumbi,infectados,mortos,dias,semanas,criancas,filhos,anos,matou,horda,corpos')
+i('ASK_BASE', 'onde fica o seu acampamento|onde e o seu acampamento|onde voce mora|onde fica a sua base|onde voce fica|onde voces estao entocados|onde voce dorme|onde e a sua casa',
+  'all=onde;acampamento,base,mora,moram,entocados,fica,ficam,casa,esconderijo,dorme,dormem,complexo;voce,voces,seu,sua|none=de onde,cidade natal,cresceu,nasceu,esta noite,posso ficar,posso dormir,deles,saqueadores,ladroes,indo,vai')
+i('ASK_PLANS', 'qual e o plano|qual o plano|o que voce esta fazendo|o que voce anda aprontando|o que voce esta fazendo aqui|e agora|qual e o seu plano|o que voces estao planejando',
+  'all=plano,planos,planejando,aprontando,fazendo aqui,fazendo por aqui,proximo passo,vai fazer,e agora;o que,qual,entao,seu,sua,o|none=onde,como eu,antes,trabalho,vida,costumava,corpos,com essa arma,dormir')
+i('ASK_DESTINATION', 'para onde voce vai|para onde voce esta indo|aonde voce vai|onde voce esta indo|para onde voces vao|para onde e a viagem|voce vai para onde|vai para onde',
+  'all=onde,aonde;vai,vao,indo,rumo,viajando,caminhando,dirigindo,seguindo;voce,voces,seu,grupo,a gente|none=devo,eu vou,como eu,eu estou indo,chegar,vai chover,esta acontecendo')
+i('ASK_ORIGIN_TODAY', 'de onde voce veio|onde voce estava|de onde voce esta vindo|voce veio de onde|de onde voces vieram|onde voce andou|voce estava onde|veio por qual caminho',
+  'all=onde,qual caminho;veio,vieram,vindo,estava,estavam,andou,chegou de|none=nasceu,cresceu,cidade natal,originalmente,isso veio,eles vieram,barulho,som')
+i('ASK_HOMETOWN', 'de onde voce e|voce e daqui|voce e de onde|onde e sua casa|voce e de onde originalmente|voce e daqui mesmo|onde voce cresceu|voce e da regiao',
+  'all=de onde,daqui,da regiao,cresceu,nasceu,cidade natal,terra natal;voce,e,originalmente,mesmo|none=veio,vieram,vindo,hoje,agora,helicoptero,barulho,som')
+i('ASK_JOB_BEFORE', 'o que voce fazia antes de tudo isso|qual era o seu trabalho|o que voce fazia antes|voce trabalhava com o que|qual era a sua profissao|voce tinha emprego|voce trabalhava onde|o que voce fazia da vida',
+  'all=trabalho,trabalhava,emprego,profissao,carreira,fazia antes,fazia da vida,ganhava a vida,era policial,era soldado,era enfermeira,era professor,era fazendeiro,era caminhoneiro,era mecanico,era medico;o que,voce,qual,seu,sua|none=eu trabalhava,meu trabalho,eu era,funciona,vai funcionar')
+i('ASK_FAMILY', 'voce tem familia|onde esta sua familia|voce esta sozinho|voce esta sozinha|tem familia|e so voce|cade sua familia|onde estao seus pais',
+  'all=familia,esposa,marido,mulher,pais,mae,pai,irmao,irma,sozinho,sozinha,parentes,so voce;voce,sua,seu,seus,tem|none=minha esposa,meu marido,minha familia,minha mae,meu pai,meus pais,eu tenho familia,eu perdi,estou sozinho,me deixa em paz,filhos,filho,filha,criancas')
+i('ASK_KIDS', 'voce tem filhos|tem criancas|voce tem filho|cade seus filhos|onde estao seus filhos|voce tem criancas|voce tem neto',
+  'all=filhos,filho,filha,filhas,criancas,crianca,bebe,netos,neto;voce,seus,sua,seu,tem|none=meus filhos,meu filho,minha filha,meu bebe,eu tenho filhos,brincadeira')
+i('ASK_PETS', 'voce tem cachorro|viu algum cachorro|tem bicho de estimacao|voce tem gato|voce viu um cachorro|viu meu cachorro|tem algum animal|voce tem um cao',
+  'all=cachorro,cachorros,cao,caes,gato,gatos,filhote,bicho de estimacao,animal,cavalo,cavalos;voce,seu,tem,viu,meu,algum|none=cachorro quente,filho da puta,cansado,racao')
+i('ASK_AGE', 'quantos anos voce tem|qual a sua idade|voce e velho|voce e velha|quando voce nasceu|em que ano voce nasceu|que idade voce tem|quantos anos',
+  'all=anos,idade,velho,velha,nasceu;quantos,qual,quando,que,sua,voce|none=anos de idade,eu tenho,velho demais,velhos tempos,mundo antigo,vida antiga,onde')
+i('ASK_HOW_SURVIVED', 'como voce sobreviveu|como voce ainda esta vivo|como voce ainda esta viva|como voce conseguiu|como voce chegou ate aqui|como voce saiu|como voce aguentou|como voces sobreviveram',
+  'all=sobreviveu,sobreviveram,sobreviver,vivo,viva,conseguiu,conseguiram,aguentou,chegou ate aqui,saiu;como;voce,voces|none=a gente vai,eu consigo,como eu,ficar vivo,eu vou')
+i('ASK_HOW_LONG', 'faz quanto tempo que voce esta aqui|quanto tempo faz|quanto tempo ja|quantos dias ja|faz quanto tempo que isso comecou|ha quanto tempo voce esta por ai|quantos dias faz|desde quando',
+  'all=quanto tempo,quantos dias,quantas semanas,desde quando,ha quanto tempo;faz,ja,esta,comecou,passou,atras,por ai,aqui|none=leva para,para chegar,andar,dirigir,ate,vai durar,esperar')
+i('ASK_SCARED', 'voce esta com medo|voce nao tem medo|voce tem medo|isso te assusta|voce fica com medo|voce nao fica com medo|esta com medo|voces estao com medo',
+  'all=medo,assusta,assustado,assustada,apavorado,nervoso,nervosa;voce,voces,te|none=eu estou com medo,eu tenho medo,estou com medo,estou apavorado,me assustou,nao tenha medo,sem medo')
+i('ASK_OKAY', 'voce esta bem|voce se machucou|tudo bem com voce|voce esta ferido|voce esta ferida|voce esta machucado|voce esta ok|ta tudo bem',
+  'all=machucou,machucado,machucada,ferido,ferida,sangrando,bem,ok;voce esta,voce se,com voce,esta tudo,voces estao|none=estou machucado,estou sangrando,estou ferido,nao vou te machucar,eu estou bem')
+i('ASK_BITTEN', 'voce foi mordido|voce foi mordida|voce esta infectado|voce esta infectada|eles te morderam|mostra seus bracos|voce levou mordida|te morderam',
+  'all=mordido,mordida,morderam,mordeu,infectado,infectada,arranhado,arranhada,febre,bracos;voce,te,mostra,voces|none=fui mordido,me mordeu,estou infectado,meu braco,minha perna,mordida de comida,maos para cima,tem infectado,infectados por perto')
