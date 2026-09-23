@@ -32,7 +32,7 @@ Todo lote traduzido é salvo em `translations/speech/` e vai para um commit no G
 
 1. [x] Infraestrutura (ganchos, formato do dicionário, build, ferramentas de fila e checagem, `tools/test_runtime.sh`)
 2. [x] Chat em português (`translations/chat/intents_ptbr.py`; teste com `tools/chat_try.sh "frase"`)
-3. [ ] Gritos e comentários (barks, cerca de 3,7 mil frases)
+3. [x] Gritos e comentários (barks, 3.741 frases, 13 lotes)
 4. [ ] Falas fixas do código: assalto, pânico, posturas, arrombamento, reações e vozes; nomes de
    esconderijo `{den}` em `server/ProjectALife/Talk/ALifeRumors.lua` ("the motel", "a house"...)
 5. [ ] Respostas da conversa (talk, cerca de 7,2 mil frases)
@@ -40,7 +40,7 @@ Todo lote traduzido é salvo em `translations/speech/` e vai para um commit no G
 
 ## Próximo passo
 
-Etapa 3: continuar os gritos (`cd tools && python3 speech_queue.py next barks 300`); faltam cerca de 2 mil.
+Etapa 4: falas fixas do código (extrator ainda a escrever: `tools/speech_queue.py` só cobre os dados de diálogo).
 
 ### Retomar em outro computador
 
@@ -80,3 +80,4 @@ Se a sessão cair no meio de um lote, rode `speech_queue.py next` de novo: ele s
 - 2026-09-23: plano definido; medido o volume (cerca de 443 mil palavras no total).
 - 2026-09-23: infraestrutura pronta e testada (ganchos em DialogueData.load, Speech.render/say, chat).
 - 2026-09-23: chat em português completo (141 entradas, todas as intenções).
+- 2026-09-23: gritos e comentários completos (3.741).
