@@ -20,7 +20,7 @@ Todo lote traduzido é salvo em `translations/speech/` e vai para um commit no G
 ## Etapas
 
 1. [x] Infraestrutura (ganchos, formato do dicionário, build, ferramentas de fila e checagem, `tools/test_runtime.sh`)
-2. [ ] Chat em português (intenções e normalização)
+2. [x] Chat em português (`translations/chat/intents_ptbr.py`; teste com `tools/chat_try.sh "frase"`)
 3. [ ] Gritos e comentários (barks, cerca de 3,7 mil frases)
 4. [ ] Falas fixas do código: assalto, pânico, posturas, arrombamento, reações e vozes
 5. [ ] Respostas da conversa (talk, cerca de 7,2 mil frases)
@@ -28,8 +28,20 @@ Todo lote traduzido é salvo em `translations/speech/` e vai para um commit no G
 
 ## Próximo passo
 
-Etapa 2: escrever `translations/chat/intents.json` (frases PT para as 150 intenções de
-`upstream/.../Dialogue/Data/ALifeDialogue_intents_1.lua`) e rodar `tools/test_runtime.sh`.
+Etapa 3: gritos e comentários (`speech_queue.py next barks 250`), lote por lote.
+
+## Guia de estilo das falas
+
+- Português do Brasil falado e informal: "tá", "pra", "tô", "né", "a gente" quando soar natural.
+- Palavrões com o peso equivalente: fuck → porra/caralho, shit → merda, damn → droga, bitch → vadia/desgraçado(a).
+- Manter exatamente as marcações `{town}`, `{name}` etc. Nomes próprios (cidades, pessoas, marcas) não mudam;
+  Knox County → Condado de Knox; Kentucky, Louisville, West Point etc. iguais.
+- Zumbis: zombies/zeds → zumbis; biters → mordedores; the dead → os mortos; infected → infectados.
+- Gênero: quem fala segue o `role`/`sex` do contexto (family_woman, civilian_woman → feminino); o
+  jogador é tratado de forma neutra sempre que possível ("você", evitar adjetivos com gênero).
+- Tom por grupo: outlaw/raider/gang/club/crime/prison → rude e ameaçador; military/police → seco,
+  jargão ("positivo", "câmbio"); family/civilian → comum; rescue → profissional e cansado.
+- Linhas curtas continuam curtas (aparecem em cima da cabeça do NPC).
 
 ## Como traduzir um lote (ciclo)
 
@@ -47,3 +59,4 @@ Se a sessão cair no meio de um lote, rode `speech_queue.py next` de novo: ele s
 
 - 2026-09-23: plano definido; medido o volume (cerca de 443 mil palavras no total).
 - 2026-09-23: infraestrutura pronta e testada (ganchos em DialogueData.load, Speech.render/say, chat).
+- 2026-09-23: chat em português completo (141 entradas, todas as intenções).
