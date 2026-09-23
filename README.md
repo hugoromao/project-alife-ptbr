@@ -69,20 +69,3 @@ Os textos novos aparecem como `MISSING`/`CHANGED` (sandbox). Para achar textos n
 número em `VERSION` antes de reenviar.
 
 Para conferir a sintaxe, rode `luac -p` (Lua 5.1) nos arquivos de `build/`.
-
-## Testar e publicar na Oficina (Steam Workshop)
-
-1. Rode `python3 tools/build.py` e copie a pasta `build/Workshop/ProjectALifeNPCs_PTBR` para
-   `Zomboid/Workshop/` no PC que tem o jogo (Windows: `C:\Users\<você>\Zomboid\Workshop\`,
-   Linux: `~/Zomboid/Workshop/`).
-2. Teste: abra o jogo, vá em **Mods**, ative **Project A-Life** e depois a tradução, e comece um
-   mundo. Para ver as opções de sandbox em português, deixe o jogo em Português (Brasil).
-3. Publique: no menu principal, abra **Workshop** → **Create and update items** → escolha
-   `ProjectALifeNPCs_PTBR` → **Next**. Preencha o título, a descrição (texto pronto em
-   `workshop_description.txt`) e as tags (Build 42, Multiplayer). Escolha a visibilidade e
-   clique em **Upload**. Aceite o contrato da Workshop na Steam se ela pedir.
-4. O jogo grava o ID da Workshop em `Zomboid/Workshop/ProjectALifeNPCs_PTBR/workshop.txt`.
-   **Guarde esse arquivo.** Para atualizar depois, gere o build de novo, copie só a pasta
-   `Contents/` por cima (mantendo o `workshop.txt`) e use o mesmo botão para reenviar.
-5. Colegas: basta se inscrever no mod original **e** na tradução. Num servidor, coloque os dois
-   IDs em `Mods=` e `WorkshopItems=`, com a tradução depois do original.
