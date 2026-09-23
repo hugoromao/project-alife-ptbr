@@ -19,3 +19,8 @@ work/fila_*.txt
 work/.commit.lock
 work/parallel.log
 work/STOP
+work/bench_*.txt
+work/review_*.tsv
+work/ollama.log
+work/queue_*_local.json
+work/lote_*_local.txt
