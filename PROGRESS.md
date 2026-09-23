@@ -55,6 +55,20 @@ git clone https://github.com/hugoromao/project-alife-ptbr.git && cd project-alif
 ./tools/test_runtime.sh      # compila o Lua 5.1 local e roda os testes
 ```
 
+## Tradução em paralelo
+
+A fila de cada fonte é dividida em N partes fixas (blocos de 50 unidades, distribuídos em rodízio),
+então tradutores em paralelo nunca pegam a mesma frase. Um lote da parte K de N:
+
+```bash
+cd tools
+python3 speech_queue.py next talk 200 --part K/N 2>/dev/null | sed 's/\t\[/ [/; s/\]\t/] /' > ../work/fila_talk_pK.txt
+# ler ../work/fila_talk_pK.txt e escrever ../work/lote_talk_pK.txt com "id<TAB>tradução"
+python3 speech_commit.py ../work/lote_talk_pK.txt --queue work/queue_talk_pK.json
+```
+
+O commit usa uma trava (`work/.commit.lock`), então vários tradutores podem salvar ao mesmo tempo.
+
 ## Guia de estilo das falas
 
 - Português do Brasil falado e informal: "tá", "pra", "tô", "né", "a gente" quando soar natural.

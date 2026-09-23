@@ -13,3 +13,7 @@ work/fila.txt
 work/lote.txt
 work/queue_current.json
 work/intents_en.txt
+work/queue_*.json
+work/lote_*.txt
+work/fila_*.txt
+work/.commit.lock

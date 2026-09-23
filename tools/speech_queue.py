@@ -8,6 +8,9 @@ next untranslated lines with their context so a batch can be translated as
   python3 speech_queue.py stats
   python3 speech_queue.py next <source> [count]   # source: barks | code | talk | scenes | radio
       writes work/queue_current.json (id -> English) for speech_commit.py
+  python3 speech_queue.py next <source> [count] --part K/N
+      only part K of N (1-based): blocks of 50 units dealt round-robin, so parallel
+      translators never share a line; writes work/queue_<source>_pK.json
 
 Translations live in translations/speech/<source>/NNN.json as {english: portuguese}.
 """
@@ -23,6 +26,7 @@ from paths import ROOT, upstream_version_dir
 
 SPEECH_DIR = ROOT / 'translations/speech'
 SOURCES = ('barks', 'code', 'talk', 'scenes', 'radio')
+BLOCK = 50
 
 
 def text_id(text):
@@ -151,23 +155,34 @@ def main():
             print(f'{source:8s} {ok:6d}/{total:<6d} {100 * ok / max(1, total):5.1f}%  ({words} palavras)')
         return
     if cmd == 'next':
-        source = sys.argv[2]
-        count = int(sys.argv[3]) if len(sys.argv) > 3 else 150
+        args = [a for a in sys.argv[2:] if not a.startswith('--part')]
+        part = next((a.split('=', 1)[-1] if '=' in a else sys.argv[sys.argv.index(a) + 1]
+                     for a in sys.argv if a.startswith('--part')), None)
+        source = args[0]
+        count = int(args[1]) if len(args) > 1 and args[1].isdigit() else 150
+        k, n = (int(x) for x in part.split('/')) if part else (1, 1)
+        owner = {}
+        for index, unit in enumerate(units_by_source[source]):
+            for en, _ in unit:
+                owner.setdefault(en, (index // BLOCK) % n + 1)
         queue, printed = OrderedDict(), 0
-        for unit in units_by_source[source]:
-            pending = [(en, ctx) for en, ctx in unit if en not in done and en not in queue]
+        for index, unit in enumerate(units_by_source[source]):
+            if (index // BLOCK) % n + 1 != k:
+                continue
+            pending = [(en, ctx) for en, ctx in unit if en not in done and en not in queue and owner[en] == k]
             if not pending:
                 continue
             if printed >= count:
                 break
             for en, ctx in unit:
-                if en in done or en in queue:
+                if en in done or en in queue or owner[en] != k:
                     continue
                 queue[en] = True
                 print(f'{text_id(en)}\t[{ctx}]\t{en}')
                 printed += 1
         (ROOT / 'work').mkdir(exist_ok=True)
-        (ROOT / 'work/queue_current.json').write_text(json.dumps(
+        name = f'work/queue_{source}_p{k}.json' if part else 'work/queue_current.json'
+        (ROOT / name).write_text(json.dumps(
             {'source': source, 'items': {text_id(en): en for en in queue}}, ensure_ascii=False, indent=0), encoding='utf-8')
         print(f'# {printed} linhas; responda com "id<TAB>tradução" e rode speech_commit.py', file=sys.stderr)
 

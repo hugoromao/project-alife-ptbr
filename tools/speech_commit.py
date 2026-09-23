@@ -1,16 +1,18 @@
 """Validate a translated batch and save it, so no finished work is ever lost.
 
-  python3 speech_commit.py <batch.txt> [--no-push]
+  python3 speech_commit.py <batch.txt> [--no-push] [--queue work/queue_talk_p1.json]
 
 <batch.txt> has one "id<TAB>portuguese" line per entry of work/queue_current.json
 (printed by speech_queue.py next). Valid lines are written to
 translations/speech/<source>/NNN.json, PROGRESS.md stats are refreshed, and the
 result is committed and pushed. Invalid lines are reported and left out.
 """
+import fcntl
 import json
 import re
 import subprocess
 import sys
+from pathlib import Path
 from collections import Counter
 
 from paths import ROOT
@@ -61,7 +63,9 @@ def update_progress():
 def main():
     batch_file = sys.argv[1]
     push = '--no-push' not in sys.argv
-    queue = json.loads((ROOT / 'work/queue_current.json').read_text(encoding='utf-8'))
+    queue_path = sys.argv[sys.argv.index('--queue') + 1] if '--queue' in sys.argv else 'work/queue_current.json'
+    queue_path = (ROOT / queue_path) if not queue_path.startswith('/') else Path(queue_path)
+    queue = json.loads(queue_path.read_text(encoding='utf-8'))
     source, items = queue['source'], queue['items']
     result, errors = {}, []
     for raw in open(batch_file, encoding='utf-8').read().splitlines():
@@ -79,6 +83,9 @@ def main():
         result[items[tid]] = pt
     missing = [tid for tid, en in items.items() if en not in result]
     if result:
+        # Parallel translators share this working tree: one commit at a time.
+        lock = open(ROOT / 'work/.commit.lock', 'w')
+        fcntl.flock(lock, fcntl.LOCK_EX)
         out_dir = SPEECH_DIR / source
         out_dir.mkdir(parents=True, exist_ok=True)
         n = len(list(out_dir.glob('*.json'))) + 1
@@ -88,10 +95,12 @@ def main():
         summary = ', '.join(f'{s} {ok}/{total}' for s, ok, total, _ in rows)
         subprocess.run(['git', 'add', str(out), 'PROGRESS.md'], cwd=ROOT, check=True)
         subprocess.run(['git', 'commit', '-q', '-m', f'Falas: {source} lote {n:03d} ({len(result)} linhas)\n\n{summary}\n\n'
-                        'Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>'], cwd=ROOT, check=True)
+                        'Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\n'
+                        'Claude-Session: https://claude.ai/code/session_01DWhx4jQiuCaznYq19SPMcU'], cwd=ROOT, check=True)
         if push:
             subprocess.run(['git', 'pull', '-q', '--rebase'], cwd=ROOT, check=False)
             subprocess.run(['git', 'push', '-q'], cwd=ROOT, check=False)
+        fcntl.flock(lock, fcntl.LOCK_UN)
         print(f'salvo {out.relative_to(ROOT)}: {len(result)} linhas | {summary}')
     for e in errors:
         print('ERRO', e)
