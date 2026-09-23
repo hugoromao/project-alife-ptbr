@@ -90,6 +90,7 @@ def main():
         subprocess.run(['git', 'commit', '-q', '-m', f'Falas: {source} lote {n:03d} ({len(result)} linhas)\n\n{summary}\n\n'
                         'Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>'], cwd=ROOT, check=True)
         if push:
+            subprocess.run(['git', 'pull', '-q', '--rebase'], cwd=ROOT, check=False)
             subprocess.run(['git', 'push', '-q'], cwd=ROOT, check=False)
         print(f'salvo {out.relative_to(ROOT)}: {len(result)} linhas | {summary}')
     for e in errors:

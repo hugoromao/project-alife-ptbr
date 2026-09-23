@@ -40,7 +40,15 @@ Todo lote traduzido é salvo em `translations/speech/` e vai para um commit no G
 
 ## Próximo passo
 
-Etapa 3: gritos e comentários (`speech_queue.py next barks 250`), lote por lote.
+Etapa 3: continuar os gritos (`cd tools && python3 speech_queue.py next barks 300`); faltam cerca de 2 mil.
+
+### Retomar em outro computador
+
+```bash
+git clone https://github.com/hugoromao/project-alife-ptbr.git && cd project-alife-ptbr
+./tools/update_upstream.sh   # baixa o mod original para upstream/ e gera build/
+./tools/test_runtime.sh      # compila o Lua 5.1 local e roda os testes
+```
 
 ## Guia de estilo das falas
 
