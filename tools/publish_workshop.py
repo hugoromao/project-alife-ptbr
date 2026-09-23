@@ -45,9 +45,11 @@ def main():
     }
     vdf.write_text('"workshopitem"\n{\n' + ''.join(f'\t"{k}"\t{vdf_string(v)}\n' for k, v in fields.items()) + '}\n',
                    encoding='utf-8')
-    result = subprocess.run([str(STEAMCMD), '+login', login, '+workshop_build_item', str(vdf), '+quit'],
-                            capture_output=True, text=True)
-    output = re.sub(r'\x1b\[[0-9;]*m', '', result.stdout + result.stderr)
+    log = ROOT / 'work' / 'publish.log'
+    with open(log, 'w') as out:  # streamed, so a stuck login can be seen while it runs
+        subprocess.run([str(STEAMCMD), '+login', login, '+workshop_build_item', str(vdf), '+quit'],
+                       stdout=out, stderr=subprocess.STDOUT, timeout=900)
+    output = re.sub(r'\x1b\[[0-9;]*m', '', log.read_text(errors='replace'))
     print('\n'.join(l for l in output.splitlines() if re.search(r'(?i)workshop|error|fail|success|upload|item|login', l)))
     if 'Success' not in output:
         raise SystemExit('Envio não confirmado; veja a saída acima.')

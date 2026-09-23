@@ -25,3 +25,4 @@ work/ollama.log
 work/queue_*_local.json
 work/lote_*_local.txt
 work/workshop_item.vdf
+work/publish.log
