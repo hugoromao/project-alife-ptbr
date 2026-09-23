@@ -43,6 +43,9 @@ def card(size):
 
 
 def main():
+    if (OUT / 'source' / 'capa.png').exists():
+        # art/ now comes from the cover the user drew (art/source/capa.png); don't overwrite it.
+        raise SystemExit('art/source/capa.png existe: a arte vem da capa do usuário, nada foi gerado.')
     OUT.mkdir(exist_ok=True)
     card(512).save(OUT / 'poster.png')
     card(256).save(OUT / 'preview.png')
