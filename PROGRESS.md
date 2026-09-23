@@ -34,14 +34,18 @@ Todo lote traduzido é salvo em `translations/speech/` e vai para um commit no G
 1. [x] Infraestrutura (ganchos, formato do dicionário, build, ferramentas de fila e checagem, `tools/test_runtime.sh`)
 2. [x] Chat em português (`translations/chat/intents_ptbr.py`; teste com `tools/chat_try.sh "frase"`)
 3. [x] Gritos e comentários (barks, 3.741 frases, 13 lotes)
-4. [ ] Falas fixas do código: assalto, pânico, posturas, arrombamento, reações e vozes; nomes de
-   esconderijo `{den}` em `server/ProjectALife/Talk/ALifeRumors.lua` ("the motel", "a house"...)
+4. [x] Falas fixas do código (1.591 frases, 6 lotes): vozes por facção, reações, fofoca, módulos
+   (pânico, posturas, cautela, assalto, arrombamento), nomes de esconderijo. Ganchos extras:
+   `IsoZombie:Say` (as cascas dos NPCs são zumbis), tabelas públicas dos módulos traduzidas no servidor,
+   descrições `{den}` do ALifeRumors.describe (`PT.denText`) e frases completadas com valor
+   ("[Received: " .. item .. "]", `PT.prefixes`).
 5. [ ] Respostas da conversa (talk, cerca de 7,2 mil frases)
 6. [ ] (etapa 2) Cenas e rádio
 
 ## Próximo passo
 
-Etapa 4: falas fixas do código (extrator ainda a escrever: `tools/speech_queue.py` só cobre os dados de diálogo).
+Etapa 5: respostas da conversa, em lotes de 250:
+`python3 speech_queue.py next talk 250`. As linhas "...continuação" são falas seguintes da mesma resposta.
 
 ### Retomar em outro computador
 

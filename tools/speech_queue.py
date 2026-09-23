@@ -110,7 +110,7 @@ def extract_code():
         src = path.read_text(encoding='utf-8')
         for tok, ctx in literals_with_context(src):
             v = tok.value
-            if CODE_SKIP_CTX.search(ctx) or not re.search(r'[a-z]{2}', v) or re.search(r'[_%/]', v):
+            if CODE_SKIP_CTX.search(ctx) or not re.search(r'[a-z]{2}', v) or re.search(r'[_%/]', v) or v[:1] == ' ':
                 continue
             if len(v.split()) < 2 and not re.search(r'[.!?]$', v):
                 continue

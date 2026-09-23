@@ -65,7 +65,7 @@ if Speech ~= nil then
         if type(vars) == "table" then
             local translated = {}
             for key, value in pairs(vars) do
-                translated[key] = type(value) == "string" and t(value) or value
+                translated[key] = type(value) == "string" and PT.value(value) or value
             end
             vars = translated
         end
@@ -88,6 +88,23 @@ if Policy ~= nil and type(Policy.caption) == "function" then
         return originalCaption(PT.caption(text))
     end
 end
+
+-- NPC shells are zombies; some modules call shell:Say directly with local line
+-- tables (panic, holdout stances), so the Say method itself gets the caption.
+local function hookShellSay()
+    local ok = pcall(function()
+        local meta = __classmetatables ~= nil and IsoZombie ~= nil and __classmetatables[IsoZombie.class] or nil
+        local index = meta ~= nil and meta.__index or nil
+        if type(index) ~= "table" or type(index.Say) ~= "function" or index.PTBRSay ~= nil then return end
+        local originalSay = index.Say
+        index.PTBRSay = originalSay
+        index.Say = function(self, text, ...)
+            return originalSay(self, PT.caption(text), ...)
+        end
+    end)
+    return ok
+end
+hookShellSay()
 
 if Intents ~= nil then
     local originalNormalize = Intents.normalize

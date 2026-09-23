@@ -18,7 +18,11 @@ package.preload["ProjectALifePTBR/Speech/Part1"] = function() return function(D)
     D["The robbers sleep at {den}."] = "Os ladr\195\181es dormem em {den}."
     D["the school"] = "a escola"
     D["He's got a gun -- move!"] = "Ele t\195\161 armado -- corre!"
-    return 8 end end
+    D["They are shouting to open fire. Get away."] = "Est\195\163o gritando pra abrir fogo. Sai da\195\173."
+    D["Last chance. We will shoot."] = "\195\154ltima chance. A gente vai atirar."
+    D["Uhh... Alright. Take this. That's all I can spare. [Received: "] =
+        "H\195\163... T\195\161 bom. Toma isso. \195\137 tudo o que eu posso dar. [Recebido:"
+    return 11 end end
 package.preload["ProjectALifePTBR/ChatIntents"] = function() return {
     { "ASK_FOOD", "voce tem comida|tem comida sobrando|tem algo para comer", "" },
     { "YES", "sim|claro|pode ser", "" }, { "NO", "nao|agora nao", "" } } end
@@ -51,6 +55,18 @@ ProjectALife.ModuleRegistry = ProjectALife.ModuleRegistry or { register = functi
 require "ZZZ_ProjectALifePTBR_Server"
 local okPanic, Panic = pcall(require, "ProjectALife/Modules/ALifeModulePanic")
 check("server hook translates panic lines", okPanic and Panic.gunFearLines[1], "Ele t\195\161 armado -- corre!")
+local okCareful, Careful = pcall(require, "ProjectALife/Modules/ALifeModuleCareful")
+check("server hook translates careful narration", okCareful and Careful.heardWords.CAREFUL_HOSTILE,
+    "Est\195\163o gritando pra abrir fogo. Sai da\195\173.")
+local okStances, Stances = pcall(require, "ProjectALife/Modules/ALifeModuleStances")
+check("server hook translates holdout line", okStances and Stances.holdoutLine("final"),
+    "\195\154ltima chance. A gente vai atirar.")
+check("den description with side", Speech.render("The robbers sleep at {den}.",
+    { den = "the school on the north side of Riverside" }, shell),
+    "Os ladr\195\181es dormem na escola no lado norte de Riverside.")
+check("prefix line finished with a value",
+    ProjectALifePTBR.caption("Uhh... Alright. Take this. That's all I can spare. [Received: Canned Beans]"),
+    "H\195\163... T\195\161 bom. Toma isso. \195\137 tudo o que eu posso dar. [Recebido: Canned Beans]")
 check("chat PT with accents (bytes)", Intents.classify("Voc\195\170 tem comida?"), "ASK_FOOD")
 check("chat PT abbreviation", Intents.classify("vc tem comida??"), "ASK_FOOD")
 check("chat PT yes pending", Intents.classify("claro", true), "YES")

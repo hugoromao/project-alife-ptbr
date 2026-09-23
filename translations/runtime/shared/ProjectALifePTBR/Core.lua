@@ -106,15 +106,42 @@ function PT.contract(text)
     return string.sub(s, 2, -2)
 end
 
+-- Den descriptions built by ALifeRumors.describe ("the school on the north side
+-- of Riverside"); only rebuilt when the place noun is known.
+PT.sides = { north = "norte", south = "sul", east = "leste", west = "oeste", northeast = "nordeste",
+    northwest = "noroeste", southeast = "sudeste", southwest = "sudoeste" }
+function PT.denText(text)
+    local noun, town, side = string.match(text, "^(.-) out past the county road$")
+    if noun ~= nil and PT.t(noun) ~= noun then return PT.t(noun) .. " depois da estrada do condado" end
+    noun, town = string.match(text, "^(.-) in the middle of (.+)$")
+    if noun ~= nil and PT.t(noun) ~= noun then return PT.t(noun) .. " no centro de " .. town end
+    noun, side, town = string.match(text, "^(.-) on the (%a+) side of (.+)$")
+    if noun ~= nil and PT.t(noun) ~= noun and PT.sides[side] ~= nil then
+        return PT.t(noun) .. " no lado " .. PT.sides[side] .. " de " .. town
+    end
+    return nil
+end
+
+-- Placeholder values: known words and den descriptions.
+function PT.value(text)
+    if type(text) ~= "string" or text == "" then return text end
+    local exact = PT.t(text)
+    if exact ~= text then return exact end
+    return PT.denText(text) or text
+end
+
 -- Rendered text whose English template had placeholders: match it against the
 -- templates and rebuild the Portuguese one with the captured values.
 local MAGIC = "([%^%$%(%)%%%.%[%]%*%+%-%?])"
 function PT.buildTemplates()
     if PT.templates ~= nil then return PT.templates end
     if not PT.loaded then PT.load() end
-    PT.templates = {}
+    PT.templates, PT.prefixes = {}, {}
     for en, pt in pairs(PT.dict) do
-        if string.find(en, "{", 1, true) then
+        if string.sub(en, -1) == " " then
+            -- Line the code finishes with a value ("... [Received: " .. label .. "]").
+            PT.prefixes[#PT.prefixes + 1] = { en = en, pt = pt }
+        elseif string.find(en, "{", 1, true) then
             local keys = {}
             local pattern = string.gsub(en, MAGIC, "%%%1")
             pattern = string.gsub(pattern, "{([a-z]+)}", function(key)
@@ -132,8 +159,14 @@ function PT.fromTemplate(text)
         local captures = { string.match(text, template.pattern) }
         if #captures > 0 then
             local values = {}
-            for index, key in ipairs(template.keys) do values[key] = PT.t(captures[index]) end
+            for index, key in ipairs(template.keys) do values[key] = PT.value(captures[index]) end
             return PT.contract((string.gsub(template.pt, "{([a-z]+)}", function(key) return values[key] or "" end)))
+        end
+    end
+    for _, prefix in ipairs(PT.prefixes) do
+        if string.sub(text, 1, #prefix.en) == prefix.en then
+            local joint = string.sub(prefix.pt, -1) == " " and "" or " "
+            return prefix.pt .. joint .. string.sub(text, #prefix.en + 1)
         end
     end
     return nil
