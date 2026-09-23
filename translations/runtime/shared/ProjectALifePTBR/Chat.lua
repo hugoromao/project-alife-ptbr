@@ -53,13 +53,44 @@ end
 -- In a Portuguese sentence "no" is "em + o", but the English matcher reads it as a
 -- refusal. Only the player's text is rewritten (patterns go through normalize too),
 -- and a lone "no" keeps meaning no.
+function Chat.rewriteNo(s)
+    s = " " .. s .. " "
+    for _ = 1, 2 do s = string.gsub(s, "([^%a])no([^%a])", "%1em o%2") end
+    return string.sub(s, 2, -2)
+end
+
 function Chat.player(text)
-    local s = " " .. string.lower(Chat.fold(tostring(text or ""))) .. " "
+    local s = string.lower(Chat.fold(tostring(text or "")))
     local words = 0
     for _ in string.gmatch(s, "%a+") do words = words + 1 end
     if words < 2 then return text end
-    for _ = 1, 2 do s = string.gsub(s, "([^%a])no([^%a])", "%1em o%2") end
-    return s
+    return Chat.rewriteNo(s)
+end
+
+local function groups(text)
+    local result = {}
+    for group in string.gmatch(tostring(text or ""), "[^;]+") do
+        local words = {}
+        for word in string.gmatch(group, "[^,]+") do words[#words + 1] = Chat.rewriteNo(word) end
+        if #words > 0 then result[#result + 1] = words end
+    end
+    return result
+end
+
+-- A separate entry with the same id: keyword groups of one entry must all match,
+-- so Portuguese groups cannot be mixed into the English entry.
+function Chat.entry(id, priority, patterns, keywords)
+    local entry = { id = id, priority = priority, patterns = {}, all = {}, none = {}, ptbr = true }
+    for pattern in string.gmatch(tostring(patterns or ""), "[^|]+") do
+        entry.patterns[#entry.patterns + 1] = Chat.rewriteNo(pattern)
+    end
+    for part in string.gmatch(tostring(keywords or ""), "[^|]+") do
+        local key, value = string.match(part, "^([a-z]+)=(.*)$")
+        if key == "all" or key == "none" then
+            for _, group in ipairs(groups(value)) do entry[key][#entry[key] + 1] = group end
+        end
+    end
+    return entry
 end
 
 -- Adds the Portuguese patterns once per loaded intent table.
@@ -67,9 +98,10 @@ function Chat.register(data)
     if data == nil or type(data.intent) ~= "function" or Chat.registeredFor == data.intents then return end
     local ok, intents = pcall(require, "ProjectALifePTBR/ChatIntents")
     if ok and type(intents) == "table" then
-        for _, entry in ipairs(intents) do
-            if data.intentById[entry[1]] ~= nil then
-                data.intent(entry[1], 50, entry[2], entry[3] or "")
+        for _, row in ipairs(intents) do
+            local original = data.intentById[row[1]]
+            if original ~= nil then
+                data.intents[#data.intents + 1] = Chat.entry(row[1], original.priority, row[2], row[3])
             end
         end
     end
