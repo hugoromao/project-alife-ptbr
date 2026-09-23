@@ -1,15 +1,15 @@
 -- PT-BR speech layer for Project A-Life. Display text only: ids, gates, events and
 -- saved data stay English. A line without a translation is shown in English.
-local PT = ProjectALifePTBR or { dict = {}, loaded = false, entries = 0 }
-ProjectALifePTBR = PT
+local PT = ALifePTBRHugo or { dict = {}, loaded = false, entries = 0 }
+ALifePTBRHugo = PT
 
 function PT.load()
     if PT.loaded then return PT.entries end
     PT.loaded = true
-    local okIndex, index = pcall(require, "ProjectALifePTBR/Speech/Index")
+    local okIndex, index = pcall(require, "ALifePTBRHugo/Speech/Index")
     local parts = okIndex and type(index) == "table" and tonumber(index.parts) or 0
     for part = 1, parts do
-        local ok, fill = pcall(require, "ProjectALifePTBR/Speech/Part" .. part)
+        local ok, fill = pcall(require, "ALifePTBRHugo/Speech/Part" .. part)
         if ok and type(fill) == "function" then PT.entries = PT.entries + (fill(PT.dict) or 0) end
     end
     return PT.entries

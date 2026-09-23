@@ -11,7 +11,7 @@ Com isso claro, segue abaixo os detalhes do mod/tradução.
 Tradução para português do Brasil do mod [Project A-Life [ALIFE NPCS]](https://steamcommunity.com/sharedfiles/filedetails/?id=3803984183)
 (Workshop 3803984183, Mod ID `ProjectALifeNPCs`), feito por Vice e equipe.
 
-Mod ID da tradução: `ProjectALifeNPCs_PTBR`. Exige o mod original.
+Mod ID da tradução: `ProjectALifeNPCs_PTBR_Hugo`. Exige o mod original.
 
 > **Oficina da Steam:** https://steamcommunity.com/sharedfiles/filedetails/?id=3806951335
 >

@@ -1,7 +1,7 @@
 -- PT-BR, server side: module line tables that are shown with shell:Say directly,
 -- bypassing Speech/AudioPolicy. Translated in place once the modules are loaded.
-require "ZZZ_ProjectALifePTBR"
-local PT = ProjectALifePTBR
+require "ZZZ_ALifePTBRHugo"
+local PT = ALifePTBRHugo
 
 local function translateList(list)
     if type(list) ~= "table" then return end

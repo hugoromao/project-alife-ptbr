@@ -15,7 +15,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 STEAMCMD = Path.home() / 'steamcmd' / 'steamcmd.sh'
-ITEM_DIR = ROOT / 'build' / 'Workshop' / 'ProjectALifeNPCs_PTBR'
+ITEM_DIR = ROOT / 'build' / 'Workshop' / 'ProjectALifeNPCs_PTBR_Hugo'
 
 
 def vdf_string(text):

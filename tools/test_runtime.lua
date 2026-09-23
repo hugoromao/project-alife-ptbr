@@ -9,8 +9,8 @@ local function check(name, got, want)
 end
 
 -- test dictionary and chat patterns, installed before the hooks load
-package.preload["ProjectALifePTBR/Speech/Index"] = function() return { parts = 1 } end
-package.preload["ProjectALifePTBR/Speech/Part1"] = function() return function(D)
+package.preload["ALifePTBRHugo/Speech/Index"] = function() return { parts = 1 } end
+package.preload["ALifePTBRHugo/Speech/Part1"] = function() return function(D)
     D["First quiet all day. I don't trust it, but I'll take it."] = "Primeiro sil\195\170ncio do dia. N\195\163o confio, mas aceito."
     D["Stay right there. Don't move a muscle."] = "Fica a\195\173 mesmo. N\195\163o mexe um m\195\186sculo."
     D["Saw a crew near {town} on {date}, around {time}."] = "Vi um bando perto de {town} em {date}, l\195\161 pelas {time}."
@@ -23,15 +23,15 @@ package.preload["ProjectALifePTBR/Speech/Part1"] = function() return function(D)
     D["Uhh... Alright. Take this. That's all I can spare. [Received: "] =
         "H\195\163... T\195\161 bom. Toma isso. \195\137 tudo o que eu posso dar. [Recebido:"
     return 11 end end
-package.preload["ProjectALifePTBR/ChatIntents"] = function() return {
+package.preload["ALifePTBRHugo/ChatIntents"] = function() return {
     { "ASK_FOOD", "voce tem comida|tem comida sobrando|tem algo para comer", "" },
     { "YES", "sim|claro|pode ser", "" }, { "NO", "nao|agora nao", "" } } end
 
 -- The game loads every shared file alphabetically before any require: Chat.lua
 -- runs before Core.lua and must not depend on the global already existing.
-ProjectALifePTBR = nil
-require "ProjectALifePTBR/Chat"
-require "ZZZ_ProjectALifePTBR"
+ALifePTBRHugo = nil
+require "ALifePTBRHugo/Chat"
+require "ZZZ_ALifePTBRHugo"
 local Data, Speech, Intents = ProjectALife.DialogueData, ProjectALife.Speech, ProjectALife.TalkIntents
 Speech.adapters.clock = function() return { year = 1993, month = 7, day = 9, hour = 15, daysSurvived = 3 } end
 Speech.adapters.isServer = function() return false end
@@ -56,7 +56,7 @@ check("caption template with contraction", ProjectALife.AudioPolicy.caption("The
     "Os ladr\195\181es dormem na escola.")
 package.path = arg[1] .. "/media/lua/server/?.lua;" .. arg[2] .. "/media/lua/server/?.lua;" .. package.path
 ProjectALife.ModuleRegistry = ProjectALife.ModuleRegistry or { register = function() return true end }
-require "ZZZ_ProjectALifePTBR_Server"
+require "ZZZ_ALifePTBRHugo_Server"
 local okPanic, Panic = pcall(require, "ProjectALife/Modules/ALifeModulePanic")
 check("server hook translates panic lines", okPanic and Panic.gunFearLines[1], "Ele t\195\161 armado -- corre!")
 local okCareful, Careful = pcall(require, "ProjectALife/Modules/ALifeModuleCareful")
@@ -69,7 +69,7 @@ check("den description with side", Speech.render("The robbers sleep at {den}.",
     { den = "the school on the north side of Riverside" }, shell),
     "Os ladr\195\181es dormem na escola no lado norte de Riverside.")
 check("prefix line finished with a value",
-    ProjectALifePTBR.caption("Uhh... Alright. Take this. That's all I can spare. [Received: Canned Beans]"),
+    ALifePTBRHugo.caption("Uhh... Alright. Take this. That's all I can spare. [Received: Canned Beans]"),
     "H\195\163... T\195\161 bom. Toma isso. \195\137 tudo o que eu posso dar. [Recebido: Canned Beans]")
 check("chat PT with accents (bytes)", Intents.classify("Voc\195\170 tem comida?"), "ASK_FOOD")
 check("chat PT abbreviation", Intents.classify("vc tem comida??"), "ASK_FOOD")

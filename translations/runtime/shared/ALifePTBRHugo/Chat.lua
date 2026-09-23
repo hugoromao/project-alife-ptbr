@@ -3,8 +3,8 @@
 -- abbreviations and registers Portuguese patterns on the existing intent ids.
 -- The game loads every shared file in alphabetical order, so this one runs before
 -- Core.lua: require it instead of assuming the global already exists.
-require "ProjectALifePTBR/Core"
-local PT = ProjectALifePTBR
+require "ALifePTBRHugo/Core"
+local PT = ALifePTBRHugo
 local Chat = PT.Chat or {}
 PT.Chat = Chat
 
@@ -106,7 +106,7 @@ end
 -- Adds the Portuguese patterns once per loaded intent table.
 function Chat.register(data)
     if data == nil or type(data.intent) ~= "function" or Chat.registeredFor == data.intents then return end
-    local ok, intents = pcall(require, "ProjectALifePTBR/ChatIntents")
+    local ok, intents = pcall(require, "ALifePTBRHugo/ChatIntents")
     if ok and type(intents) == "table" then
         for _, row in ipairs(intents) do
             local original = data.intentById[row[1]]

@@ -4,10 +4,10 @@ require "ProjectALife/Dialogue/ALifeDialogueData"
 require "ProjectALife/Dialogue/ALifeSpeech"
 require "ProjectALife/Talk/ALifeTalkIntents"
 require "ProjectALife/Audio/ALifeAudioPolicy"
-require "ProjectALifePTBR/Core"
-require "ProjectALifePTBR/Chat"
+require "ALifePTBRHugo/Core"
+require "ALifePTBRHugo/Chat"
 
-local PT = ProjectALifePTBR
+local PT = ALifePTBRHugo
 if PT.hooked then return PT end
 PT.hooked = true
 

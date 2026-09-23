@@ -6,11 +6,11 @@ Todo lote traduzido é salvo em `translations/speech/` e vai para um commit no G
 ## Arquitetura (decidida)
 
 - Nenhum arquivo do original é substituído para as falas. Arquivos novos do mod:
-  - `42/media/lua/shared/ProjectALifePTBR/Core.lua`: dicionário (inglês → português), busca e valores
+  - `42/media/lua/shared/ALifePTBRHugo/Core.lua`: dicionário (inglês → português), busca e valores
     padrão em PT para `{date}`, `{time}`, `{count}` etc.
-  - `42/media/lua/shared/ProjectALifePTBR/Speech/*.lua`: dicionário gerado pelo build a partir de
+  - `42/media/lua/shared/ALifePTBRHugo/Speech/*.lua`: dicionário gerado pelo build a partir de
     `translations/speech/**/*.json`.
-  - `42/media/lua/shared/ZZZ_ProjectALifePTBR.lua`: ganchos.
+  - `42/media/lua/shared/ZZZ_ALifePTBRHugo.lua`: ganchos.
     - `DialogueData.load`: traduz na memória os registros (talk/barks/scenes/radio), depois de carregados.
     - `Speech.render`: traduz o modelo antes de preencher as `{marcações}`.
     - `Speech.say`: traduz falas fixas do código (assalto, pânico, reações etc.) por texto exato.
