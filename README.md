@@ -13,6 +13,8 @@ Tradução para português do Brasil do mod [Project A-Life [ALIFE NPCS]](https:
 
 Mod ID da tradução: `ProjectALifeNPCs_PTBR`. Exige o mod original.
 
+> **Oficina da Steam:** https://steamcommunity.com/sharedfiles/filedetails/?id=3806951335
+>
 > **Tradução feita com IA generativa.** Os textos em português, as ferramentas deste repositório e os
 > ajustes de código foram produzidos com o modelo **Claude Opus 5.5** (Anthropic), com a tradução espanhola
 > da comunidade como referência do que traduzir. Parte das falas dos NPCs (respostas da conversa, cenas e
