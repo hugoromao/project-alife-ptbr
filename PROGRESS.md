@@ -55,6 +55,15 @@ git clone https://github.com/hugoromao/project-alife-ptbr.git && cd project-alif
 ./tools/test_runtime.sh      # compila o Lua 5.1 local e roda os testes
 ```
 
+## Publicação na Oficina
+
+Item 3806951335 (id em `art/workshop_id.txt`). O envio pelo jogo falhou ("Error requesting Steam to update
+the item"); use o SteamCMD, com o login já salvo:
+
+```bash
+python3 tools/publish_workshop.py hugiss52 "nota da atualização"
+```
+
 ## Tradução em paralelo
 
 A fila de cada fonte é dividida em N partes fixas (blocos de 50 unidades, distribuídos em rodízio),
