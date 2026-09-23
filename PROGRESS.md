@@ -17,6 +17,17 @@ Todo lote traduzido é salvo em `translations/speech/` e vai para um commit no G
     - Chat: `Intents.normalize` (acentos e abreviações PT) e intenções PT registradas no `Data.load`.
 - Fala sem tradução aparece em inglês (não quebra nada).
 
+## Situação
+
+<!-- stats -->
+| Fonte | Traduzidas | Total | % |
+|---|---:|---:|---:|
+| barks | 250 | 3741 | 6.7% |
+| talk | 0 | 7191 | 0.0% |
+| scenes | 0 | 15198 | 0.0% |
+| radio | 0 | 9106 | 0.0% |
+<!-- /stats -->
+
 ## Etapas
 
 1. [x] Infraestrutura (ganchos, formato do dicionário, build, ferramentas de fila e checagem, `tools/test_runtime.sh`)
