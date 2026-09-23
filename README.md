@@ -1,5 +1,13 @@
 # Project A-Life [ALIFE NPCS] — Tradução PT-BR
 
+Antes de qualquer coisa, quero deixar claro que este é um mod 100% vibecodado com o Claude Code. Ou seja, pode haver problemas sérios de tradução ou bugs no decorrer do jogo. UTILIZE POR SUA CONTA E RISCO.
+
+Não sou desenvolvedor de Lua nem de mods do Zomboid (Tenho interesse, inclusive quero começar a estudar Blender no tempo livre). O problema é que atualmente não existe tradução PT-BR, e eu gostaria de poder jogar este mod com meus amigos que não falam inglês. Assim, vamos seguir testando essa implementação gerada pela IA e corrigindo os problemas que encontrarmos no nosso server. Quem sabe quando eu tiver mais tempo e conhecimento da engine do jogo eu faça uma tradução mais minuciosa e 100% feita por humanos.
+
+Com isso claro, segue abaixo os detalhes do mod/tradução.
+
+---
+
 Tradução para português do Brasil do mod [Project A-Life [ALIFE NPCS]](https://steamcommunity.com/sharedfiles/filedetails/?id=3803984183)
 (Workshop 3803984183, Mod ID `ProjectALifeNPCs`), feito por Vice e equipe.
 
