@@ -42,7 +42,7 @@ function PT.translateData()
     for _, scene in ipairs(Data.scenes or {}) do translateRecords(scene.turns) end
     for _, segment in ipairs(Data.segments or {}) do translateRecords(segment.lines) end
     Speech.intelCache = {}
-    PT.Chat.register(Data)
+    if PT.Chat ~= nil and type(PT.Chat.register) == "function" then PT.Chat.register(Data) end
 end
 
 if Data ~= nil and type(Data.load) == "function" then

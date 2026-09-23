@@ -27,6 +27,10 @@ package.preload["ProjectALifePTBR/ChatIntents"] = function() return {
     { "ASK_FOOD", "voce tem comida|tem comida sobrando|tem algo para comer", "" },
     { "YES", "sim|claro|pode ser", "" }, { "NO", "nao|agora nao", "" } } end
 
+-- The game loads every shared file alphabetically before any require: Chat.lua
+-- runs before Core.lua and must not depend on the global already existing.
+ProjectALifePTBR = nil
+require "ProjectALifePTBR/Chat"
 require "ZZZ_ProjectALifePTBR"
 local Data, Speech, Intents = ProjectALife.DialogueData, ProjectALife.Speech, ProjectALife.TalkIntents
 Speech.adapters.clock = function() return { year = 1993, month = 7, day = 9, hour = 15, daysSurvived = 3 } end

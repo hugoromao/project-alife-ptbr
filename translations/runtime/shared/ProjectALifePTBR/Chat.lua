@@ -1,6 +1,9 @@
 -- PT-BR chat: lets NPCs understand what the player types in Portuguese.
 -- The English matcher keeps working; this folds accents, expands common chat
 -- abbreviations and registers Portuguese patterns on the existing intent ids.
+-- The game loads every shared file in alphabetical order, so this one runs before
+-- Core.lua: require it instead of assuming the global already exists.
+require "ProjectALifePTBR/Core"
 local PT = ProjectALifePTBR
 local Chat = PT.Chat or {}
 PT.Chat = Chat
