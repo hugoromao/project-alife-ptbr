@@ -22,7 +22,7 @@ Todo lote traduzido é salvo em `translations/speech/` e vai para um commit no G
 <!-- stats -->
 | Fonte | Traduzidas | Total | % |
 |---|---:|---:|---:|
-| barks | 850 | 3741 | 22.7% |
+| barks | 1150 | 3741 | 30.7% |
 | talk | 0 | 7191 | 0.0% |
 | scenes | 0 | 15198 | 0.0% |
 | radio | 0 | 9106 | 0.0% |
@@ -33,7 +33,8 @@ Todo lote traduzido é salvo em `translations/speech/` e vai para um commit no G
 1. [x] Infraestrutura (ganchos, formato do dicionário, build, ferramentas de fila e checagem, `tools/test_runtime.sh`)
 2. [x] Chat em português (`translations/chat/intents_ptbr.py`; teste com `tools/chat_try.sh "frase"`)
 3. [ ] Gritos e comentários (barks, cerca de 3,7 mil frases)
-4. [ ] Falas fixas do código: assalto, pânico, posturas, arrombamento, reações e vozes
+4. [ ] Falas fixas do código: assalto, pânico, posturas, arrombamento, reações e vozes; nomes de
+   esconderijo `{den}` em `server/ProjectALife/Talk/ALifeRumors.lua` ("the motel", "a house"...)
 5. [ ] Respostas da conversa (talk, cerca de 7,2 mil frases)
 6. [ ] (etapa 2) Cenas e rádio
 
