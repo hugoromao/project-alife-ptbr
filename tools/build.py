@@ -48,24 +48,32 @@ visibility=public
 """
 
 WORKSHOP_DESCRIPTION = """[h1]Project A-Life [ALIFE NPCS] - Tradução PT-BR[/h1]
-Tradução para português do Brasil do mod [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3803984183]Project A-Life [ALIFE NPCS][/url], de Vice.
+Antes de qualquer coisa, quero deixar claro que este é um mod 100% vibecodado com o Claude Code. Ou seja, pode haver problemas sérios de tradução ou bugs no decorrer do jogo. [b]UTILIZE POR SUA CONTA E RISCO.[/b]
 
-[b]Requer o mod original[/b] (ProjectALifeNPCs). Ative os dois; esta tradução carrega depois do original.
-Feita para a versão {upstream_version} do original.
+Não sou desenvolvedor de Lua nem de mods do Zomboid (Tenho interesse, inclusive quero começar a estudar Blender no tempo livre). O problema é que atualmente não existe tradução PT-BR, e eu gostaria de poder jogar este mod com meus amigos que não falam inglês. Assim, vamos seguir testando essa implementação gerada pela IA e corrigindo os problemas que encontrarmos no nosso server. Quem sabe quando eu tiver mais tempo e conhecimento da engine do jogo eu faça uma tradução mais minuciosa e 100% feita por humanos.
+
+Com isso claro, segue abaixo os detalhes do mod/tradução.
+
+[hr][/hr]
+Tradução para português do Brasil do mod [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3803984183]Project A-Life [ALIFE NPCS][/url] (Mod ID ProjectALifeNPCs), feito por Vice e equipe.
+
+[b]Requer o mod original.[/b] Ative os dois; esta tradução carrega depois do original. Mod ID da tradução: ProjectALifeNPCs_PTBR. Feita para a versão {upstream_version} do original.
 
 [h2]O que está traduzido[/h2]
 [list]
-[*]Interface, menus, Criador de NPCs e opções de sandbox
+[*]Interface: Criador de facções e NPCs, menus de contexto, painel de geração, console de encontros e opções de sandbox
 [*]Falas dos NPCs: gritos de combate, avisos, reações, vozes das facções e respostas da conversa
 [*]Chat em português: você pode digitar em português para conversar com os NPCs (acentos e abreviações como "vc" e "pra" funcionam)
 [*]Cenas (conversas entre NPCs) e rádio: tradução em andamento; o que ainda não foi traduzido aparece em inglês
 [/list]
 
 [h2]Tradução feita com IA generativa[/h2]
-Os textos em português e as ferramentas foram produzidos com o Claude Opus 5.5 e o Claude Sonnet 5 (Anthropic); parte das cenas e do rádio foi traduzida localmente com o Gemma 3 12B. A tradução espanhola da comunidade serviu de referência. Ainda não houve uma revisão humana completa: se encontrar algo estranho, avise nos comentários ou abra uma issue.
+Os textos em português e as ferramentas foram produzidos com o Claude Opus 5.5 e o Claude Sonnet 5 (Anthropic); parte das cenas e do rádio foi traduzida localmente com o Gemma 3 12B. A tradução espanhola da comunidade serviu de referência. Ainda não houve uma revisão humana completa: se encontrar algo estranho, avise nos comentários ou abra uma issue no GitHub.
 
-Código-fonte e ferramentas: [url=https://github.com/hugoromao/project-alife-ptbr]github.com/hugoromao/project-alife-ptbr[/url]
-Todo o crédito do mod original é de seu autor. Este item não inclui o mod original."""
+[h2]Código-fonte[/h2]
+[url=https://github.com/hugoromao/project-alife-ptbr]github.com/hugoromao/project-alife-ptbr[/url]
+
+Todo o crédito do mod original é de seus autores. Este item não inclui o mod original."""
 
 
 
