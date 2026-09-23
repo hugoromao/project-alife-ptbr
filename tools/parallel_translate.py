@@ -21,9 +21,9 @@ TOOLS = ROOT / 'tools'
 WORK = ROOT / 'work'
 PARTS = 4
 MODEL = 'sonnet'
-SIZES = {'talk': 250, 'scenes': 200, 'radio': 150}
-RETRY_WAIT = 600
-MAX_FAILURES = 12
+SIZES = {'talk': 150, 'scenes': 150, 'radio': 100}
+RETRY_WAIT = 900
+MAX_FAILURES = 30
 print_lock = threading.Lock()
 
 
@@ -94,8 +94,10 @@ def lane(k, sources):
                 break
             try:
                 rows = translate(lines)
-                if len(rows) < len(lines) // 2:
+                if len(rows) < min(20, len(lines)):
                     raise RuntimeError(f'resposta com {len(rows)} de {len(lines)} linhas')
+                if len(rows) < len(lines):
+                    log(f'p{k}: {source} resposta parcial ({len(rows)} de {len(lines)}), o resto volta pra fila')
             except Exception as error:  # usage limit, timeout, network
                 failures += 1
                 log(f'p{k}: {source} falhou ({failures}/{MAX_FAILURES}): {error}')
