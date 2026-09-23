@@ -3,6 +3,7 @@
 require "ProjectALife/Dialogue/ALifeDialogueData"
 require "ProjectALife/Dialogue/ALifeSpeech"
 require "ProjectALife/Talk/ALifeTalkIntents"
+require "ProjectALife/Audio/ALifeAudioPolicy"
 require "ProjectALifePTBR/Core"
 require "ProjectALifePTBR/Chat"
 
@@ -59,17 +60,32 @@ if Speech ~= nil then
     -- for placeholders the caller did not fill.
     local originalRender = Speech.render
     function Speech.render(text, vars, shell)
-        if type(text) == "string" then
-            text = t(text)
-            vars = PT.withDefaults(text, vars, shell)
+        if type(text) ~= "string" then return originalRender(text, vars, shell) end
+        text = t(text)
+        if type(vars) == "table" then
+            local translated = {}
+            for key, value in pairs(vars) do
+                translated[key] = type(value) == "string" and t(value) or value
+            end
+            vars = translated
         end
-        return originalRender(text, vars, shell)
+        vars = PT.withDefaults(text, vars, shell)
+        return PT.contract(originalRender(text, vars, shell))
     end
 
-    -- Fixed lines written in the code (robbery, panic, stances, reactions...).
+    -- Fixed lines written in the code (robbery, stances, reactions...).
     local originalSay = Speech.say
     function Speech.say(shell, text, options)
-        return originalSay(shell, t(text), options)
+        return originalSay(shell, PT.caption(text), options)
+    end
+end
+
+-- Voice captions and ambient gossip reach the screen through AudioPolicy.caption.
+local Policy = ProjectALife.AudioPolicy
+if Policy ~= nil and type(Policy.caption) == "function" then
+    local originalCaption = Policy.caption
+    function Policy.caption(text)
+        return originalCaption(PT.caption(text))
     end
 end
 

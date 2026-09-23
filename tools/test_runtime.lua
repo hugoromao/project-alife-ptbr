@@ -14,7 +14,11 @@ package.preload["ProjectALifePTBR/Speech/Part1"] = function() return function(D)
     D["First quiet all day. I don't trust it, but I'll take it."] = "Primeiro sil\195\170ncio do dia. N\195\163o confio, mas aceito."
     D["Stay right there. Don't move a muscle."] = "Fica a\195\173 mesmo. N\195\163o mexe um m\195\186sculo."
     D["Saw a crew near {town} on {date}, around {time}."] = "Vi um bando perto de {town} em {date}, l\195\161 pelas {time}."
-    return 3 end end
+    D["Grabbing this {found}."] = "Vou pegar {found}."
+    D["The robbers sleep at {den}."] = "Os ladr\195\181es dormem em {den}."
+    D["the school"] = "a escola"
+    D["He's got a gun -- move!"] = "Ele t\195\161 armado -- corre!"
+    return 8 end end
 package.preload["ProjectALifePTBR/ChatIntents"] = function() return {
     { "ASK_FOOD", "voce tem comida|tem comida sobrando|tem algo para comer", "" },
     { "YES", "sim|claro|pode ser", "" }, { "NO", "nao|agora nao", "" } } end
@@ -36,6 +40,17 @@ check("render template + PT date/time", Speech.render("Saw a crew near {town} on
 check("render untranslated stays English", Speech.render("Totally new line.", nil, shell), "Totally new line.")
 Speech.say(shell, "Stay right there. Don't move a muscle.", {})
 check("say translates fixed code line", drawn, "Fica a\195\173 mesmo. N\195\163o mexe um m\195\186sculo.")
+check("caption template with filled placeholder", ProjectALife.AudioPolicy.caption("Grabbing this canned beans."), "Vou pegar canned beans.")
+check("caption bracketed stays hidden", ProjectALife.AudioPolicy.caption("[static]"), nil)
+check("render translates var values + contraction", Speech.render("The robbers sleep at {den}.", { den = "the school" }, shell),
+    "Os ladr\195\181es dormem na escola.")
+check("caption template with contraction", ProjectALife.AudioPolicy.caption("The robbers sleep at the school."),
+    "Os ladr\195\181es dormem na escola.")
+package.path = arg[1] .. "/media/lua/server/?.lua;" .. arg[2] .. "/media/lua/server/?.lua;" .. package.path
+ProjectALife.ModuleRegistry = ProjectALife.ModuleRegistry or { register = function() return true end }
+require "ZZZ_ProjectALifePTBR_Server"
+local okPanic, Panic = pcall(require, "ProjectALife/Modules/ALifeModulePanic")
+check("server hook translates panic lines", okPanic and Panic.gunFearLines[1], "Ele t\195\161 armado -- corre!")
 check("chat PT with accents (bytes)", Intents.classify("Voc\195\170 tem comida?"), "ASK_FOOD")
 check("chat PT abbreviation", Intents.classify("vc tem comida??"), "ASK_FOOD")
 check("chat PT yes pending", Intents.classify("claro", true), "YES")

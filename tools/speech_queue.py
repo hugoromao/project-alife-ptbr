@@ -6,7 +6,7 @@ next untranslated lines with their context so a batch can be translated as
 "id<TAB>portuguese" lines.
 
   python3 speech_queue.py stats
-  python3 speech_queue.py next <source> [count]   # source: barks | talk | scenes | radio
+  python3 speech_queue.py next <source> [count]   # source: barks | code | talk | scenes | radio
       writes work/queue_current.json (id -> English) for speech_commit.py
 
 Translations live in translations/speech/<source>/NNN.json as {english: portuguese}.
@@ -22,7 +22,7 @@ from lualex import tokenize
 from paths import ROOT, upstream_version_dir
 
 SPEECH_DIR = ROOT / 'translations/speech'
-SOURCES = ('barks', 'talk', 'scenes', 'radio')
+SOURCES = ('barks', 'code', 'talk', 'scenes', 'radio')
 
 
 def text_id(text):
@@ -74,6 +74,7 @@ def extract():
             for i in range(0, len(rest) - 1, 2):
                 unit.append((rest[i + 1].value, f'{sid} ({topic}; {short_gate(gate)}) fala {rest[i].text}'))
             out['scenes'].append(unit)
+    out['code'] = extract_code()
     for f in sorted(data.glob('ALifeDialogue_radio_*.lua')):
         for _, toks in _calls(f, ['seg']):
             strs = [t.value for t in toks if t.kind == 'string']
@@ -81,6 +82,41 @@ def extract():
             unit = [(rest[i + 1], f'{sid} ({kind}) {rest[i]}') for i in range(0, len(rest) - 1, 2)]
             out['radio'].append(unit)
     return out
+
+
+# Speech written in the code (voice styles, reactions, gossip, module shouts,
+# rumor place names). Voice-pack captions for recorded audio are left out: they
+# only show with NPC voice audio on, and then they match English recordings.
+CODE_FILES = [
+    'shared/ProjectALife/Audio/ALifeFactionVoiceStyles.lua', 'shared/ProjectALife/Audio/ALifeReactionLibrary.lua',
+    'shared/ProjectALife/Audio/ALifeVoiceDialogue.lua', 'shared/ProjectALife/Audio/ALifeVoiceExtraEvents.lua',
+    'shared/ProjectALife/Audio/ALifeVoiceLootEvents.lua', 'shared/ProjectALife/Audio/ALifeGossip.lua',
+    'shared/ProjectALife/Audio/ALifeVoiceCatalog.lua', 'server/ProjectALife/Talk/ALifeTalkSupplies.lua',
+    'server/ProjectALife/Talk/ALifeRumors.lua', 'server/ProjectALife/Modules/ALifeModulePanic.lua',
+    'server/ProjectALife/Modules/ALifeModuleStances.lua', 'server/ProjectALife/Modules/ALifeModuleCareful.lua',
+    'server/ProjectALife/Modules/ALifeModuleRobbery.lua', 'server/ProjectALife/Modules/ALifeModuleBreach.lua',
+]
+CODE_SKIP_CTX = re.compile(r'(print|log|Log|error|require|summary =|label =|getTexture|Sound|sound =|playSound|id =|event =)')
+
+
+def extract_code():
+    from anchors import literals_with_context
+    root = upstream_version_dir() / 'media/lua'
+    units = []
+    for rel in CODE_FILES:
+        path = root / rel
+        if not path.exists():
+            continue
+        src = path.read_text(encoding='utf-8')
+        for tok, ctx in literals_with_context(src):
+            v = tok.value
+            if CODE_SKIP_CTX.search(ctx) or not re.search(r'[a-z]{2}', v) or re.search(r'[_%/]', v):
+                continue
+            if len(v.split()) < 2 and not re.search(r'[.!?]$', v):
+                continue
+            line = src.count('\n', 0, tok.start) + 1
+            units.append([(v, f'{path.stem}:{line} {ctx[-30:]}')])
+    return units
 
 
 def translated():
