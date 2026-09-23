@@ -34,8 +34,39 @@ modversion={version}
 versionMin=42.20.0
 poster=poster.png
 icon=icon.png
-description=Tradução para português do Brasil do Project A-Life [ALIFE NPCS] (interface, Criador, menus, rádio e opções de sandbox). Requer o mod original ProjectALifeNPCs. Não inclui o mod original. Feita para a versão {upstream_version} do original.
+description=Tradução para português do Brasil do Project A-Life [ALIFE NPCS]: interface, Criador, menus, opções de sandbox, falas dos NPCs e chat em português. Requer o mod original ProjectALifeNPCs. Não inclui o mod original. Feita para a versão {upstream_version} do original.
 """
+
+# Read by the in-game Workshop uploader (Menu principal > Oficina). After the first
+# upload the game adds id=<workshop id> to the copy it uploaded; keep that id in
+# art/workshop_id.txt so later builds update the same item.
+WORKSHOP_TXT = """version=1
+{id_line}title=Project A-Life [ALIFE NPCS] - Tradução PT-BR
+{description}
+tags=Build 42;Language;Multiplayer
+visibility=public
+"""
+
+WORKSHOP_DESCRIPTION = """[h1]Project A-Life [ALIFE NPCS] - Tradução PT-BR[/h1]
+Tradução para português do Brasil do mod [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3803984183]Project A-Life [ALIFE NPCS][/url], de Vice.
+
+[b]Requer o mod original[/b] (ProjectALifeNPCs). Ative os dois; esta tradução carrega depois do original.
+Feita para a versão {upstream_version} do original.
+
+[h2]O que está traduzido[/h2]
+[list]
+[*]Interface, menus, Criador de NPCs e opções de sandbox
+[*]Falas dos NPCs: gritos de combate, avisos, reações, vozes das facções e respostas da conversa
+[*]Chat em português: você pode digitar em português para conversar com os NPCs (acentos e abreviações como "vc" e "pra" funcionam)
+[*]Cenas (conversas entre NPCs) e rádio: tradução em andamento; o que ainda não foi traduzido aparece em inglês
+[/list]
+
+[h2]Tradução feita com IA generativa[/h2]
+Os textos em português e as ferramentas foram produzidos com o Claude Opus 5.5 e o Claude Sonnet 5 (Anthropic); parte das cenas e do rádio foi traduzida localmente com o Gemma 3 12B. A tradução espanhola da comunidade serviu de referência. Ainda não houve uma revisão humana completa: se encontrar algo estranho, avise nos comentários ou abra uma issue.
+
+Código-fonte e ferramentas: [url=https://github.com/hugoromao/project-alife-ptbr]github.com/hugoromao/project-alife-ptbr[/url]
+Todo o crédito do mod original é de seu autor. Este item não inclui o mod original."""
+
 
 
 def lua_literal(original_token_text, value):
@@ -200,6 +231,11 @@ def main():
     (MOD_DIR / 'common' / '.keep').write_text('')
     if (art / 'preview.png').exists():
         shutil.copy2(art / 'preview.png', OUT / 'Workshop' / MOD_ID / 'preview.png')
+    workshop_id = (art / 'workshop_id.txt').read_text().strip() if (art / 'workshop_id.txt').exists() else ''
+    description = '\n'.join('description=' + line for line in
+                            WORKSHOP_DESCRIPTION.format(upstream_version=upstream_version).splitlines())
+    (OUT / 'Workshop' / MOD_ID / 'workshop.txt').write_text(WORKSHOP_TXT.format(
+        id_line=f'id={workshop_id}\n' if workshop_id else '', description=description), encoding='utf-8')
 
     print(f'{len(outputs)} Lua files, {stale_total} stale entries -> {MOD_DIR}')
     if failed or (strict and stale_total):
