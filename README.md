@@ -11,15 +11,16 @@ Com isso claro, segue abaixo os detalhes do mod/tradução.
 Tradução para português do Brasil do mod [Project A-Life [ALIFE NPCS]](https://steamcommunity.com/sharedfiles/filedetails/?id=3803984183)
 (Workshop 3803984183, Mod ID `ProjectALifeNPCs`), feito por Vice e equipe.
 
-Mod ID da tradução: `ProjectALifeNPCs_PTBR_Hugo`. Exige o mod original.
+Workshop ID: `3806951335` · Mod ID: `ProjectALifeNPCs_PTBR_Hugo`. Exige o mod original.
 
 > **Oficina da Steam:** https://steamcommunity.com/sharedfiles/filedetails/?id=3806951335
 >
 > **Tradução feita com IA generativa.** Os textos em português, as ferramentas deste repositório e os
-> ajustes de código foram produzidos com o modelo **Claude Opus 5.5** (Anthropic), com a tradução espanhola
-> da comunidade como referência do que traduzir. Parte das falas dos NPCs (respostas da conversa, cenas e
-> rádio) foi traduzida pelo **Claude Sonnet 5**, seguindo o mesmo guia de estilo. Ainda não houve uma revisão humana completa, então
-> pode haver termos estranhos ou textos que não cabem na tela. Correções são bem-vindas via issue ou pull request.
+> ajustes de código foram produzidos com o modelo **Claude Opus 5.5** (Anthropic). Parte das falas dos NPCs
+> (respostas da conversa e começo das cenas) foi traduzida pelo **Claude Sonnet 5**, e o restante das cenas e o
+> rádio localmente com o **Gemma 3 12B**, seguindo o mesmo guia de estilo. Ainda não houve uma revisão humana
+> completa, então pode haver termos estranhos ou textos que não cabem na tela. Correções são bem-vindas via
+> issue ou pull request.
 
 Este repositório não inclui o mod original nem outras traduções, que são de outros autores. As
 ferramentas baixam o original da Workshop quando precisam.
@@ -38,10 +39,9 @@ Requisitos: Python 3, curl e, para as imagens, Pillow (`pip install pillow`).
   mapa de esquadrões, console de encontros, painel de geração (admin) e janela de status.
 - Descrições de comportamentos, módulos, encontros, papéis de NPC, estados de arma e mensagens de admin.
 - Opções de sandbox (`Translate/PTBR/Sandbox.json`) e nomes dos itens (`ItemName.json`).
-
-Ainda **não** estão traduzidos: as falas dos NPCs (diálogos, gritos de combate, rádio do Condado de Knox),
-cerca de 14 mil linhas. E as palavras que o jogador digita no chat para conversar continuam sendo
-reconhecidas em inglês.
+- Falas dos NPCs: gritos de combate, avisos, reações, vozes das facções e respostas da conversa (100%).
+- Chat em português: o jogador pode digitar em português (com acentos e abreviações como "vc" e "pra").
+- Cenas (conversas entre NPCs) e rádio: em andamento; o que falta aparece em inglês. Veja `PROGRESS.md`.
 
 ## Como funciona
 
