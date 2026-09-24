@@ -1,6 +1,7 @@
 """Upload (or update) the Workshop item with SteamCMD instead of the in-game uploader.
 
   python3 tools/publish_workshop.py <steam_login> "change note"
+  python3 tools/publish_workshop.py <steam_login> --so-descricao   # only title/description, files untouched
 
 Needs ~/steamcmd/steamcmd.sh and a cached login: run once, in a terminal,
   ~/steamcmd/steamcmd.sh +login <steam_login> +quit
@@ -27,7 +28,9 @@ def main():
     if len(sys.argv) < 2:
         raise SystemExit(__doc__)
     login = sys.argv[1]
-    note = sys.argv[2] if len(sys.argv) > 2 else 'Atualização da tradução'
+    text_only = '--so-descricao' in sys.argv
+    args = [a for a in sys.argv[2:] if a != '--so-descricao']
+    note = args[0] if args else 'Atualização da tradução'
     subprocess.run(['python3', str(ROOT / 'tools' / 'build.py')], check=True)
     info = (ITEM_DIR / 'workshop.txt').read_text(encoding='utf-8').splitlines()
     title = next(l.split('=', 1)[1] for l in info if l.startswith('title='))
@@ -44,6 +47,9 @@ def main():
         'description': description,
         'changenote': note,
     }
+    if text_only:
+        for key in ('contentfolder', 'previewfile', 'changenote'):
+            del fields[key]
     vdf.write_text('"workshopitem"\n{\n' + ''.join(f'\t"{k}"\t{vdf_string(v)}\n' for k, v in fields.items()) + '}\n',
                    encoding='utf-8')
     log = ROOT / 'work' / 'publish.log'

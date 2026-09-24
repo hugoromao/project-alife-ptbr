@@ -70,8 +70,9 @@ Tradução para português do Brasil do mod [url=https://steamcommunity.com/shar
 [h2]Tradução feita com IA generativa[/h2]
 Os textos em português e as ferramentas foram produzidos com o Claude Opus 5.5 e o Claude Sonnet 5 (Anthropic); parte das cenas e do rádio foi traduzida localmente com o Gemma 3 12B. A tradução espanhola da comunidade serviu de referência. Ainda não houve uma revisão humana completa: se encontrar algo estranho, avise nos comentários ou abra uma issue no GitHub.
 
-[h2]Código-fonte[/h2]
-[url=https://github.com/hugoromao/project-alife-ptbr]github.com/hugoromao/project-alife-ptbr[/url]
+[h2]Código-fonte e contato[/h2]
+Tradução: Hugo Romão — [url=https://github.com/hugoromao]github.com/hugoromao[/url]
+Repositório da tradução: [url=https://github.com/hugoromao/project-alife-ptbr]github.com/hugoromao/project-alife-ptbr[/url]
 
 Todo o crédito do mod original é de seus autores. Este item não inclui o mod original."""
 
