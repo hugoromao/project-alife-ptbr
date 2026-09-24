@@ -44,8 +44,17 @@ Todo lote traduzido é salvo em `translations/speech/` e vai para um commit no G
 
 ## Próximo passo
 
-Etapa 5: respostas da conversa, em lotes de 250:
-`python3 speech_queue.py next talk 250`. As linhas "...continuação" são falas seguintes da mesma resposta.
+Cenas e rádio são traduzidos localmente com Ollama (gemma3:12b, ~22 falas/min), em segundo plano:
+
+```bash
+setsid nohup python3 tools/ollama_translate.py scenes radio --model gemma3:12b >> work/ollama.log 2>&1 &
+touch work/STOP   # pausa depois do bloco atual (libera a GPU para jogar)
+```
+
+Situação na pausa de 24/09: cenas 94% (primeira passada completa; ~870 descartadas por desalinhamento
+voltam na próxima passada), rádio 0,8% (~10 h). Depois: revisar `work/review_scenes.tsv` (linhas marcadas,
+quase todas traduções encurtadas), reenviar a descrição da Oficina (estava cortada nas aspas; script já
+corrigido) e publicar com `python3 tools/publish_workshop.py hugiss52 "nota"`.
 
 ### Retomar em outro computador
 
