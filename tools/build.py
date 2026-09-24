@@ -68,13 +68,16 @@ Tradução para português do Brasil do mod [url=https://steamcommunity.com/shar
 [/list]
 
 [h2]Tradução feita com IA generativa[/h2]
-Os textos em português e as ferramentas foram produzidos com o Claude Opus 5.5 e o Claude Sonnet 5 (Anthropic); parte das cenas e do rádio foi traduzida localmente com o Gemma 3 12B. A tradução espanhola da comunidade serviu de referência. Ainda não houve uma revisão humana completa: se encontrar algo estranho, avise nos comentários ou abra uma issue no GitHub.
+Os textos em português e as ferramentas foram produzidos com o Claude Opus 5.5 e o Claude Sonnet 5 (Anthropic); parte das cenas e do rádio foi traduzida localmente com o Gemma 3 12B. Ainda não houve uma revisão humana completa: se encontrar algo estranho, avise nos comentários ou abra uma issue no GitHub.
 
 [h2]Código-fonte e contato[/h2]
 Tradução: Hugo Romão — [url=https://github.com/hugoromao]github.com/hugoromao[/url]
 Repositório da tradução: [url=https://github.com/hugoromao/project-alife-ptbr]github.com/hugoromao/project-alife-ptbr[/url]
 
-Todo o crédito do mod original é de seus autores. Este item não inclui o mod original."""
+Todo o crédito do mod original é de seus autores. Este item não inclui o mod original.
+
+Workshop ID: {workshop_id}
+Mod ID: {mod_id}"""
 
 
 
@@ -242,7 +245,7 @@ def main():
         shutil.copy2(art / 'preview.png', OUT / 'Workshop' / MOD_ID / 'preview.png')
     workshop_id = (art / 'workshop_id.txt').read_text().strip() if (art / 'workshop_id.txt').exists() else ''
     description = '\n'.join('description=' + line for line in
-                            WORKSHOP_DESCRIPTION.format(upstream_version=upstream_version).splitlines())
+                            WORKSHOP_DESCRIPTION.format(upstream_version=upstream_version, workshop_id=workshop_id, mod_id=MOD_ID).splitlines())
     (OUT / 'Workshop' / MOD_ID / 'workshop.txt').write_text(WORKSHOP_TXT.format(
         id_line=f'id={workshop_id}\n' if workshop_id else '', description=description), encoding='utf-8')
 
