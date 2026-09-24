@@ -19,7 +19,8 @@ ITEM_DIR = ROOT / 'build' / 'Workshop' / 'ProjectALifeNPCs_PTBR_Hugo'
 
 
 def vdf_string(text):
-    return '"' + text.replace('\\', '\\\\').replace('"', '\\"') + '"'
+    # SteamCMD's VDF reader stops at an escaped quote, so double quotes become single ones.
+    return '"' + text.replace('\\', '/').replace('"', "'") + '"'
 
 
 def main():
